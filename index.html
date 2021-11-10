@@ -1,9 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Resume</title>
+
+    <!--Social Links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--CSS BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Style -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        /* Header/logo Title */
+        
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+        /* Increase the font size of the heading */
+        
+        .header h1 {
+            font-size: 40px;
+        }
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+        }
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        /* Right-aligned link */
+        
+        .navbar a.right {
+            float: right;
+        }
+        /* Change color on hover */
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Active/current link */
+        
+        .navbar a.active {
+            background-color: #666;
+            color: white;
+        }
+        /* Column container */
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        /* Main column */
+        
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+        /* Fake image, just for this example */
+        
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div class="navbar">
+        <a href="" class="active">About</a>
+        <a href="https://github.com/pharaohmak" target="_blank">Portfolio</a>
+        <a href="https://sleepingpharaoh.com" target="_blank">Website</a>
+        <a href="mailto:pharaohmak@sleepingpharaoh.com" target="_blank" class="right">Contact</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+
+            <img src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/175758981_10215640753852404_4900179319064844302_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=-SYiqu9nqSYAX8E16eg&_nc_ht=scontent-den4-1.xx&oh=ff47c99238288cfdaefd8fe7e063e1c1&oe=617C5397"
+                alt="Personal Headshot" style="width:333px;height:400px">
+
+            <br> <br> <br>
+            <h2>
+                <a href="https://www.facebook.com/makram.ibrahim.16" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/PharaohMak" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/mak-ibrahim-01957b17a/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/pharaohmak/" target="_blank" class="fa fa-instagram"></a>
+            </h2>
+            <br>
+            <br>
+            <h3>Software Engineer | Full Stack Web Development, Data Science, Machine Learning</h3>
+            <hr>
+            <h4>About Me</h4> <br>
+            <p>My name is Makram Ibrahim, I was born in a village in Sudan called Nuba Mountains on April 25, 1995. My family of 5 moved to the United States in 2000 to a small city in a Utah, Salt Lake City. I have lived in Salt Lake City ever since and
+                went through Elementary, Middle School, and High School. Growing up I was always interested in computers and understanding how to get computers do what you want. I am just starting my journey to becoming a software engineer
+                <br>
+
+                <h4>Education</h4> <br>
+                <p>Attended Weber State University and Salt Lake Community College to study General Technology and Computer Science for 2 years.</p>
+
+                <h4>Skills</h4>
+                <ul>
+                    <li>Sales</li>
+                    <li>Programming</li>
+                    <li>Customer Service</li>
+                </ul>
+
+                <h4>Qualities</h4>
+                <ul>
+                    <li>Learn and Adapt quickly</li>
+                    <li>Organized and Detail Orianted</li>
+                    <li>Responsible and Reliable</li>
+                </ul>
+
+                <div class="box-sizing" style="height:60px;"></div><br>
+                <div class="box-sizing" style="height:60px;"></div><br>
+                <div class="box-sizing" style="height:60px;"></div>
+        </div>
+
+        <div class="main">
+            <h1>Experience</h1>
+            <br>
+            <h2>Sleeping Pharaoh Entertainment</h2>
+            <h5>Business Owner| Content Management, Event Management, and Corporate Communications, Oct 2018 - Present</h5>
+            <br>
+            <p>Sleeping Pharaoh Entertainment is a service-oriented company providing clients, customers, and corporations with services in content management, event management, and corporate communications. What sets Sleeping Pharaoh Entertainment apart
+                is the value we give in our services; to treat every customer like a human being, listen to all ideas, and to celebrate differences. We plan to offer various products such as, apparel, shoes, backpacks, jewelry, watches, and more. Sleeping
+                Pharaoh Entertainment was established in October of 2018 and is currently at the start-up stage. We are currently raising funding to make necessary purchases for company launch and a support staff. Sleeping Pharaoh Entertainment is a single
+                owned and operated company but utilize technology in apps and services to assist in workload. There are currently no contacts or partnerships in place, but we plan to acquire partnerships with affiliate partners to delegate studio and
+                office tasks.</p>
+            <br>
+            <h2>Lexington Law Firm</h2>
+            <h5>Paralegal, Mar 2015 – Dec 2016</h5>
+            <br>
+            <p>Lexington Lawfirm is a Credit Repair Agency that assists clients who have bad credit to repairing their credit back to good standing. During my time at Lexington Law firm, I worked as a paralegal in three different departments. Case Setup
+                Team, Client Loyalty Team, and Special Projects Team. On the Case Setup Team our responsibility was to properly obtain the clients credit reports, go over the negative items on their credit reports, and educate the clients on the credit
+                repair process. On the Client Loyalty Team, we proactively talked with clients and went over the progress of there credit report. We worked with the clients to come up with solutions for them to reach their credit goals. On the Special
+                Projects Team, we would call back clients who are requesting to cancel their service, and discuss the reason why they want to cancel, in hopes of keeping them on as a client unless they had already reached their credit goals.</p>
+            <br>
+            <h2>Clearlink Communications</h2>
+            <h5>Sales Representative, Feb 2016 – May 2018</h5>
+            <br>
+            <p>Clear link Communications is a telecommunications services company that offers customers with phone, internet, and television service plans. During my time at Clear link, I learned many useful skills working in a high paced and competitive
+                environment. This was a Commission based job with high call volume which made it a competitive environment. Provide good customer service, staying in compliance and knowing how to close are my key takeaways from working at Clear link.</p>
+
+            <br>
+            <h2>Teleperformance</h2>
+            <h5>Sales Representative, Jan 2019 - Dec 2020</h5> <br>
+            <p>Teleperformance is a third-party call center for USAA Federal Saving Bank. I worked in customer service as the first call resolution, where I would take incoming calls from members to assist in consumer loan servicing. I would assist customers
+                in anything from changing a due date for a payment on their loan to processing a refund for the customer. requests including; due date changes, processing payment reversal, and connecting themember to the right department.</p>
+            <br>
+            <h2>Certifications</h2>
+            <h5>Google IT Automation With Python, Aug 2021</h5><br>
+            <p>This program builds on your IT foundations to help you take your career to the next level. It’s designed to teach you how to program with Python and how to use Python to automate common system administration tasks. You'll also learn to use
+                Git and GitHub, troubleshoot and debug complex problems, and apply automation at scale by using configuration management and the Cloud.</p>
+            <p>This beginner-level, six-course certificate, developed by Google, is designed to provide IT professionals with in-demand skills -- including Python, Git, and IT automation -- that can help you advance your career. Knowing how to write code
+                to solve problems and automate solutions is a crucial skill for anybody in IT. Python, in particular, is now the most in-demand programming language by employers.</p>
+
+            <h5>Course Certificates Completed</h5>
+
+            <ol>
+                <li>Automating Real-World Tasks with Python</li>
+                <li>Configuration Management and the Cloud</li>
+                <li>Troubleshooting and Debugging Techniques</li>
+                <li>Intoduction to Git and Github</li>
+                <li>Using Python to Interact with the Operating System</li>
+                <li>Crash Course on Python</li>
+            </ol>
+
+
+        </div>
+    </div>
+
 </body>
 
 </html>
