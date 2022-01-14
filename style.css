@@ -668,6 +668,7 @@ body {
 /*!sc*/
 
 .button {
+    display: flex;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
@@ -877,6 +878,10 @@ data-styled.g4[id="GetInTouchIcon__SvgStyles-sc-1ibku4n-0"] {
     transition: transform 1s;
 }
 
+.expectations {
+    font-size: 16px;
+    padding: 5px;
+}
 
 /*!sc*/
 
