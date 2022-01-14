@@ -668,7 +668,6 @@ body {
 /*!sc*/
 
 .button {
-    display: flex;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
