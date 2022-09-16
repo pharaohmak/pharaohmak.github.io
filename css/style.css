@@ -54,5 +54,15 @@ nav-bar{
 
 .about-me {
     padding: 1rem;
-    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.skills-container {
+    margin: 1rem;
+}
+
+header {
+    margin: 1rem;
 }
