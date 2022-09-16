@@ -2,10 +2,19 @@ body {
     margin: 1rem 0;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif
+}
+
 a {
     text-decoration: none;
 }
-
 
 li svg {
     height: 100px;
@@ -15,7 +24,6 @@ li svg {
 li {
     list-style-type: none;
 }
-
 
 .skills-box {
     display: flex;
@@ -41,13 +49,12 @@ li {
     justify-content: center;
 }
 
-
 .headshot {
     height: 750px;
     width: auto;
 }
 
-nav-bar{
+nav-bar {
     display: flex;
     align-items: flex-end;
 }
