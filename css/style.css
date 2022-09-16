@@ -1,21 +1,58 @@
+body {
+    margin: 1rem 0;
+}
+
 a {
     text-decoration: none;
 }
 
+
+li svg {
+    height: 100px;
+    margin: 1.5rem;
+}
+
 li {
-    list-style: none;
+    list-style-type: none;
 }
 
 
-.skillsBox {
+.skills-box {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.skill {
-    margin: 10px;
+.technical-skills {
+    margin: 1.5rem;
 }
 
+.portfolio {
+    margin: 1.5rem;
+}
+
+.rate {
+    margin: 1.5rem;
+}
 
 .bio {
     padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.headshot {
+    height: 750px;
+    width: auto;
+}
+
+nav-bar{
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-me {
+    padding: 1rem;
+    margin-top: 3rem;
 }
