@@ -1,16 +1,10 @@
 body {
-    margin: 1rem 0;
+    margin: 1rem;
+    font-family: "Raleway", sans-serif
+
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Raleway", sans-serif
-}
+
 
 a {
     text-decoration: none;
@@ -25,51 +19,120 @@ li {
     list-style-type: none;
 }
 
+label {
+    height: auto;
+}
+
+form {
+    margin: 1rem;
+}
+
+main {
+    margin: 3rem 0;
+}
+
+footer {
+    margin: 0;
+}
+
+.overlay {
+    display: none;
+}
+
+.headshot {
+    float: left;
+    height: 750px;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.bio {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .skills-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.technical-skills {
-    margin: 1.5rem;
+.certificates {
+    display: block;
+    margin-left: 1rem;
 }
 
-.portfolio {
-    margin: 1.5rem;
+
+.skills {
+    margin-top: 3rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+
 }
 
 .rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.service {
+    width: 100%;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: lightgray;
+    margin: 0;    
+}
+
+.portfolio {
+    margin: 3rem 0;
+}
+
+.contact-me span {
+    margin: 3rem;
+}
+
+.closing {
+    display: flex;
+    background-color: grey;
+}
+
+.closing-message {
+    width: 44%;
     margin: 1.5rem;
 }
 
-.bio {
-    padding: 25px;
+.discover {
+    width: 66%;
+    margin: 1.5rem;
+}
+
+.discover h3 {
+    text-align: center;
+}
+
+.discover-links {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.headshot {
-    height: 750px;
-    width: auto;
+.contact {
+    background-color: lightgray;
 }
 
-nav-bar {
-    display: flex;
-    align-items: flex-end;
-}
-
-.about-me {
-    padding: 1rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
-.skills-container {
-    margin: 1rem;
-}
-
-header {
-    margin: 1rem;
+.popular-tags {
+    margin: 1.5rem;
 }
