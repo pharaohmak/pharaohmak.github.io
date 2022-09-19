@@ -1,15 +1,23 @@
+html {
+    background: "./assets/videos/animation.mp4";
+}
 body {
     margin: 1rem;
-    font-family: "Raleway", sans-serif
-
+    font-family: "Raleway", sans-serif;
+    background-color: #121212;
+    color: #FAF9F6;
 }
 
-
+video {
+    margin: 0;
+}
 
 a {
     text-decoration: none;
 }
-
+ul {
+    padding: 0;
+}
 li svg {
     height: 100px;
     margin: 1.5rem;
@@ -25,23 +33,25 @@ label {
 
 form {
     margin: 1rem;
+    color: #282828;
 }
 
 main {
     margin: 3rem 0;
+    background-color: #181818;
 }
 
 footer {
     margin: 0;
+    background-color: #181818;
 }
-
 .overlay {
     display: none;
 }
 
 .headshot {
     float: left;
-    height: 750px;
+    max-height: auto;
     width: auto;
     margin-right: 1rem;
 }
@@ -53,6 +63,10 @@ footer {
     justify-content: center;
 }
 
+.bio h3 {
+    text-align: center;
+}
+
 .skills-box {
     display: flex;
     flex-wrap: wrap;
@@ -60,13 +74,22 @@ footer {
 }
 
 .certificates {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
 }
+
+.certificates h3 {
+    text-align: center;
+}
+
 
 
 .skills {
     margin-top: 3rem;
+    background-color: #282828;
 }
 
 .pagination {
@@ -78,6 +101,7 @@ footer {
 
 .rate {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 3rem;
@@ -89,7 +113,7 @@ footer {
 
 .contact-me {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     background-color: lightgray;
     margin: 0;    
@@ -100,22 +124,29 @@ footer {
 }
 
 .contact-me span {
-    margin: 3rem;
+    padding: 0 3rem ;
+    width: 250px;
+    background-color: #282828;
+    justify-content: space-between;
 }
 
 .closing {
     display: flex;
-    background-color: grey;
+    flex-direction: row;
+    flex-wrap: no-wrap ;
+    background-color: #404040;
 }
 
 .closing-message {
-    width: 44%;
     margin: 1.5rem;
 }
 
 .discover {
-    width: 66%;
-    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .discover h3 {
@@ -126,13 +157,27 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .contact {
     background-color: lightgray;
 }
 
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #404040;
+    margin: 2.5rem 0;
+}
+
 .popular-tags {
     margin: 1.5rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .closing {
+        flex-direction: column;
+    }
 }
