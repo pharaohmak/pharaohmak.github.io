@@ -1,3 +1,20 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("your@email.address", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -690,6 +707,40 @@
                 </ul>
             </article>
         </section>
+        <br><br>
+        <section class="testimonial text-center">
+            <div class="container">
+
+                <div class="heading white-heading">
+                    Testimonials
+                </div>
+                <div id="testimonial4"
+                    class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                    data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="testimonial4_slide">
+                                <h4> Ship Handling Calculator App</h4>
+                                <p>" What a great experience working with you to create this multi page productivity
+                                    app. I had some very specific requirements and was not always able to communicate
+                                    properly (my fault), but you took all of that in stride, adjusted the app until I
+                                    was happy and kept me in the loop throughout the process. I will be using your
+                                    services again when I get my next app idea. Thank you! "</p>
+                                <h4> -- Jill Russell</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -697,8 +748,9 @@
             <h2 id="contact"><b>Contact Me</b></h2>
             <article class="contact-me">
                 <span>
-                    <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
                     <a href="mailto:pharaohmak@sleepingpharaoh.com">
+
+                        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
                         <p>Email</p>
                     </a>
                 </span>
@@ -707,8 +759,9 @@
                     <p>Texas, US</p>
                 </span>
                 <span>
-                    <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
                     <a href="tel: 3853818144">
+
+                        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
                         <p>Call</p>
                     </a>
                 </span>
@@ -716,26 +769,15 @@
             <hr class="w3-opacity">
 
             <section class="contact">
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-section">
-                        <br>
-                        <label>Name</label>
-                        <input class="w3-input w3-border" type="text" name="Name" required>
-                    </div>
-                    <div class="w3-section">
-                        <label>Email</label>
-                        <input class="w3-input w3-border" type="text" name="Email" required>
-                    </div>
-                    <div class="w3-section">
-
-                        <label>Message</label>
-                        <input class="w3-input w3-border" type="text" name="Message" required>
-                    </div>
-                    <br><br>
-                    <button type="submit" class="w3-button w3-black w3-margin-bottom"><i
-                            class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-                    <br><br>
-                </form>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "22720972",
+                        formId: "ad1234e4-d57b-412b-9b44-46c9c09cf0a7",
+                        version: "V2_PRERELEASE"
+                    });
+                </script>
             </section>
 
             <section class="closing">
