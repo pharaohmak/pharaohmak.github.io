@@ -1,10 +1,10 @@
 html {
-    background: "./assets/videos/animation.mp4";
+    background: #454636;
 }
 body {
     margin: 1rem;
     font-family: "Raleway", sans-serif;
-    background-color: #121212;
+    background-color: #454636;
     color: #FAF9F6;
 }
 
@@ -38,12 +38,14 @@ form {
 
 main {
     margin: 3rem 0;
-    background-color: #181818;
+}
+
+video {
+    border-radius: 50px;
 }
 
 footer {
     margin: 0;
-    background-color: #181818;
 }
 .overlay {
     display: none;
@@ -116,7 +118,8 @@ footer {
     justify-content: space-evenly;
     text-align: center;
     background-color: lightgray;
-    margin: 0;    
+    margin: 0; 
+    border-radius: 50px;   
 }
 
 .portfolio {
@@ -126,7 +129,6 @@ footer {
 .contact-me span {
     padding: 0 3rem ;
     width: 250px;
-    background-color: #282828;
     justify-content: space-between;
 }
 
@@ -162,6 +164,7 @@ footer {
 .contact {
     background-color: lightgray;
     padding: 1rem ;
+    border-radius: 25px;
 }
 
 .contact-me {
@@ -240,6 +243,7 @@ footer {
     padding-bottom: 50px;
     background-position: center;
         background-size: cover;
+        border-radius: 25px;
 }
 #testimonial4 .carousel-inner:hover{
   cursor: -moz-grab;
@@ -424,3 +428,19 @@ footer {
    
 }
 
+
+ .nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.page-title {
+    text-align: center;
+}
