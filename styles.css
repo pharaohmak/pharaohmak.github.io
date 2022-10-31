@@ -47,6 +47,12 @@ video {
 footer {
     margin: 0;
 }
+
+.closing {
+    border-radius: 50px;
+    margin-top: 3rem;
+}
+
 .overlay {
     display: none;
 }
@@ -443,4 +449,21 @@ footer {
 
 .page-title {
     text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+.certificates ul {
+    display: flex;
+}
+
+.certificates ul li {
+    margin: 2rem;
+
 }
