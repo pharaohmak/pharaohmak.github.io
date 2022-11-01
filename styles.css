@@ -431,6 +431,20 @@ footer {
         margin: 1rem 0;
     }
 
+    .certificates ul {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
    
 }
 
