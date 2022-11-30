@@ -2,124 +2,345 @@
 <html>
 
 <head>
-    <title>Portfolio</title>
+    <title>Makram Ibrahim Portfolio</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="icon" href="./assets/favicon.ico">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="w3-lightw-grey w3-content" style="max-width:1600px">
 
     <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="/assets/logo.png" style="width:45%;" class="w3-round"><br><br>
+            <h4><b>Makram Ibrahim</b></h4>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        </div>
+
+        <a href="https://www.facebook.com/makram.ibrahim.16" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://github.com/pharaohmak" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/mak-ibrahim/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/alchemistmak/" target="_blank" class="fa fa-instagram"></a>
+    </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="overlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
 
-        <nav style="z-index:3;width:300px;" id="mySidebar"><br>
-            <div>
-                <a href="#" onclick="w3_close()" title="close menu">
-                    <i class="fa fa-remove"></i>
-                </a>
-                <img src="/assets/logo.png" style="width:45%;"><br><br>
-                <h4><b>Front-End Developer</b></h4>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+            <a href="#"><img src="/assets/logo.png" style="width:65px;"
+                    class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1><b>Remote Full-Stack Software Engineer - - Automation Specialist</b></h1>
+
+                <div class="w3-section w3-bottombar w3-padding-16">
+                    <span class="w3-margin-right">Filter:</span>
+                    <button onclick="navAll()" class="w3-button w3-black">ALL</button>
+                    <button id="website-tab" onclick="navWebsites()" class="w3-button w3-white"><i
+                            class="fa fa-diamond w3-margin-right"></i>Websites</button>
+                    <button onclick="navPrograms()" class="w3-button w3-white w3-hide-small"><i
+                            class="fa fa-map-pin w3-margin-right"></i>Programs</button>
+                    <button onclick="navComponents()" class="w3-button w3-white w3-hide-small"><i
+                            class="fa fa-photo w3-margin-right"></i>Components</button>
+
+                </div>
             </div>
-            <div>
-                <a href="#portfolio" onclick="w3_close()"><i></i>PORTFOLIO</a>
-                <a href="#about" onclick="w3_close()"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-                <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
-                        class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        </header>
+
+        <!-- All Tab First Photo Grid-->
+        <div id="allTab">
+            <div class="w3-row-padding">
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://pharaohmak.github.io/facial-recognition/" target="_blank">
+                        <img src="/assets/projects/capstone/facial-recognition.jpeg" alt="JavaScript Facial Recognition"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>JavaScript Facial Recognition Software</b></p>
+                            <p>Face-api is a JavaScript library that supports Face
+                                Detection, Face Recognition, Face Expression, Age, and Gender Detection.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w3-third w3-container"><a href="https://music-payer-react-g0cltjayo-pharaohmak.vercel.app/"
+                        target="_blank">
+                        <img src="/assets/projects/capstone/music-app.png" alt="React Music Player"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>React Music Player App</b></p>
+                            <p>Successfully created an awesome-looking music player app that lets you to play
+                                songs and skip songs.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom"><a href="https://pharaohmak.github.io/tetris-game/"
+                        target="_blank">
+                        <img src="/assets/projects/capstone/tetris-game.jpeg" alt="Tetris Game"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Tetris Game</b></p>
+                            <p>The object of the game is to clear falling blocks by forming horizontal lines of blocks
+                                without gaps or blocks of the same color touching.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div>
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <!-- Second Photo Grid-->
+            <div class="w3-row-padding">
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://github.com/pharaohmak/SpaceShooterGame" target="_blank">
+                        <img src="/assets/projects/capstone/space-shooter.jpeg" alt="Space Shooter Game"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Space Shooter Game</b></p>
+                            <p>Space shooter is a game in which the player aims the ship at oncoming targets and the
+                                ship moves automatically in accordance with the controls.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </nav>
 
-    </div>
+            <!-- Pagination -->
+            <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                    <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                </div>
+            </div>
+        </div>
 
-    <header>
-        <h1 class="page-title">Remote Full-Stack Software Engineer - - IT Automation Specialist</h1>
+        <!-- Websites Tab First Photo Grid -->
+        <div style="display: none;" id="websitesTab">
+            <div class="w3-row-padding">
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://pharaohmak.github.io/colmar-academy/" target="_blank">
+                        <img src="/assets/projects/websites/colmar-academy.png" alt="Colmar Academy"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Omarang Organization</b></p>
+                            <p>Omarang Association in USA is an organization that provides social services and education
+                                programs that will prepare and build strong future generation of Omarang Community.</p>
+                        </div>
+                    </a>
+                </div>
 
-        <nav class="nav-bar">
-            <ul class="nav-bar">
-                <a href="#About">
-                    <li>About</li>
+                <div class="w3-third w3-container"><a href="https://pharaohmak.github.io/flexbox-business-site/"
+                        target="_blank">
+                        <img src="/assets/projects/websites/flexbox-business-site.png" alt="Flexbox Business Site"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Ajack Mobile Mechanic</b></p>
+                            <p>Welcome to A-Jack Mobile Mechanic, your number one source for all mechanical needs.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Second Photo Grid-->
+            <div class="w3-row-padding">
+
+            </div>
+        </div>
+
+        <!-- Components Tab First Photo Grid-->
+        <div id="componentsTab" style="display: none;">
+            <div class="w3-row-padding">
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://www.frontendmentor.io/solutions/3columnpreviewcardcomponentmain-HJlPR8zyUc"
+                        target="_blank">
+                        <img src="/assets/projects/components/3-column.jpeg" alt="3 Column"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>3 Column Prreview Card Component</b></p>
+                            <p>This challenge is perfect if you're just getting started. The shift between the layouts
+                                will be a nice test if you're new to building responsive projects.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom"><a href="https://www.frontendmentor.io/solutions/fourcardfeaturesectionmaster-Hk_mnC2r5
+                    " target="_blank">
+                        <img src="/assets/projects/components/four-card.jpeg" alt="Four Card Feature Section"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Four Card Feature Section</b></p>
+                            <p>A nice layout-based challenge for beginners. This will test anyone who is new to
+                                multi-column and responsive layouts.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w3-third w3-container"><a
+                        href="https://www.frontendmentor.io/solutions/huddlelandingpagewithsingleintroductorysectionmaster-SkRq45ESq"
+                        target="_blank">
+                        <img src="/assets/projects/components/huddle-landing-page.jpeg" alt="Huddle Landing Page"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Huddle Landing Page</b></p>
+                            <p>A perfect challenge for beginners, this project will get you working with a two column
+                                layout.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Second Photo Grid-->
+            <div class="w3-row-padding">
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://www.frontendmentor.io/solutions/interactiveratingcomponentmain-BkTjQzir5"
+                        target="_blank">
+                        <img src="/assets/projects/components/interactive-rating.jpeg"
+                            alt="Interactive Rating Component" style="width:100%; height: 350px;"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Interactive Rating Component</b></p>
+                            <p>This is a nice, small project to practice handling user interactions and updating the
+                                DOM. Perfect for anyone who has learned the basics of JavaScript!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://www.frontendmentor.io/solutions/nftpreviewcard-SyTP0FmSq" target="_blank">
+                        <img src="/assets/projects/components/nft-preview.jpeg" alt="NFT Preview Section"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>NFT Preview Card</b></p>
+                            <p>This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting
+                                a small project to play around with.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w3-third w3-container"><a
+                        href="https://www.frontendmentor.io/solutions/ordersummarycomponentmain-rkJ0jYSH9"
+                        target="_blank">
+                        <img src="/assets/projects/components/order-summary.jpeg" alt="Order Summary"
+                            style="width:100%; height: 350px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Order Summary Component</b></p>
+                            <p>A perfect project for newbies who are starting to build confidence with layouts!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Programs Tab First Photo Grid-->
+        <div id="programsTab" style="display: none;">
+            <div class="w3-third w3-container w3-margin-bottom"><a href="https://pharaohmak.github.io/bmi-calculator/"
+                    target="_blank">
+                    <img src="/assets/projects/programs/bmi-calc.png" alt="3 Body Mass Index Calculator"
+                        style="width:100%; height: 350px;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>3 Body Mass Index Calculator</b></p>
+                        <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to
+                            adult men and women.</p>
+                    </div>
                 </a>
-                <a href="#Portfolio">
-                    <li>Portfolio</li>
+            </div>
+
+            <div class="w3-third w3-container w3-margin-bottom"><a href="https://pharaohmak.github.io/grade-calculator/"
+                    target="_blank">
+                    <img src="/assets/projects/programs/grade-calc.png" alt="Grade Calculator"
+                        style="width:100%; height: 350px;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Grade Calculator</b></p>
+                        <p>A grade calculator is a type of calculator that is used to calculate grades.</p>
+                    </div>
                 </a>
-                <a href="#Services">
-                    <li>Services</li>
+            </div>
+
+            <div class="w3-third w3-container"><a href="https://pharaohmak.github.io/discount-checker/" target="_blank">
+                    <img src="/assets/projects/programs/discount-checker.png" alt="Discount Checker"
+                        style="width:100%; height: 350px;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Discount Checker</b></p>
+                        <p>Input the original cost of an item and then spits out
+                            the discounted price.</p>
+                    </div>
                 </a>
-                <a href="#Contact">
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </nav>
+            </div>
+        </div>
 
-        <video width="100%" height="fill" autoplay muted loop>
-            <source src="laptop.mp4" type="video/mp4">
-        </video>
+        <!-- Images of Me -->
+        <div class="w3-row-padding w3-padding-16" id="about">
+            <h4><b>About Me</b></h4>
+            <div class="w3-col m6">
+                <img src="/assets/headshot.jpeg" alt="Me" style="width:100%">
+            </div>
 
-    </header>
-
-    <br><br>
-
-
-    <main>
-        <div id="About"></div>
-        <section class="about">
-            <h3 class="page-title">Are You Looking For a Reliable, Hardworking, and
-                Effective Problem Solver?
-            </h3>
-
-            <article class="bio">
-                <h4>
-                    My goal is to find trends in software solutions that may provide potentially competitive automated
-                    services in order to ensure your business continues to carefully carve its niche in the marketplace.
-                </h4>
-                <p>
-                    I am a freelance developer who works with small-business owners offering services for system design
-                    and development, troubleshooting and debugging, and cloud configuration and management. I create
-                    custom technology solutions for small business owners that help better automate tasks to increase
-                    productivity. I create and develop solutions for end users, including single or multiple programs,
-                    and custom applications. Along with the development in web, server, mobile, and desktop
-                    environments. As part of my duties, I will provide technical leadership for software preventative
-                    maintenance, software updates, and support to clients.
-                    <br><br>
-                    I possess a solid set of technical credentials, together with experience in numerous industries,
-                    including financial services, advertising, manufacturing, and retail management and administration.
-                    I am certified in Full-Stack Software Engineering, Front-End Engineering, and Web Development, and
-                    specialize in IT Automation with Python. I am proficient in PHP, C#, PYTHON, JAVASCRIPT, and SQL;
-                    Strong in design and integration with intuitive problem-solving skills; and passionate about
-                    implementing and launching new projects.
-                    <br><br>
-                    As your remote Full Stack Software Engineer, I'll collaborate with back-end and front-end developers
-                    to design new features and fix bugs. I'll work with designers and UX Engineers to create
-                    interactive, realistic prototypes, and improve the user experience of your mobile and web
-                    application to increase traffic and revenue. I will prepare, organize, and document corrective
-                    action. Recommend appropriate solutions using a
-                    variety of information, including technical data, customer specifications, architectural/design
-                    constraints, and operating specifications. Plan and supervise the software project and testing to
-                    ensure completion of project objectives based on specifications/objectives.
-                </p>
-                <h3>
-                    I Am Prepared To Translate Business Requirements Into Technical
-                    Solutions.
+            <!-- Biography -->
+            <div class="w3-col m6">
+                <h3 class="page-title">Are You Looking For a Reliable, Hardworking, and
+                    Effective Problem Solver?
                 </h3>
-            </article>
 
+                <article class="bio">
+                    <h4>
+                        My goal is to find trends in software solutions that may provide potentially competitive
+                        automated services in order to ensure your business continues to carefully carve its niche in
+                        the marketplace.
+                    </h4>
+                    <p>
+                        I am a freelance developer who works with small-business owners offering services for system
+                        design and development, troubleshooting and debugging, and cloud configuration and management. I
+                        create custom technology solutions for small business owners that help better automate tasks to
+                        increase productivity. I create and develop solutions for end users, including single or
+                        multiple programs, and custom applications. Along with the development in web, server, mobile,
+                        and desktop environments. As part of my duties, I will provide technical leadership for software
+                        preventative maintenance, software updates, and support to clients.
+                        <br><br>
+                        I possess a solid set of technical credentials, together with experience in numerous industries,
+                        including financial services, advertising, manufacturing, and retail management and
+                        administration. I am certified in Full-Stack Software Engineering, Front-End Engineering, and
+                        Web Development, and specialize in IT Automation with Python. I am proficient in PHP, C#,
+                        PYTHON, JAVASCRIPT, and SQL; Strong in design and integration with intuitive problem-solving
+                        skills; and passionate about implementing and launching new projects.
+                        <br><br>
+                        As your remote Full Stack Software Engineer, I'll collaborate with back-end and front-end
+                        developers to design new features and fix bugs. I'll work with designers and UX Engineers to
+                        create interactive, realistic prototypes, and improve the user experience of your mobile and web
+                        application to increase traffic and revenue. I will prepare, organize, and document corrective
+                        action. Recommend appropriate solutions using a variety of information, including technical
+                        data, customer specifications, architectural/design constraints, and operating specifications.
+                        Plan and supervise the software project and testing to ensure completion of project objectives
+                        based on specifications/objectives.
+                    </p>
+                    <h3>
+                        I Am Prepared To Translate Business Requirements Into Technical
+                        Solutions.
+                    </h3>
+                </article>
+            </div>
+        </div>
+
+        <!-- Qualifications -->
+        <div class="w3-container w3-padding-large" style="margin-bottom:32px">
             <article class="qualifications">
                 <section class="certificates">
                     <h2>Certificates</h2>
@@ -146,7 +367,6 @@
                             </a>
                         </li>
                     </ul>
-
                 </section>
 
                 <section class="Skills">
@@ -398,204 +618,14 @@
                     </ul>
                 </section>
             </article>
+            <hr>
 
-        </section>
-        <div id="Portfolio"></div>
-        <h2>Portfolio</h2>
-
-        <section>
-            <span class="w3-margin-right">Filter:</span>
-            <button onclick="navAll()" class="w3-button w3-black">ALL</button>
-            <button onclick="navWebsites()" class="w3-button w3-white"><i
-                    class="fa fa-photo w3-margin-right"></i>Websites</button>
-            <button onclick="navFrameworks()" class="w3-button w3-white w3-hide-small"><i
-                    class="fa fa-code w3-margin-right"></i>Frameworks</button>
-            <button onclick="navApps()" class="w3-button w3-white w3-hide-small"><i
-                    class="fa fa-diamond w3-margin-right"></i>Applications</button>
-
-        </section>
-
-
-        <!-- All Tab -->
-        <article class="portfolio">
-            <section id="allTab">
-                <div class="w3-row-padding" style="display: block;">
-                    <div class="w3-third w3-container w3-margin-bottom">
-                        <a href="https://crypto-punks-clone.herokuapp.com/" target="_blank">
-
-                            <img src="./assets/projects/capstone/crypto-punks-clone.png" alt="Norway"
-                                style="height: 300px; width: 100%;" class="w3-hover-opacity">
-                        </a>
-                        <div class="w3-container w3-white">
-                            <a href="https://crypto-punks-clone.herokuapp.com/ target=" _blank">
-                                <p><b>React, Web3, NFT | CryptoPunks Clone</b></p>
-                            </a>
-                            <p>
-                                Listing Web Application using ReactJs, ThirdWeb and OpenSea API, and MetaMask Wallet.
-                                The address as well as the punks are displayed dynamically from Opensea Marketplace.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="w3-third w3-container w3-margin-bottom">
-                        <a href="https://music-payer-react-g0cltjayo-pharaohmak.vercel.app/" target="_blank">
-                            <img src="./assets/projects/capstone/music-app.png" alt="Norway" style="width:100%"
-                                height="300px" class="w3-hover-opacity">
-                        </a>
-                        <div class="w3-container w3-white">
-                            <p><b><a href="https://music-payer-react-g0cltjayo-pharaohmak.vercel.app/"
-                                        target="_blank">UI and its Functionalities | React Music Player</a> </b></p>
-                            </a>
-                            <p>
-                                Set up and build music player applications using react.js from absolutely
-                                scratch. Successfully created an awesome-looking music player app that lets you to play
-                                songs and skip songs.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="w3-third w3-container">
-                        <a href="https://pharaohmak.github.io/facial-recognition/" target="_blank">
-                            <img src="./assets/projects/capstone/facial-recognition.jpeg" alt="Norway"
-                                style="width:100%" height="300px" class="w3-hover-opacity">
-                        </a>
-                        <div class="w3-container w3-white">
-                            <a href="https://pharaohmak.github.io/facial-recognition/" target="_blank">
-                                <p><b>Facial Recognition Software</b></p>
-                            </a>
-                            <p>
-                                Face-api is a JavaScript library created by Vincent Mühler., to
-                                detect faces via browser. It is built over tensorflow. js core API. It supports Face
-                                Detection, Face Recognition, Face Expression, Age, and Gender Detection.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Websites Tab -->
-            <section id="websitesTab" style="display: none;">
-                <div class="w3-row-padding">
-                    <div class="w3-third w3-container w3-margin-bottom">
-                        <a href="https://www.frontendmentor.io/solutions/huddlelandingpagewithsingleintroductorysectionmaster-SkRq45ESq"
-                            target="_blank">
-                            <img src="assets/projects/frontend-mentor/huddle-landing-page.jpeg" alt="Norway"
-                                style="width:100%; height: 302px;" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Frontend Mentor - - Huddle Landing Page</b></p>
-                                <p>A perfect challenge for beginners, this project will get you working with a two
-                                    column layout.</p>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="w3-third w3-container w3-margin-bottom">
-                        <a href="https://www.frontendmentor.io/solutions/interactiveratingcomponentmain-BkTjQzir5"
-                            target="_blank">
-                            <img src="assets/projects/frontend-mentor/interactive-rating.jpeg" alt="Norway"
-                                style="width:100%" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Frontend Mentor - - interactive Rating Component</b></p>
-                                <p>This is a nice, small project to practice handling user interactions and updating the
-                                    DOM.</p>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="w3-third w3-container">
-                        <a href="https://www.frontendmentor.io/solutions/socialproofsectionmaster-HyOiMQvBq"
-                            target="_blank">
-                            <img src="/assets/projects/frontend-mentor/social-proof.jpeg" alt="Norway"
-                                style="width:100%; height: 302px;" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <p><b>Frontend Mentor - - Social Proof Section</b></p>
-                                <p>This project will test your layout skills. If you're starting to get confident with
-                                    Flexbox or Grid, this will provide a nice challenge!</p>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Applications Tab-->
-            <section>
-                <div class="w3-row-padding" style="display: none;" id="appsTab">
-                    <div class="w3-third w3-container w3-margin-bottom">
-                        <img src="./assets/projects/release-all-dreams.jpg" alt="Norway" style="width:100%; height: 316px;"
-                            class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>Release-All-Dreams | Music Publishing App</b></p>
-                            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                                ultricies congue gravida diam non fringilla.</p>
-                        </div>
-                    </div>
-
-                    <div class="w3-third w3-container w3-margin-bottom">
-                        <img src="./assets/projects/laundry-room.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>Laundry-Room | Personal Laundry Service</b></p>
-                            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                                ultricies congue gravida diam non fringilla.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Frameworks Tab-->
-            <section>
-                <div class="w3-row-padding" style="display: none;" id="frameworksTab">
-                    <div class="w3-third w3-container w3-margin-bottom">
-                        <img src="assets/projects/capstone/tetris-game.jpeg" alt="Norway" style="width:100%" height="480px"
-                            class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>Tetris Game</b></p>
-                            <p>The object of the game is to clear falling blocks by forming horizontal lines of blocks
-                                without gaps or blocks of the same color touching.</p>
-                        </div>
-                    </div>
-
-                    <div class="w3-third w3-container w3-margin-bottom">
-                        <img src="assets/projects/capstone/space-shooter.jpeg" alt="Norway"
-                            style="width:100%; height: 480px;" class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>Spaceshooter Game</b></p>
-                            <p>Space shooter is a game in which the player aims the ship at oncoming targets and the
-                                ship moves automatically in accordance with the controls.</p>
-                        </div>
-                    </div>
-
-                    <div class="w3-third w3-container">
-                        <img src="./assets/projects/capstone/to-do.jpeg" alt="Norway" style="width:100%; height: 480px"
-                            class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>To-Do List</b></p>
-                            <p>Todolist for React Native is an app where you can list your tasks and read on updates.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </article>
-
-        <span class="pagination">
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-            <a href="index.html" class="w3-bar-item w3-black w3-button">1</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-        </span>
-
-        <section>
-            <h2>Technical Skills</h2>
-
+            <h4>Technical Skills</h4>
             <!-- Progress bars / Skills -->
             <p>Computer Programming and Coding</p>
             <div class="w3-grey">
                 <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
             </div>
-
             <p>Object-Orianted Software Development</p>
             <div class="w3-grey">
                 <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
@@ -611,163 +641,145 @@
                     </a>
                 </button>
             </p>
-        </section>
+            <hr>
+            <h4>Testimonials</h4>
 
-        <div id="Services"></div>
+            <section class="testimonial text-center">
+                <div class="container">
 
-        <h4>How much I charge</h4>
-        <h6>
-            If you have fixed-price quotes for any part of your
-            application, I can also provide you with customized performance recommendations that will truly make
-            your application stand out. <br><br>
-        </h6>
-
-        <section class="rate">
-            <article class="service">
-                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-black w3-xlarge w3-padding-32">System Design and Development</li>
-                    <li class="w3-black ">
-                        Write code and collaborate with a team of developers and designers to create software products.
-
-
-                    </li>
-                    <li class="w3-padding-16">Design Project Concept</li>
-                    <li class="w3-padding-16">Build, Test, & Deploy Prototype</li>
-                    <li class="w3-padding-16">Toubleshooting & Modifications</li>
-                    <li class="w3-padding-16">
-                        <span class="w3-opacity">starting at </span>
-                        <h2>$ 200</h2>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
-                            <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
-
-                        </a>
-                    </li>
-                </ul>
-            </article>
-
-            <article class="service">
-                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-orange w3-xlarge w3-padding-32">Troubleshooting and Debugging</li>
-                    <li class="w3-black"> Use optimal data structures and algorithms to solve problems for individuals
-                        and small-businesses.
-
-                    </li>
-                    <li class="w3-padding-16">Manage Usability Logic</li>
-                    <li class="w3-padding-16">Create & Manage Database</li>
-                    <li class="w3-padding-16">Design & Maintain Server</li>
-                    <li class="w3-padding-16">
-                        <span class="w3-opacity">starting at</span>
-                        <h2>$ 400</h2>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
-                            <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
-
-                        </a>
-                    </li>
-                </ul>
-            </article>
-
-            <article class="service">
-                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-black w3-xlarge w3-padding-32">Configuration Management and the Cloud</li>
-                    <li class="w3-black">Calculate, measure, and improve performance for data-driven decision-making
-                        across any application.</li>
-                    <li class="w3-padding-16">Cross Platform Optimization </li>
-                    <li class="w3-padding-16">RESTful Services and APIs </li>
-                    <li class="w3-padding-16">Non-Functional Requirements </li>
-                    <li class="w3-padding-16">
-                        <span class="w3-opacity">starting at</span>
-
-                        <h2>$ 800</h2>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
-                            <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
-
-                        </a>
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <br><br>
-        <section class="testimonial text-center">
-            <div class="container">
-
-                <div class="heading white-heading">
-                    Testimonials
-                </div>
-                <div id="testimonial4"
-                    class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
-                    data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="testimonial4_slide">
-                                <h4> Ship Handling Calculator App</h4>
-                                <p>" What a great experience working with you to create this multi page productivity
-                                    app. I had some very specific requirements and was not always able to communicate
-                                    properly (my fault), but you took all of that in stride, adjusted the app until I
-                                    was happy and kept me in the loop throughout the process. I will be using your
-                                    services again when I get my next app idea. Thank you! "</p>
-                                <h4> -- Jill Russell</h4>
-                            </div>
-                        </div>
-
+                    <div class="heading white-heading">
                     </div>
-                    <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+                    <div id="testimonial4"
+                        class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                        data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="testimonial4_slide">
+                                    <a href="https://expo.dev/@pharaohmak/ShipHandlingCalculator" target="_blank">
+                                        <h4> Ship Handling Calculator App</h4>
+                                    </a>
+                                    <p>" What a great experience working with you to create this multi page productivity
+                                        app. I had some very specific requirements and was not always able to
+                                        communicate
+                                        properly (my fault), but you took all of that in stride, adjusted the app until
+                                        I
+                                        was happy and kept me in the loop throughout the process. I will be using your
+                                        services again when I get my next app idea. Thank you! "</p>
+                                    <h4> -- Jill Russell</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <h4 id="contact">How much I charge</h4>
+            <!-- Pricing Tables -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-black w3-xlarge w3-padding-32">System Interface Design and Development</li>
+                        <li class="w3-padding-16">Write code and collaborate with team of developers and designers to
+                            create software products.</li>
+                        <li class="w3-padding-16">Design Project Concept</li>
+                        <li class="w3-padding-16">Build, Test, & Deploy Prototype</li>
+                        <li class="w3-padding-16">Toubleshooting & Modifications</li>
+                        <li class="w3-padding-16">
+                            <span class="w3-opacity">Starting at</span>
+
+                            <h2>$ 250</h2>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
+                                <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-orange w3-xlarge w3-padding-32">Troubleshooting and Debugging Techniques</li>
+                        <li class="w3-padding-16">Use optimal data structures and algorithms to solve problems for
+                            individuals and small-businesses.</li>
+                        <li class="w3-padding-16">Manage Usability Logic</li>
+                        <li class="w3-padding-16">Create & Manage Database</li>
+                        <li class="w3-padding-16">Design & Maintain Server</li>
+                        <li class="w3-padding-16">
+                            <span class="w3-opacity">Starting at</span>
+
+                            <h2>$ 500</h2>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
+                                <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-black w3-xlarge w3-padding-32">Configuration Management and the Cloud</li>
+                        <li class="w3-padding-16">Calculate, measure, and improve performance for data-driven
+                            decision-making across any application.</li>
+                        <li class="w3-padding-16">Cross Platform Optimization</li>
+                        <li class="w3-padding-16">RESTful Services and APIs</li>
+                        <li class="w3-padding-16">Non-Functional Requirements</li>
+                        <li class="w3-padding-16">
+                            <span class="w3-opacity">Starting at</span>
+
+                            <h2>$ 800</h2>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
+                                <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
+
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <div id="Contact"></div>
-
-    <footer>
-        <div class="footer-container">
-            <h2 id="contact"><b>Contact Me</b></h2>
-            <article class="contact-me">
-                <span>
+        <div class="w3-container w3-padding-large w3-grey">
+            <h4><b>Contact Me</b></h4>
+            <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+                <div class="w3-third w3-dark-grey">
                     <a href="mailto:pharaohmak@sleepingpharaoh.com">
-
                         <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
                         <p>Email</p>
                     </a>
-                </span>
-                <span>
+                </div>
+                <div class="w3-third w3-orange">
                     <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
                     <p>United States</p>
-                </span>
-                <span>
+                </div>
+                <div class="w3-third w3-dark-grey">
                     <a href="tel: 3853818144">
-
                         <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
                         <p>Call</p>
                     </a>
-                </span>
-            </article>
+                </div>
+            </div>
+            <hr class="w3-opacity">
 
-            <section class="contact">
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                <script>
-                    hbspt.forms.create({
-                        region: "na1",
-                        portalId: "22720972",
-                        formId: "ad1234e4-d57b-412b-9b44-46c9c09cf0a7",
-                        version: "V2_PRERELEASE"
-                    });
-                </script>
-            </section>
+        </div>
 
-            <section class="closing">
-                <article class="closing-message">
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-dark-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
                     <h3>THANK YOU FOR VISITING</h3>
                     <p>It's difficult to stay up-to-date with the latest and greatest technologies and practices, and
                         it's
@@ -778,11 +790,11 @@
                         waiting for?
                     </p>
                     <p>DESIGN. BUILD. TEST. MAINTAIN. </p>
-                </article>
+                </div>
 
-                <aside class="discover">
+                <div class="w3-third">
                     <h3>DISCOVER MORE</h3>
-                    <ul class="discover-links">
+                    <ul class="w3-ul w3-hoverable">
                         <a href="https://pharaohmak.wordpress.com" target="_blank">
                             <li class="w3-padding-16">
                                 <span class="w3-large">📨 BLOG</span><br>
@@ -797,9 +809,9 @@
                             </li>
                         </a>
                     </ul>
-                </aside>
+                </div>
 
-                <span class="popular-tags">
+                <div class="w3-third">
                     <h3>POPULAR TAGS</h3>
                     <p>
                         <span class="w3-tag w3-black w3-margin-bottom">Security</span> <span
@@ -817,13 +829,15 @@
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">Maintainability</span> <span
                             class="w3-tag w3-grey w3-small w3-margin-bottom">Design</span>
                     </p>
-                </span>
-            </section>
-        </div>
-    </footer>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- End page content -->
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>

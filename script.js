@@ -9,30 +9,31 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 
+// Script to navigate portfolio tabs
 function navAll() {
-    document.querySelector("#allTab").style.display="block"
-    document.querySelector("#websitesTab").style.display="none"
-    document.querySelector("#appsTab").style.display="none"
-    document.querySelector("#frameworksTab").style.display="none"
+    document.querySelector("#websitesTab").style.display = "none"
+    document.querySelector("#componentsTab").style.display = "none"
+    document.querySelector("#programsTab").style.display = "none"
+    document.querySelector("#allTab").style.display = "block"
 }
 
 function navWebsites() {
     document.querySelector("#allTab").style.display = "none";
+    document.querySelector("#componentsTab").style.display = "none"
+    document.querySelector("#programsTab").style.display = "none"
     document.querySelector("#websitesTab").style.display = "block"
-    document.querySelector("#appsTab").style.display="none"
-    document.querySelector("#frameworksTab").style.display="none"
 }
 
-function navApps() {
-    document.querySelector("#appsTab").style.display="block"
-    document.querySelector("#allTab").style.display="none"
-    document.querySelector("#frameworksTab").style.display="none"
-    document.querySelector("#websitesTab").style.display="none"
+function navComponents() {
+    document.querySelector("#websitesTab").style.display = "none"
+    document.querySelector("#allTab").style.display = "none"
+    document.querySelector("#programsTab").style.display = "none"
+    document.querySelector("#componentsTab").style.display = "block"
 }
 
-function navFrameworks() {
-    document.querySelector("#frameworksTab").style.display="block"
-    document.querySelector("#allTab").style.display="none"
-    document.querySelector("#websitesTab").style.display="none"
-    document.querySelector("#appsTab").style.display="none"
+function navPrograms() {
+    document.querySelector("#allTab").style.display = "none"
+    document.querySelector("#componentsTab").style.display = "none"
+    document.querySelector("#websitesTab").style.display = "none"
+    document.querySelector("#programsTab").style.display = "block"
 }
