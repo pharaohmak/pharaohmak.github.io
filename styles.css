@@ -12,6 +12,9 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
 
 #about h3 {
     text-align: center;
@@ -32,7 +35,7 @@ a {
 }
 
 .skills-box svg {
-    height: 150px;
+    height: 80px;
 }
 
 .skills-box {
