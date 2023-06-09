@@ -16,7 +16,12 @@ li {
     list-style-type: none;
 }
 
+
 #about h3 {
+    text-align: center;
+}
+
+.discover-section-algn {
     text-align: center;
 }
 

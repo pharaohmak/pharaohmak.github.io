@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Alchemy Code.</title>
+    <title>Alchemy Code. | Makram Ibrahim</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
 
 <body class="w3-lightw-grey w3-content" style="max-width:1600px">
 
-    <!-- Sidebar/menu -->
+    <!-- ! ------------------------------------------------------------------------------------------------  START SIDEBAR --------------------------------------------------------------------------------------------- -->
     <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
         <div class="w3-container">
             <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
@@ -46,37 +46,39 @@
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
         title="close side menu" id="myOverlay"></div>
 
-    <!-- !PAGE CONTENT! -->
+    <!-- ! ---------------------------------------------------------------------------------------------  START PAGE CONTENT ------------------------------------------------------------------------------------------- -->
     <div class="w3-main" style="margin-left:300px">
 
-        <!-- Header -->
+        <!-- ! --------------------------------------------------------------------------------------------- PAGE HEADER ----------------------------------------------------------------------------------------------- -->
         <header id="portfolio">
             <a href="#"><img src="/assets/logo.png" style="width:65px;"
                     class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
             <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
                     class="fa fa-bars"></i></span>
             <div class="w3-container">
-                <h1><b>Alchemy Code. | Full-Stack Software Engineering </b></h1>
-<br>
+                <h1><b>Alchemy Code. | Full-Stack Software Engineering </b></h1><br>
+
                 <div class="w3-section w3-bottombar w3-padding-16">
                     <span class="w3-margin-right">Filter:</span>
-                    <button onclick="navAll()" class="w3-button w3-black">ALL</button>
-                    <button id="website-tab" onclick="navWebsites()" class="w3-button w3-white"><i
-                            class="fa fa-diamond w3-margin-right"></i>Websites</button>
-                    <button onclick="navPrograms()" class="w3-button w3-white w3-hide-small"><i
-                            class="fa fa-map-pin w3-margin-right"></i>Programs</button>
-                    <button onclick="navComponents()" class="w3-button w3-white w3-hide-small"><i
-                            class="fa fa-photo w3-margin-right"></i>Components</button>
-
+                    <button id="navAllBtn" onclick="navAll()" class="w3-button w3-white"><i
+                            class="fa fa-star w3-margin-right"></i>Capstone</button>
+                    <button id="navWebsitesBtn" onclick="navWebsites()" class="w3-button w3-white"><i
+                            class="fa fa-photo w3-margin-right"></i>Websites</button>
+                    <button id="navProgramsBtn" onclick="navPrograms()" class="w3-button w3-white w3-hide-small"><i
+                            class="fa fa-gear w3-margin-right"></i>Programs</button>
+                    <button id="navComponentsBtn" onclick="navComponents()" class="w3-button w3-white w3-hide-small"><i
+                            class="fa fa-diamond w3-margin-right"></i>Components</button>
                 </div>
             </div>
         </header>
 
-        <!-- All Tab First Photo Grid-->
+        <!-- ! ----------------------------------------------------------------------------------------  PROJECT PORTFOLIO --------------------------------------------------------------------------------------------- -->
+        <!-- CAPSTONE: 
+            First Photo Grid-->
         <div id="allTab">
             <div class="w3-row-padding">
                 <div class="w3-third w3-container w3-margin-bottom"><a
-                        href="https://pharaohmak.github.io/facial-recognition/" target="_blank">
+                        href="https://pharaohmak.github.io/facial-recognition-software/" target="_blank">
                         <img src="/assets/projects/capstone/facial-recognition.jpeg" alt="JavaScript Facial Recognition"
                             style="width:100%; height: 250px;" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
@@ -86,7 +88,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="w3-third w3-container"><a href="https://music-payer-react-g0cltjayo-pharaohmak.vercel.app/"
                         target="_blank">
                         <img src="/assets/projects/capstone/music-app.png" alt="React Music Player"
@@ -98,7 +99,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="w3-third w3-container w3-margin-bottom"><a href="https://pharaohmak.github.io/tetris-game/"
                         target="_blank">
                         <img src="/assets/projects/capstone/tetris-game.jpeg" alt="Tetris Game"
@@ -111,6 +111,7 @@
                     </a>
                 </div>
             </div>
+
             <!-- Second Photo Grid-->
             <div class="w3-row-padding">
                 <div class="w3-third w3-container w3-margin-bottom"><a
@@ -119,6 +120,27 @@
                             style="width:100%; height: 250px;" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
                             <p><b>Space Shooter Game</b></p>
+                            <p>Space shooter is a game in which the player aims the ship at oncoming targets and the
+                                ship moves automatically in accordance with the controls.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="w3-third w3-container w3-margin-bottom"><a href="https://sweet-muffin-7ba3dc.netlify.app"
+                        target="_blank">
+                        <img src="/assets/projects/capstone/crypto-punks-clone.png" alt="Space Shooter Game"
+                            style="width:100%; height: 250px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Crypto Punks Cloned Website</b></p>
+                            <p>Space shooter is a game in which the player aims the ship at oncoming targets and the
+                                ship moves automatically in accordance with the controls.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="w3-third w3-container w3-margin-bottom"><a href="#" target="_blank">
+                        <img src="/assets/images/" alt="Space Shooter Game" style="width:100%; height: 250px;"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Crypto Punks Cloned Website</b></p>
                             <p>Space shooter is a game in which the player aims the ship at oncoming targets and the
                                 ship moves automatically in accordance with the controls.</p>
                         </div>
@@ -136,7 +158,8 @@
             </div>
         </div>
 
-        <!-- Websites Tab First Photo Grid -->
+        <!-- WEBSITES:
+             First Photo Grid -->
         <div style="display: none;" id="websitesTab">
             <div class="w3-row-padding">
                 <div class="w3-third w3-container w3-margin-bottom"><a
@@ -150,7 +173,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="w3-third w3-container"><a href="https://pharaohmak.github.io/flexbox-business-site/"
                         target="_blank">
                         <img src="/assets/projects/websites/flexbox-business-site.png" alt="Flexbox Business Site"
@@ -161,7 +183,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="w3-third w3-container"><a href="https://www.outcomelegal.com" target="_blank">
                         <img src="/assets/projects/websites/outcome-legal.png" alt="Flexbox Business Site"
                             style="width:100%; height: 250px;" class="w3-hover-opacity">
@@ -173,13 +194,10 @@
                     </a>
                 </div>
             </div>
-            <!-- Second Photo Grid-->
-            <div class="w3-row-padding">
-
-            </div>
         </div>
 
-        <!-- Components Tab First Photo Grid-->
+        <!-- COMPONENTS:
+            First Photo Grid -->
         <div id="componentsTab" style="display: none;">
             <div class="w3-row-padding">
                 <div class="w3-third w3-container w3-margin-bottom"><a
@@ -194,7 +212,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="w3-third w3-container w3-margin-bottom"><a href="https://www.frontendmentor.io/solutions/fourcardfeaturesectionmaster-Hk_mnC2r5
                     " target="_blank">
                         <img src="/assets/projects/components/four-card.jpeg" alt="Four Card Feature Section"
@@ -206,7 +223,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="w3-third w3-container"><a
                         href="https://www.frontendmentor.io/solutions/huddlelandingpagewithsingleintroductorysectionmaster-SkRq45ESq"
                         target="_blank">
@@ -220,7 +236,8 @@
                     </a>
                 </div>
             </div>
-            <!-- Second Photo Grid-->
+
+            <!-- Second Photo Grid -->
             <div class="w3-row-padding">
                 <div class="w3-third w3-container w3-margin-bottom"><a
                         href="https://www.frontendmentor.io/solutions/interactiveratingcomponentmain-BkTjQzir5"
@@ -235,7 +252,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="w3-third w3-container w3-margin-bottom"><a
                         href="https://www.frontendmentor.io/solutions/nftpreviewcard-SyTP0FmSq" target="_blank">
                         <img src="/assets/projects/components/nft-preview.jpeg" alt="NFT Preview Section"
@@ -247,7 +263,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="w3-third w3-container"><a
                         href="https://www.frontendmentor.io/solutions/ordersummarycomponentmain-rkJ0jYSH9"
                         target="_blank">
@@ -262,20 +277,20 @@
             </div>
         </div>
 
-        <!-- Programs Tab First Photo Grid-->
+        <!-- PROGRAMS:
+            First Photo Grid -->
         <div id="programsTab" style="display: none;">
             <div class="w3-third w3-container w3-margin-bottom"><a href="https://pharaohmak.github.io/bmi-calculator/"
                     target="_blank">
                     <img src="/assets/projects/programs/bmi-calc.png" alt="3 Body Mass Index Calculator"
                         style="width:100%; height: 250px;" class="w3-hover-opacity">
                     <div class="w3-container w3-white">
-                        <p><b>3 Body Mass Index Calculator</b></p>
+                        <p><b>B.M.I (Body Mass Index) Calculator</b></p>
                         <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to
                             adult men and women.</p>
                     </div>
                 </a>
             </div>
-
             <div class="w3-third w3-container w3-margin-bottom"><a href="https://pharaohmak.github.io/grade-calculator/"
                     target="_blank">
                     <img src="/assets/projects/programs/grade-calc.png" alt="Grade Calculator"
@@ -286,7 +301,6 @@
                     </div>
                 </a>
             </div>
-
             <div class="w3-third w3-container"><a href="https://pharaohmak.github.io/discount-checker/" target="_blank">
                     <img src="/assets/projects/programs/discount-checker.png" alt="Discount Checker"
                         style="width:100%; height: 250px;" class="w3-hover-opacity">
@@ -297,43 +311,81 @@
                     </div>
                 </a>
             </div>
+
+            <!-- Second Photo Grid-->
+            <div class="w3-row-padding">
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://pharaohmak.github.io/rating-calculator/" target="_blank">
+                        <img src="/assets/projects/programs/convert-calc.png" alt="Conversionn Calculator"
+                            style="width:100%; height: 250px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Conversion Calculator</b></p>
+                            <p>Use this tool to convert gallons to quarts, pints, or cups</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://pharaohmak.github.io/rating-calculator/" target="_blank">
+                        <img src="/assets/projects/programs/dicount-calculator.png" alt="Conversionn Calculator"
+                            style="width:100%; height: 250px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Discount Calculator</b></p>
+                            <p>Use this tool to see how much you can save with discounts</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="w3-third w3-container w3-margin-bottom"><a
+                        href="https://pharaohmak.github.io/rating-calculator/" target="_blank">
+                        <img src="/assets/projects/programs/movie-collection.png" alt="Conversionn Calculator"
+                            style="width:100%; height: 250px;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b> (Bronze, Gold, Silver) Collection Rating</b></p>
+                            <p>Use this tool to track your movie collections and where your collections is ranked </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <!-- Images of Me -->
+
+        <!-- ! -------------------------------------------------------------------------------------------  BIOGRAPHY SECTION  ----------------------------------------------------------------------------------------- -->
         <div class="w3-row-padding w3-padding-16" id="about">
             <h4><b>About Me</b></h4>
+
+            <!-- PROFESSIONAL HEADSHOT IMAGE -->
             <div class="w3-col m6">
                 <img src="/assets/headshot.jpeg" alt="Me" style="width:100%">
             </div>
 
-            <!-- Biography -->
+            <!-- BIGRAPHY SECTION INTRO -->
             <div class="w3-col m6">
-                <h3 class="page-title">Are You Looking For a Reliable, Hardworking, and
-                    Effective Problem Solver?
-                </h3>
+
+                <!-- CALL TO ACTION TITLE -->
+                <h3 class="page-title">Are You Looking For a Reliable, Hardworking, and Effective Problem Solver?</h3>
 
                 <article class="bio">
-                    <h4>
-                        My goal is to find trends in software solutions that may provide potentially competitive
+
+                    <!-- CALL TO ACTION OPENING MESSAGE-->
+                    <h4>My goal is to find trends in software solutions that may provide potentially competitive
                         automated services in order to ensure your business continues to carefully carve its niche in
-                        the marketplace.
-                    </h4>
-                    <p>
-                        I am a freelance developer who works with small-business owners offering services for system
+                        the marketplace. </h4>
+
+                    <!-- CAREER DEVELOPMENT JOURNEY: VALUES, INTRESTS, AND PRINCIPLES -->
+                    <p>I am a freelance developer who works with small-business owners offering services for system
                         design and development, troubleshooting and debugging, and cloud configuration and management. I
                         create custom technology solutions for small business owners that help better automate tasks to
                         increase productivity. I create and develop solutions for end users, including single or
                         multiple programs, and custom applications. Along with the development in web, server, mobile,
                         and desktop environments. As part of my duties, I will provide technical leadership for software
-                        preventative maintenance, software updates, and support to clients.
-                        <br><br>
+                        preventative maintenance, software updates, and support to clients.<br><br>
+
                         I possess a solid set of technical credentials, together with experience in numerous industries,
                         including financial services, advertising, manufacturing, and retail management and
                         administration. I am certified in Full-Stack Software Engineering, Front-End Engineering, and
                         Web Development, and specialize in IT Automation with Python. I am proficient in PHP, C#,
                         PYTHON, JAVASCRIPT, and SQL; Strong in design and integration with intuitive problem-solving
-                        skills; and passionate about implementing and launching new projects.
-                        <br><br>
+                        skills; and passionate about implementing and launching new projects.<br><br>
+
                         As your remote Full Stack Software Engineer, I'll collaborate with back-end and front-end
                         developers to design new features and fix bugs. I'll work with designers and UX Engineers to
                         create interactive, realistic prototypes, and improve the user experience of your mobile and web
@@ -341,19 +393,19 @@
                         action. Recommend appropriate solutions using a variety of information, including technical
                         data, customer specifications, architectural/design constraints, and operating specifications.
                         Plan and supervise the software project and testing to ensure completion of project objectives
-                        based on specifications/objectives.
-                    </p>
-                    <h3>
-                        I Am Prepared To Translate Business Requirements Into Technical
-                        Solutions.
-                    </h3>
+                        based on specifications/objectives.</p>
+
+                    <!-- CALL TO ACTION CLOSING MESSAGE -->
+                    <h3>I Am Prepared To Translate Business Requirements Into Technical Solutions.</h3>
                 </article>
             </div>
         </div>
 
-        <!-- Qualifications -->
+        <!-- ! -------------------------------------------------------------------------------------  PROFEIONAL EXPERTISE  --------------------------------------------------------------------------------------------- -->
+        <!-- QUALIFICATIONS -->
         <div class="w3-container w3-padding-large" style="margin-bottom:32px">
             <article class="qualifications">
+                <!-- CERTIFICATES-->
                 <section class="certificates">
                     <h2>Certificates</h2>
                     <ul>
@@ -381,8 +433,10 @@
                     </ul>
                 </section>
 
+                <!-- ! --------------------------------------------------------------------------------  PROGRAMING LANGUAGES  ----------------------------------------------------------------------------------------- -->
                 <section class="Skills">
-                    <h2>Skills</h2>
+                    <h3>PROGRAMMING SKILLS</h3>
+                    <!-- (HTML) HYPER TEXT MARKUP LANGUAGE -->
                     <ul class="skills-box">
                         <a href="https://html.com/" target="_blank">
                             <li class="html">
@@ -399,7 +453,7 @@
                                 </svg>
                             </li>
                         </a>
-
+                        <!-- (CSS) CASCADE STYLING SHEET-->
                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
                             <li class="css">
                                 <svg viewBox="0 0 128 128">
@@ -423,7 +477,7 @@
                                 </svg>
                             </li>
                         </a>
-
+                        <!-- (JS) JAVASCRIPT-->
                         <a href="https://www.javascript.com/" target="_blank">
                             <li class="javascript">
                                 <svg viewBox="0 0 128 128">
@@ -434,7 +488,7 @@
                                 </svg>
                             </li>
                         </a>
-
+                        <!-- JAVA -->
                         <a href="https://www.java.com/en/" target="_blank">
                             <li class="java">
                                 <svg viewBox="0 0 128 128">
@@ -459,7 +513,7 @@
                                 </svg>
                             </li>
                         </a>
-
+                        <!-- PYTHON -->
                         <a href="https://www.python.org/" target="_blank">
                             <li class="python">
                                 <svg viewBox="0 0 128 128">
@@ -477,7 +531,7 @@
                                 </svg>
                             </li>
                         </a>
-
+                        <!-- PHP -->
                         <a href="https://www.php.net/" target="_blank">
                             <li class="php">
                                 <svg viewBox="0 0 128 128">
@@ -522,7 +576,7 @@
                                 </svg>
                             </li>
                         </a>
-
+                        <!-- C# -->
                         <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">
                             <li class="c#">
                                 <svg viewBox="0 0 128 128">
@@ -540,6 +594,8 @@
                         </a>
 
                         <!-- CSS Preprocessors-->
+
+                        <!-- BOOTSTRAP -->
                         <a href="https://getbootstrap.com/" target="_blank">
                             <li class="bootstap">
                                 <svg viewBox="0 0 128 128">
@@ -592,7 +648,7 @@
                                 </svg>
                             </li>
                         </a>
-
+                        <!-- TYPESCRIPT -->
                         <a href="https://www.typescriptlang.org/" target="_blank">
                             <li class="typescript">
                                 <svg viewBox="0 0 128 128">
@@ -603,7 +659,7 @@
                                 </svg>
                             </li>
                         </a>
-
+                        <!-- SASS -->
                         <a href="https://sass-lang.com/" target="_blank">
                             <li class="sass">
                                 <svg viewBox="0 0 128 128">
@@ -614,7 +670,10 @@
                             </li>
                         </a>
 
-                        <!-- Frameworks -->
+                        <!-- FRAMEWORKS & LIBRARIES-->
+
+                        <!-- REACT 
+                            (ADD REACT NATIVE, FLUTTER, SWIFTUI, DJANGO, AND FLASK)-->
                         <a href="https://reactjs.org/" target="_blank">
                             <li class="react">
                                 <svg viewBox="0 0 128 128">
@@ -632,7 +691,8 @@
             </article>
             <hr>
 
-            <h4>Technical Skills</h4>
+            <!-- ! -----------------------------------------------------------------------------------   TECHNICAL SKILLS  --------------------------------------------------------------------------------------------- -->
+            <h3>TECHNICAL SKILLS</h3>
             <!-- Progress bars / Skills -->
             <p>Computer Programming and Coding</p>
             <div class="w3-grey">
@@ -653,20 +713,21 @@
                     </a>
                 </button>
             </p>
-            <hr>
-            <h4>Testimonials</h4>
 
+            <!-- ! -------------------------------------------------------------------------  CLIENT FEEDBACK, RATINGS, AND REVIEWS  ------------------------------------------------------------------------------------ -->
+            <br>
+            <hr>
+            <h3>TESTIMONIALS</h3><br>
             <section class="testimonial text-center">
                 <div class="container">
-
-                    <div class="heading white-heading">
-                    </div>
+                    <!-- TESTIMONIAL CAROUSEL CONTAINER -->
                     <div id="testimonial4"
                         class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
                         data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-
+                        <!-- TESTIMONIAL CAROUSEL LISTBOX-->
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
+                                <!-- TESTIMONIAL # 1 -->
                                 <div class="testimonial4_slide">
                                     <a href="https://expo.dev/@pharaohmak/ShipHandlingCalculator" target="_blank">
                                         <h4> Ship Handling Calculator App</h4>
@@ -681,7 +742,7 @@
                                     <h4> -- Jill Russell</h4>
                                 </div>
                             </div>
-
+                            <!-- ADD ADDITIONAL TESTIMONIALS HERE -->
                         </div>
                         <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
@@ -693,9 +754,13 @@
                 </div>
             </section>
 
-            <h4 id="contact">How much I charge</h4>
-            <!-- Pricing Tables -->
+            <!-- ! --------------------------------------------------------------------------------  RATE OF SERVICE  -------------------------------------------------------------------------------------------------- -->
+            <!-- PRICING TABLES -->
             <div class="w3-row-padding" style="margin:0 -16px">
+                <br>
+                <h3 id="contact">RATE OF SERVICE</h3><br>
+
+                <!-- FULL STACK DEVELOPMENT | WEB DEVELOPMENT & DESIGN, MOBILE APP DEVELOPMENT, INTERFACE DESIGN & DEVELOPMENT -->
                 <div class="w3-third w3-margin-bottom">
                     <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
                         <li class="w3-black w3-xlarge w3-padding-32">System Interface Design and Development</li>
@@ -706,18 +771,16 @@
                         <li class="w3-padding-16">Updates & Modifications</li>
                         <li class="w3-padding-16">
                             <span class="w3-opacity">Starting at</span>
-
                             <h2>$ 250</h2>
                         </li>
                         <li class="w3-light-grey w3-padding-24">
                             <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
                                 <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
-
                             </a>
                         </li>
                     </ul>
                 </div>
-
+                <!-- FRONTEND DEVELOPMENT | FRAMEWORKS & LIBRARIES, API INTEGRATION, DEV OPS TOOLS -->
                 <div class="w3-third w3-margin-bottom">
                     <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
                         <li class="w3-orange w3-xlarge w3-padding-32">Troubleshooting and Debugging Techniques</li>
@@ -728,18 +791,16 @@
                         <li class="w3-padding-16">Design & Maintain Server</li>
                         <li class="w3-padding-16">
                             <span class="w3-opacity">Starting at</span>
-
                             <h2>$ 500</h2>
                         </li>
                         <li class="w3-light-grey w3-padding-24">
                             <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
                                 <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
-
                             </a>
                         </li>
                     </ul>
                 </div>
-
+                <!-- BACKEND DEVELOPMENNT | IT AUTOMATION, OPERATIONS REENGINEERING, TECH SUPPORT -->
                 <div class="w3-third">
                     <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
                         <li class="w3-black w3-xlarge w3-padding-32">Configuration Management and the Cloud</li>
@@ -750,13 +811,11 @@
                         <li class="w3-padding-16">Non-Functional Requirements</li>
                         <li class="w3-padding-16">
                             <span class="w3-opacity">Starting at</span>
-
                             <h2>$ 800</h2>
                         </li>
                         <li class="w3-light-grey w3-padding-24">
                             <a href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 " target="_blank">
                                 <button class="w3-button w3-orange w3-padding-large w3-hover-black">Book Now</button>
-
                             </a>
                         </li>
                     </ul>
@@ -764,19 +823,25 @@
             </div>
         </div>
 
+        <!-- ! -----------------------------------------------------------------------------------------  CTA CONTACT BANNER  ------------------------------------------------------------------------------------------ -->
+        <!-- CALL TO ACTION CONTACT BANNER -->
         <div class="w3-container w3-padding-large w3-grey">
-            <h4><b>Contact Me</b></h4>
+            <!-- CTA TITLE-->
+            <h3><b>CONTACT US</b></h3>
             <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+                <!-- E-MAIL LINK -->
                 <div class="w3-third w3-dark-grey">
                     <a href="mailto:pharaohmak@sleepingpharaoh.com">
                         <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
                         <p>Email</p>
                     </a>
                 </div>
+                <!-- LOCATION -->
                 <div class="w3-third w3-orange">
                     <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
                     <p>United States</p>
                 </div>
+                <!-- CALL LINK -->
                 <div class="w3-third w3-dark-grey">
                     <a href="tel: 3853818144">
                         <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
@@ -785,42 +850,58 @@
                 </div>
             </div>
             <hr class="w3-opacity">
-
         </div>
 
-        <!-- Footer -->
+        <!-- ! -----------------------------------------------------------------------------------------  PAGE FOOTER  ------------------------------------------------------------------------------------------------- -->
         <footer class="w3-container w3-padding-32 w3-dark-grey">
             <div class="w3-row-padding">
+
+                <!-- FOOTER FAREWELL MESSAGE -->
                 <div class="w3-third">
+                    <!-- CLOSING TITLE -->
                     <h3>THANK YOU FOR VISITING</h3>
+                    <!-- CLOSING MESSAGE -->
                     <p>Stay ahead of the curve with our comprehensive collection of cutting-edge technologies, industry
                         best practices, and emerging trends. Our extensive library of innovative programs, applications,
                         tutorials, and software is readily available, empowering you to keep up with the ever-evolving
                         landscape. Don't miss out on the opportunity to thrive in your field. Explore our resources
-                        today and embrace the future with us. 
-                    </p>
+                        today and embrace the future with us.</p>
+                    <!-- CALL TO ACTION TAG-LINE -->
                     <p>DESIGN. BUILD. TEST. MAINTAIN. </p>
                 </div>
 
-                <div class="w3-third">
+                <!-- FOOTER CONTACT LINKS -->
+                <div class="w3-third dicover-section-algn">
+                    <!-- CONTACT TITLE -->
                     <h3>DISCOVER MORE</h3>
+
+                    <!-- CONTACT LINKS -->
                     <ul class="w3-ul w3-hoverable">
+                        <!-- TECH ENTREPRENUER BLOG -->
                         <a href="https://pharaohmak.wordpress.com" target="_blank">
                             <li class="w3-padding-16">
-                                <span class="w3-large">📨 Alchemy Code. Workshop</span><br>
-                                <span>LEARN. SHARE. COLLABORATE</span>
+                                <span class="w3-large">📨 TECH ENTREPRENUER BLOG</span><br>
+                                <span>Tech News and Trends, Entreprenuar Stories & Interviews, and Career Advice</span>
                             </li>
                         </a>
-
+                        <!-- FIN-TECH NEWSLETTER -->
                         <a href="https://sleeping-pharaoh-tech.myshopify.com" target="_blank">
                             <li class="w3-padding-16">
-                                <span class="w3-large">🏪 Developer Store</span><br>
-                                <span>WEB APPS, TEMPLATES, THEMES</span>
+                                <span class="w3-large">🏪 FIN-TECH NEWSLETTER</span><br>
+                                <span>Product Reviews & Comparisons, How-To Guides and Tutorias, and Startup Advice &
+                                    Resources</span>
+                            </li>
+                        </a>
+                        <!-- DEVELOPER STORE -->
+                        <a href="https://sleeping-pharaoh-tech.myshopify.com" target="_blank">
+                            <li class="w3-padding-16">
+                                <span class="w3-large">🏪 DEVELOPER STORE: COMING SOON!</span><br>
                             </li>
                         </a>
                     </ul>
                 </div>
 
+                <!-- ! ---------------------------------------------------------------------------  SEARCH ENGINE OPTIMIZATION  ---------------------------------------------------------------------------------------- -->
                 <div class="w3-third">
                     <h3>POPULAR TAGS</h3>
                     <p>
@@ -839,21 +920,18 @@
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">Maintainability</span> <span
                             class="w3-tag w3-grey w3-small w3-margin-bottom">Design</span>
                     </p>
-                    <a href="https://sleeping-pharaoh.mailchimpsites.com" target="_blank">
-                        <li class="w3-padding-16">
-                            <span class="w3-large">Proudly Powered by Sleeping Pharaoh® Est.</span><br>
-                            <span></span>
-                        </li>
-                    </a>
                 </div>
-
+                <!-- SLEEPING PHARAOH EST. CORPORATE TAG -->
+                <a href="https://sleeping-pharaoh.mailchimpsites.com" target="_blank">
+                    <i class="w3-padding-12">
+                        <span><img src="/assets/favicon.ico" alt="sleeping pharaoh establishment official logo"> </span>
+                        <span class="w3-medium">PROUDLY POWERED BY SLEEPING PHARAOH EST.</span><br></i></a>
             </div>
         </footer>
-
-        <!-- End page content -->
     </div>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
