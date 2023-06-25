@@ -27,15 +27,18 @@ li {
 
 .certificates {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .certificates li {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .certificates ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
