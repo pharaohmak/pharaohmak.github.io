@@ -26,7 +26,7 @@ li {
 }
 
 .certificates {
-    overflow: scroll;
+    display: flex;
 }
 
 .certificates li {
