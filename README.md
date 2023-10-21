@@ -22,24 +22,6 @@ I embrace a powerful set of intentions and goals that underscore my commitment t
 
 - **Residual Income:** I recognize the importance of a reliable source of residual income. It allows me to invest in passive income opportunities, contribute to financial support, and foster career development in both my professional journey and the companies I collaborate with.
 
-## **Service Offerings:**
-
-My expertise spans a broad spectrum of services, including:
-
-- **Web Development and Design:** Crafting engaging and functional websites that resonate with a target audience.
-
-- **Mobile App Development:** Creating user-friendly mobile applications for a seamless digital experience.
-
-- **IT Automation:** Streamlining IT processes to enhance operational efficiency while ensuring compliance with relevant rules and regulations.
-
-- **DevOps Engineering:** Implementing best practices for software development, testing, and deployment to expedite project objectives.
-
-- **UX/UI Design:** Elevating user experiences through intuitive and visually appealing interfaces.
-
-## **Market Trends:**
-
-I stay at the forefront of technology trends, continuously seeking out innovations such as increased digitization, automation, and mobile accessibility. This enables me to offer cutting-edge solutions that align with the evolving needs of my clients.
-
 ## **Professional Accomplishments:**
 
 One of my noteworthy achievements includes the successful development and launch of a Ship Handling Calculator app, a valuable tool for ship captains and navigators. This project involved collaboration with marine experts and resulted in a reliable, user-friendly, and essential resource for enhancing safety and efficiency in ship handling.
