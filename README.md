@@ -4,7 +4,7 @@
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
-As a Senior Software Engineer, DevOps Specialist, and IT Automation Expert, I am committed to driving innovation and efficiency in the world of technology. With a passion for crafting custom solutions, I have spent my career dedicated to empowering small business owners and organizations to navigate the dynamic landscape of the digital era. My diverse skill set spans multiple programming languages, CSS preprocessors, and frameworks. This versatility allows me to craft tailored solutions that meet the unique needs of small business owners, enhancing their daily operations and bolstering their competitive edge.
+As a Senior Software Engineer and IT Automation Specialist, I am committed to driving innovation and efficiency in the world of technology. With a passion for crafting custom solutions, I have spent my career dedicated to empowering small business owners and organizations to navigate the dynamic landscape of the digital era. My diverse skill set spans multiple programming languages, CSS preprocessors, and frameworks. This versatility allows me to craft tailored solutions that meet the unique needs of small business owners, enhancing their daily operations and bolstering their competitive edge.
 
 ### **Background and Expertise:**
 
@@ -19,8 +19,6 @@ I embrace a powerful set of intentions and goals that underscore my commitment t
 - **Positive Contribution:** My primary intention is to gain knowledge of new skills and expertise, with the ultimate goal of making a positive contribution to the world. I believe in the transformative power of technology to shape a brighter future.
 
 - **Professional Advancement:** My goal is to employ my knowledge, skills, and expertise to launch a professional career in the software development industry. I seek opportunities that challenge me and provide room for career advancement, enabling me to make a lasting impact.
-
-- **Residual Income:** I recognize the importance of a reliable source of residual income. It allows me to invest in passive income opportunities, contribute to financial support, and foster career development in both my professional journey and the companies I collaborate with.
 
 ## **Professional Accomplishments:**
 
