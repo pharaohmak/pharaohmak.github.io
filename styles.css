@@ -31,7 +31,8 @@ html {
 .bio {
   display: flex;
   flex-direction: row;
-  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
 }
 .spacer {
   display: block;
@@ -417,5 +418,13 @@ li {
 
   .testimonial4_slide h4:last-child {
     margin-bottom: 0;
+  }
+
+  .bio {
+    flex-direction: column;
+  }
+
+  .project-portfolio {
+    flex-direction: column;
   }
 }
