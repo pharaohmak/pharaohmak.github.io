@@ -1,1130 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makram Ibrahim | Software Engineer</title>
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- FONTS -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway"
-    />
-    <!-- W3 STYLESHEET -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  </head>
-  <body>
-    <!-- BACKGROUND VIDEO -->
-    <video id="background-video" autoplay loop muted>
-      <source src="assets/videos/particles.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <!-- SIDEBAR MENU -->
-    <header>
-      <nav
-        id="mySidebar"
-        class="w3-sidebar w3-collapse w3-white w3-animate-left"
-        style="display: none; z-index: 3; width: 300px"
-      >
-        <!-- MENU TITLE AND SUBTITLE -->
-        <section class="sidebar-container">
-          <article class="w3-container" >
-            <!-- BUTTON TO CLOSE MENU -->
-            <a
-              href="#"
-              onclick="w3_close()"
-              class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
-              title="close menu"
-            >
-              <i class="fa fa-remove"></i>
-            </a>
-            <!-- LOGO -->
-            <img
-              src="/assets/images/logo.png"
-              style="width: 45%"
-              class="w3-round"
-            /><br /><br />
-            <!-- MENU TITLE-->
-            <h3><b>Full-Stack Software Engineer</b></h3>
-            <!-- MENU SUBTITLE -->
-            <h4>IT Automation Specialist</h4>
-          </article>
-          <!-- IN-PAGE NAVIGATION LINKS -->
-          <article class="w3-bar-block">
-            <a
-              href="#about"
-              onclick="w3_close()"
-              class="w3-bar-item w3-button w3-padding"
-              ><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a
-            >
-            <a
-              href="#portfolio"
-              onclick="w3_close()"
-              class="w3-bar-item w3-button w3-padding"
-              ><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a
-            >
-            <a
-              href="#contact"
-              onclick="w3_close()"
-              class="w3-bar-item w3-button w3-padding"
-              ><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a
-            >
-          </article>
-          <!-- SOCIAL LINKS -->
-          <article>
-            <a
-              href="https://www.facebook.com/makram.ibrahim.16"
-              target="_blank"
-              class="fa fa-facebook"
-            ></a>
-            <a
-              href="https://github.com/pharaohmak"
-              target="_blank"
-              class="fa fa-github"
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/mak-ibrahim/"
-              target="_blank"
-              class="fa fa-linkedin"
-            ></a>
-            <a
-              href="https://www.instagram.com/alchemistmak/"
-              target="_blank"
-              class="fa fa-instagram"
-            ></a>
-          </article>
-        </section>
-      </nav>
-      <section>
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div
-          class="w3-overlay w3-hide-large w3-animate-opacity"
-          onclick="w3_close()"
-          style="cursor: pointer"
-          title="close side menu"
-          id="myOverlay"
-        ></div>
-        <!-- HEADER BUTTONS -->
-        <a href="#"
-          ><img
-            src="/assets/images/logo.png"
-            style="width: 65px"
-            class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"
-        /></a>
-        <span
-          class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"
-          onclick="w3_open()"
-          ><i class="fa fa-bars"></i
-        ></span>
-      </section>
-    </header>
 
-    <!-- PAGE CONTENT-->
-    <main id="background" class="w3-main" style="margin-left: 300px">
-      <!--- ABOUT ME SECTION-->
-      <section id="about" class="about-me">
-        <h1 id="page-title">
-          <b>"Makram M. Ibrahim: Build Innovative Solutions for Automation" </b>
-        </h1>
-        <article class="bio">
-          <img src="/assets/images/headshot.jpeg" alt="Me" />
-          <article class="bio-section">
-            <!-- CALL TO ACTION TITLE -->
-            <h4 class="page-title">
-              Are You Looking For a Reliable, Hardworking, and Effective Problem
-              Solver?
-            </h4>
-            <!-- CALL TO ACTION OPENING MESSAGE-->
-            <p>
-              My goal is to find trends in software solutions that may provide
-              potentially competitive automated services in order to ensure your
-              business continues to carefully carve its niche in the
-              marketplace.
-            </p>
-            <!-- CAREER DEVELOPMENT JOURNEY: VALUES, INTRESTS, AND PRINCIPLES -->
-            <p>
-              "I'm a Senior Software Engineer specializing in system design and
-              development, and IT automation. With expertise in troubleshooting,
-              debugging, and cloud configuration, I craft custom solutions that
-              automate tasks and enhance productivity. Certified in Full-Stack
-              Software Engineering, Front-End Engineering, and Backend
-              Engineering, I bring a strong technical background and industry
-              experience in finance, advertising, manufacturing, and retail.
-            </p>
-            <!-- CALL TO ACTION CLOSING MESSAGE -->
-            <h4>
-              I Am Prepared To Translate Business Requirements Into Technical
-              Solutions.
-            </h4>
-          </article>
-        </article>
-      </section>
-      <!-- CERTIFICATIONS -->
-      <section class="expertise">
-        <article class="certifications">
-          <h2>CERTIFICATIONS</h2>
-          <ul class="certificates">
-            <li>
-              <a
-                href="./assets/certifications/it-automation.pdf"
-                target="_blank"
-              >
-                <img
-                  class="expertise"
-                  src="./assets/certifications/badges/python.jpeg"
-                  alt=""
-                  height="100px"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="./assets/certifications/front-end.pdf" target="_blank">
-                <img
-                  class="expertise"
-                  src="./assets/certifications/badges/frontend-engineer.jpeg"
-                  alt=""
-                  height="100px"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="./assets/certifications/web-development.pdf"
-                target="_blank"
-              >
-                <img
-                  class="expertise"
-                  src="./assets/certifications/badges/web-development.jpeg"
-                  alt=""
-                  height="100px"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="./assets/certifications/full-stack.pdf" target="_blank">
-                <img
-                  class="expertise"
-                  src="./assets/certifications/badges/full-stack-engineer.jpeg"
-                  alt=""
-                  height="100px"
-                />
-              </a>
-            </li>
-          </ul>
-        </article>
-      </section>
-      <!-- PROGRAMMING KNOWLEDGE -->
-      <section class="skills">
-        <article>
-          <h2>PROGRAMMING SKILLS</h2>
-          <ul class="skills-box">
-            <!-- FRONTEND TECHNOLOGIES-->
-            <!-- (HTML) HYPER TEXT MARKUP LANGUAGE -->
-            <a href="https://html.com/" target="_blank">
-              <li>
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/html.jpg"
-                  alt=" HTML5 Logo"
-                />
-              </li>
-            </a>
-            <!-- (CSS) CASCADE STYLING SHEET-->
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              target="_blank"
-            >
-              <li class="knowledge">
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/css.png"
-                  alt=" CSS3 Logo"
-                />
-              </li>
-            </a>
-            <!-- (JS) JAVASCRIPT-->
-            <a href="https://www.javascript.com/" target="_blank">
-              <li class="knowledge">
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/javascript.png"
-                  alt="JavaScript Logo"
-                />
-              </li>
-            </a>
-            <!-- TYPESCRIPT -->
-            <a href="https://www.typescriptlang.org/" target="_blank">
-              <li class="typescript">
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/typscript.png"
-                  alt="TypeScript Logo"
-                />
-              </li>
-            </a>
-            <!-- SASS -->
-            <a href="https://sass-lang.com/" target="_blank">
-              <li class="sass">
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/sass.png"
-                  alt="Sass Logo"
-                />
-              </li>
-            </a>
-            <!-- REACT -->
-            <a href="https://reactjs.org/" target="_blank">
-              <li class="react">
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/react.png"
-                  alt="React JS Logo"
-                />
-              </li>
-            </a>
-            <!-- Angular -->
-            <a href="https://angular.io" target="_blank">
-              <li>
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/angular.png"
-                  alt="Angular Logo"
-                />
-              </li>
-            </a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makram Ibrahim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/logo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_K1PoFs8pB2YVWStDxrUls");
+    })();
+  </script>
+</head>
 
-            <!-- BACKEND TECHNOLOGIES-->
-            <!-- PYTHON -->
-            <a href="https://www.python.org/" target="_blank">
-              <li class="python">
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/python.png"
-                  alt="Python Logo"
-                />
-              </li>
-            </a>
-            <!-- PHP -->
-            <a href="https://www.php.net/" target="_blank">
-              <li class="php">
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/php.png"
-                  alt="PHP Logo"
-                />
-              </li>
-            </a>
-            <!-- Django -->
-            <a href="https://www.djangoproject.com">
-              <li>
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/django.png"
-                  alt="Django Logo"
-                />
-              </li>
-            </a>
-            <!-- Node JS -->
-            <a href="https://nodejs.org/en">
-              <li>
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/node.png"
-                  alt="Node JS Logo"
-                />
-              </li>
-            </a>
-
-            <!-- DATA TECHNOLOGIES -->
-            <!-- SQL -->
-            <a href="https://www.sql.org">
-              <li>
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/sql.png"
-                  alt="SQL Logo"
-                />
-              </li>
-            </a>
-            <!-- MYSQL -->
-            <a href="https://www.mysql.com/downloads/">
-              <li>
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/mysql.png"
-                  alt="MySQL Logo"
-                />
-              </li>
-            </a>
-            <!-- POSTGRESQL -->
-            <a href="https://www.postgresql.org">
-              <li>
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/postgresql.png"
-                  alt="PostgreSQL Logo"
-                />
-              </li>
-            </a>
-            <!-- MonoDB -->
-            <a href="https://www.mongodb.com">
-              <li>
-                <img
-                  class="knowledge"
-                  src="assets/images/programming-languages/mongo-db.png"
-                  alt="MongoDB Logo"
-                />
-              </li>
-            </a>
-          </ul>
-        </article>
-      </section>
-      <!-- TECHNICAL SKILLS -->
-      <section class="technical-skills">
-        <article>
-          <h2>TECHNICAL SKILLS</h2>
-          <br />
-          <!-- Progress bars -->
-          <p>Computer Programming and Coding</p>
-          <div class="w3-grey">
-            <div
-              class="w3-container w3-dark-grey w3-padding w3-center"
-              style="width: 95%"
-            >
-              95%
-            </div>
-          </div>
-          <p>Object-Orianted Software Development</p>
-          <div class="w3-grey">
-            <div
-              class="w3-container w3-dark-grey w3-padding w3-center"
-              style="width: 85%"
-            >
-              85%
-            </div>
-          </div>
-          <p>Software Testing and Debugging</p>
-          <div class="w3-grey">
-            <div
-              class="w3-container w3-dark-grey w3-padding w3-center"
-              style="width: 80%"
-            >
-              80%
-            </div>
-          </div>
-          <p>
-            <button
-              class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom"
-            >
-              <a
-                href="assets/certifications/personal-resume.pdf"
-                target="_blank"
-              >
-                <i class="fa fa-link w3-margin-right"></i>View Resume
-              </a>
-            </button>
-          </p>
-        </article>
-      </section>
-      <!-- PROJECT PORTFOLIO -->
-      <section id="portfolio" class="project-portfolio">
-        <h2>PROJECT PORTFOLIO</h2>
-        <!-- FILTER -->
-        <div class="w3-section w3-bottombar w3-padding-16">
-          <span class="w3-margin-right">Filter:</span>
-          <button id="navAllBtn" onclick="navAll()" class="w3-button w3-white">
-            <i class="fa fa-star w3-margin-right"></i>Capstone
-          </button>
-          <button
-            id="navWebsitesBtn"
-            onclick="navWebsites()"
-            class="w3-button w3-white"
-          >
-            <i class="fa fa-photo w3-margin-right"></i>Websites
-          </button>
-          <button
-            id="navComponentsBtn"
-            onclick="navComponents()"
-            class="w3-button w3-white w3-hide-small"
-          >
-            <i class="fa fa-diamond w3-margin-right"></i>Apps
-          </button>
-          <button
-            id="navProgramsBtn"
-            onclick="navPrograms()"
-            class="w3-button w3-white w3-hide-small"
-          >
-            <i class="fa fa-gear w3-margin-right"></i>Programs
-          </button>
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/logo.png" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Portfolio</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hey</h1>
+        <h1 class="title orange">I'm Mak.</h1>
+        <p class="header__para">
+          I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for building web and mobile applications
+          with great user
+          experiences.
+          <br>
+          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/mak-ibrahim/" target="_blank" class="social__link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/pharaohmak" target="_blank" class="social__link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="./assets/certifications/Makram Ibrahim Resume.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a href="./assets/certifications/it-automation.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-certificate"></i>
+          </a>
         </div>
-        <!-- CAPSTONE PROJECTS -->
-        <article id="capstone-tab">
-          <div class="w3-third w3-container w3-margin-bottom project-card">
-            <a
-              href="https://pharaohmak.github.io/facial-recognition-software/"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/projects/capstone/facial-recognition-software.jpeg"
-                alt="JavaScript Facial Recognition"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Facial Expression Software</b></p>
-                <p>
-                  Face-api is a JavaScript library that supports Face Detection,
-                  Face Recognition, Face Expression, Age, and Gender Detection.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="w3-third w3-container w3-margin-bottom project-card">
-            <a
-              href="https://music-payer-react-g0cltjayo-pharaohmak.vercel.app/"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/projects/capstone/music-player-web-app.png"
-                alt="React Music Player"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Music Player Web App</b></p>
-                <p>
-                  The React Music Player Web App is an awesome-looking music
-                  player app that lets you to play songs and skip songs.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div id="project-container" class="w3-third w3-container">
-            <a href="https://pharaohmak.github.io/tetris-game/" target="_blank">
-              <img
-                src="/assets/images/projects/capstone/tetris-game.jpeg"
-                alt="Tetris Game"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Tetris Game</b></p>
-                <p>
-                  The object of the game is to clear falling blocks by forming
-                  horizontal lines of blocks without gaps or blocks of the same
-                  color touching.
-                </p>
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- WEBSITE PROJECTS -->
-        <article id="website-tab" style="display: none">
-          <div class="w3-third w3-container w3-margin-bottom">
-            <a
-              href="https://pharaohmak.github.io/omarang-association-website/"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/projects/websites/omarang-association.png"
-                alt="Colmar Academy"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Omarang Association in USA</b></p>
-                <p>
-                  Omarang Association in USA is an organization that provides
-                  social services and education programs that will prepare and
-                  build strong future generation of Omarang Community.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="w3-third w3-container w3-margin-bottom">
-            <a
-              href="https://pharaohmak.github.io/flexbox-business-site/"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/projects/websites/ajack-mobile-mechanic.png"
-                alt="Flexbox Business Site"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Ajack Mobile Mechanic</b></p>
-                <p>
-                  Welcome to A-Jack Mobile Mechanic, your number one source for
-                  all mechanical needs.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="w3-third w3-container">
-            <a href="https://www.outcomelegal.com" target="_blank">
-              <img
-                src="/assets/images/projects/websites/outcome-legal.png"
-                alt="Flexbox Business Site"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Outcome Legal</b></p>
-                <p>
-                  Welcome to Milchak & Associates, a full-service family law
-                  practice dedicated to providing the highest quality legal
-                  services to our clients.
-                </p>
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- APP PROJECTS-->
-        <article id="app-tab" style="display: none">
-          <div class="w3-third w3-container w3-margin-bottom">
-            <a href="https://expo.dev/@pharaohmak/todolist" target="_blank">
-              <img
-                src="/assets/images/projects/capstone/to-do-web-app.jpeg"
-                alt="3 Column"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>To-Do App</b></p>
-                <p>
-                  Todolist for React Native is an app where you can list your
-                  tasks and read on updates. You can have update from within the
-                  app! This is an alternative to the native todo list.
-                </p>
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- PROGRAM PROJECTS -->
-        <article id="programs-tab" style="display: none">
-          <div class="w3-third w3-container w3-margin-bottom">
-            <a href="https://pharaohmak.github.io/bmi-calc/" target="_blank">
-              <img
-                src="/assets/images/projects/programs/bmi-calc.png"
-                alt="3 Body Mass Index Calculator"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>B.M.I (Body Mass Index) Calculator</b></p>
-                <p>
-                  Body mass index (BMI) is a measure of body fat based on height
-                  and weight that applies to adult men and women.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="w3-third w3-container w3-margin-bottom">
-            <a
-              href="https://pharaohmak.github.io/lets-go-shopping/"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/projects/programs/lets-go-shopping.png"
-                alt="Conversionn Calculator"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Lets Go Shopping</b></p>
-                <p>Use this tool to see how much you can save with discounts</p>
-              </div>
-            </a>
-          </div>
-          <div class="w3-third w3-container w3-margin-bottom">
-            <a
-              href="https://pharaohmak.github.io/letter-grade-calc/"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/projects/programs/letter-grade-calc.png"
-                alt="Grade Calculator"
-                style="width: 100%; height: 250px"
-                class="w3-hover-opacity"
-              />
-              <div class="w3-container w3-white">
-                <p><b>Letter Grade Calculator</b></p>
-                <p>
-                  A grade calculator is a type of calculator that is used to
-                  calculate grades.
-                </p>
-              </div>
-            </a>
-          </div>
-          <!-- Second Photo Grid-->
-          <div class="w3-row-padding">
-            <div class="w3-third w3-container">
-              <a href="https://pharaohmak.github.io/filler-up/" target="_blank">
-                <img
-                  src="/assets/images/projects/programs/filler-up.png"
-                  alt="Discount Checker"
-                  style="width: 100%; height: 250px"
-                  class="w3-hover-opacity"
-                />
-                <div class="w3-container w3-white">
-                  <p><b>Filler Up</b></p>
-                  <p>
-                    Input the original cost of an item and then spits out the
-                    discounted price.
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="w3-third w3-container w3-margin-bottom">
-              <a
-                href="https://pharaohmak.github.io/pumpkin-patch-pickers/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/images/projects/programs/pumpkin-patch-pickers.png"
-                  alt="Conversionn Calculator"
-                  style="width: 100%; height: 250px"
-                  class="w3-hover-opacity"
-                />
-                <div class="w3-container w3-white">
-                  <p><b>Pumpkin Patch Pickers</b></p>
-                  <p>
-                    Use this tool to convert gallons to quarts, pints, or cups
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="w3-third w3-container w3-margin-bottom">
-              <a
-                href="https://pharaohmak.github.io/loyalty-card/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/images/projects/programs/loyalty-card.png"
-                  alt="Conversionn Calculator"
-                  style="width: 100%; height: 250px"
-                  class="w3-hover-opacity"
-                />
-                <div class="w3-container w3-white">
-                  <p><b> Loyalty Card</b></p>
-                  <p>
-                    Use this tool to track your movie collections and where your
-                    collections is ranked
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- Third Photo Grid -->
-          <div style="display: none" class="w3-row-padding">
-            <div class="w3-third w3-container">
-              <a
-                href="https://pharaohmak.github.io/miles-to-empty/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/images/projects/programs/miles-to-empty.png"
-                  alt="Discount Checker"
-                  style="width: 100%; height: 250px"
-                  class="w3-hover-opacity"
-                />
-                <div class="w3-container w3-white">
-                  <p><b>Miles To Empty</b></p>
-                  <p>
-                    Input the original cost of an item and then spits out the
-                    discounted price.
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="w3-third w3-container w3-margin-bottom">
-              <a
-                href="https://pharaohmak.github.io/discount-checker/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/images/projects/programs/discount-checker.png"
-                  alt="Conversionn Calculator"
-                  style="width: 100%; height: 250px"
-                  class="w3-hover-opacity"
-                />
-                <div class="w3-container w3-white">
-                  <p><b>Discount Checker</b></p>
-                  <p>
-                    Use this tool to convert gallons to quarts, pints, or cups
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="w3-third w3-container w3-margin-bottom">
-              <a
-                href="https://pharaohmak.github.io/movie-star/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/images/projects/programs/movie-star.png"
-                  alt="Conversionn Calculator"
-                  style="width: 100%; height: 250px"
-                  class="w3-hover-opacity"
-                />
-                <div class="w3-container w3-white">
-                  <p><b>Movie Star</b></p>
-                  <p>
-                    Use this tool to track your movie collections and where your
-                    collections is ranked
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-      <!-- CLIENT TESTIMONIALS -->
-      <section class="client-testimonials">
-        <h2>CLIENT TESTIMONIALS</h2>
-        <article class="testimonial text-center">
-          <div class="container">
-            <!-- TESTIMONIAL CAROUSEL CONTAINER -->
-            <div
-              id="testimonial4"
-              class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
-              data-ride="carousel"
-              data-pause="hover"
-              data-interval="5000"
-              data-duration="2000"
-            >
-              <!-- TESTIMONIAL CAROUSEL LISTBOX-->
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <!-- TESTIMONIAL # 1 -->
-                  <div class="testimonial4_slide">
-                    <a
-                      href="https://expo.dev/@pharaohmak/ShipHandlingCalculator"
-                      target="_blank"
-                    >
-                      <h4>Ship Handling Calculator App</h4>
-                    </a>
-                    <p>
-                      " What a great experience working with you to create this
-                      multi page productivity app. I had some very specific
-                      requirements and was not always able to communicate
-                      properly (my fault), but you took all of that in stride,
-                      adjusted the app until I was happy and kept me in the loop
-                      throughout the process. I will be using your services
-                      again when I get my next app idea. Thank you! "
-                    </p>
-                    <h4>-- Jill Russell</h4>
-                  </div>
-                </div>
-                <!-- ADD ADDITIONAL TESTIMONIALS HERE -->
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#testimonial4"
-                data-slide="prev"
-              >
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#testimonial4"
-                data-slide="next"
-              >
-                <span class="carousel-control-next-icon"></span>
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
+      </div>
+      <img src="assets/headshot.jpeg" alt="Image description" class="header__image">
 
-      <!-- RATE OF SERVICE-->
-      <section class="services">
-        <article>
-          <div class="w3-row-padding" style="margin: 0 -16px">
-            <br />
-            <h2 id="contact">RATE OF SERVICE</h2>
-            <br />
-            <!-- FULL STACK DEVELOPMENT | WEB DEVELOPMENT & DESIGN, MOBILE APP DEVELOPMENT, INTERFACE DESIGN & DEVELOPMENT -->
-            <div class="w3-third w3-margin-bottom">
-              <ul
-                class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off"
-              >
-                <li class="w3-black w3-xlarge w3-padding-32">
-                  System Design & Development
-                </li>
-                <li class="w3-padding-16">
-                  Write code and collaborate with team of developers and
-                  designers to create software products.
-                </li>
-                <li class="w3-padding-16">Design Project Concept</li>
-                <li class="w3-padding-16">Test and Deploy Prototype</li>
-                <li class="w3-padding-16">Updates & Modifications</li>
-                <li class="w3-padding-16">
-                  <span class="w3-opacity">Starting at</span>
-                  <h2>$ 250</h2>
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                  <a
-                    href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 "
-                    target="_blank"
-                  >
-                    <button
-                      class="w3-button w3-orange w3-padding-large w3-hover-black"
-                    >
-                      Book Now
-                    </button>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- FRONTEND DEVELOPMENT | FRAMEWORKS & LIBRARIES, API INTEGRATION, DEV OPS TOOLS -->
-            <div class="w3-third w3-margin-bottom">
-              <ul
-                class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off"
-              >
-                <li class="w3-orange w3-xlarge w3-padding-32">
-                  Troubleshooting & Debugging
-                </li>
-                <li class="w3-padding-16">
-                  Use optimal data structures and algorithms to solve problems
-                  for individuals and small-businesses.
-                </li>
-                <li class="w3-padding-16">Manage Usability Logic</li>
-                <li class="w3-padding-16">Create & Manage Database</li>
-                <li class="w3-padding-16">Design & Maintain Server</li>
-                <li class="w3-padding-16">
-                  <span class="w3-opacity">Starting at</span>
-                  <h2>$ 500</h2>
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                  <a
-                    href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 "
-                    target="_blank"
-                  >
-                    <button
-                      class="w3-button w3-orange w3-padding-large w3-hover-black"
-                    >
-                      Book Now
-                    </button>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- BACKEND DEVELOPMENNT | IT AUTOMATION, OPERATIONS REENGINEERING, TECH SUPPORT -->
-            <div class="w3-third">
-              <ul
-                class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off"
-              >
-                <li class="w3-black w3-xlarge w3-padding-32">
-                  Manage Cloud Configuration
-                </li>
-                <li class="w3-padding-16">
-                  Calculate, measure, and improve performance for data-driven
-                  decision-making across any application.
-                </li>
-                <li class="w3-padding-16">Cross Platform Optimization</li>
-                <li class="w3-padding-16">RESTful Services and APIs</li>
-                <li class="w3-padding-16">System Requirements</li>
-                <li class="w3-padding-16">
-                  <span class="w3-opacity">Starting at</span>
-                  <h2>$ 800</h2>
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                  <a
-                    href="https://www.picktime.com/3d439899-381d-4d67-8c48-1812cc4ccb23 "
-                    target="_blank"
-                  >
-                    <button
-                      class="w3-button w3-orange w3-padding-large w3-hover-black"
-                    >
-                      Book Now
-                    </button>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </section>
-      <!-- PAGE FOOTER -->
-      <footer class="footer">
-        <!-- CALL TO ACTION BANNER -->
-        <section>
-          <div class="w3-container w3-padding-large w3-grey">
-            <!-- CTA TITLE-->
-            <h3><b>CONTACT US</b></h3>
-            <div
-              class="w3-row-padding w3-center w3-padding-24"
-              style="margin: 0 -16px"
-            >
-              <!-- E-MAIL LINK -->
-              <div class="w3-third w3-dark-grey">
-                <a href="mailto:pharaohmak@sleepingpharaoh.com">
-                  <p>
-                    <i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i>
-                  </p>
-                  <p>Email</p>
-                </a>
-              </div>
-              <!-- LOCATION -->
-              <div class="w3-third w3-orange">
-                <p>
-                  <i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i>
-                </p>
-                <p>United States</p>
-              </div>
-              <!-- CALL LINK -->
-              <div class="w3-third w3-dark-grey">
-                <a href="tel: 3853818144">
-                  <p>
-                    <i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i>
-                  </p>
-                  <p>Call</p>
-                </a>
-              </div>
-            </div>
-            <hr class="w3-opacity" />
-          </div>
-        </section>
-        <section class="w3-container w3-padding-32 w3-dark-grey">
-          <div class="w3-row-padding">
-            <!-- FOOTER FAREWELL MESSAGE -->
-            <article class="w3-third">
-              <!-- CLOSING TITLE -->
-              <h3>THANK YOU FOR VISITING</h3>
-              <!-- CLOSING MESSAGE -->
-              <p>
-                Stay ahead of the curve with our comprehensive collection of
-                cutting-edge technologies, industry best practices, and emerging
-                trends. Our extensive library of innovative programs,
-                applications, tutorials, and software is readily available,
-                empowering you to keep up with the ever-evolving landscape.
-                Don't miss out on the opportunity to thrive in your field.
-                Explore our resources today and embrace the future with us.
-              </p>
-              <!-- CALL TO ACTION TAG-LINE -->
-              <p>DESIGN. BUILD. TEST. MAINTAIN.</p>
-            </article>
-            <!-- FOOTER CONTACT LINKS -->
-            <article class="w3-third dicover-section-algn">
-              <!-- CONTACT TITLE -->
-              <h3>DISCOVER MORE</h3>
-              <!-- CONTACT LINKS -->
-              <ul class="w3-ul w3-hoverable">
-                <!-- TECH ENTREPRENUER BLOG -->
-                <a href="https://pharaohmak.wordpress.com" target="_blank">
-                  <li class="w3-padding-16">
-                    <span class="w3-large">📨 TECH ENTREPRENUER BLOG</span
-                    ><br />
-                    <span
-                      >Tech News and Trends, Entreprenuar Stories & Interviews,
-                      and Career Advice</span
-                    >
-                  </li>
-                </a>
-                <!-- FIN-TECH NEWSLETTER -->
-                <a
-                  href="https://sleeping-pharaoh-tech.myshopify.com"
-                  target="_blank"
-                >
-                  <li class="w3-padding-16">
-                    <span class="w3-large">🏪 FIN-TECH NEWSLETTER</span><br />
-                    <span
-                      >Product Reviews & Comparisons, How-To Guides and
-                      Tutorias, and Startup Advice & Resources</span
-                    >
-                  </li>
-                </a>
-                <!-- DEVELOPER STORE -->
-                <a
-                  href="https://sleeping-pharaoh-tech.myshopify.com"
-                  target="_blank"
-                >
-                  <li class="w3-padding-16">
-                    <span class="w3-large"
-                      >🏪 DEVELOPER STORE: COMING SOON!</span
-                    ><br />
-                  </li>
-                </a>
-              </ul>
-            </article>
-            <!-- SEARCH ENGINE OPTIMIZATION -->
-            <article class="w3-third">
-              <h3>POPULAR TAGS</h3>
-              <p>
-                <span class="w3-tag w3-black w3-margin-bottom">Security</span>
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Reliability</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Software</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Usability</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Scalability</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Development</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Responsive</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Application</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Code</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Website</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Performance</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Program</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Maintainability</span
-                >
-                <span class="w3-tag w3-grey w3-small w3-margin-bottom"
-                  >Design</span
-                >
-              </p>
-            </article>
-            <!-- SLEEPING PHARAOH EST. CORPORATE TAG -->
-            <article>
-              <a
-                href="https://sleeping-pharaoh.mailchimpsites.com"
-                target="_blank"
-              >
-                <i class="w3-padding-12">
-                  <span
-                    ><img
-                      src="/assets/favicon.ico"
-                      alt="sleeping pharaoh establishment official logo"
-                    />
-                  </span>
-                  <span class="w3-medium"
-                    >PROUDLY POWERED BY SLEEPING PHARAOH EST.</span
-                  ><br /></i
-              ></a>
-            </article>
-          </div>
-        </section>
-      </footer>
-    </main>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about"> About Me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+        <p class="modal__para">
+          I'm an experienced <b class="orange">Frontend Software Engineer</b> specializing in crafting captivating <b class="orange">web pages</b> and <b class="orange">cross-platform applications</b>. I excel in seamless <b class="orange">collaboration</b> with back-end developers to deliver cohesive and <b class="orange">high-quality solutions</b>. With a versatile skill set, I am dedicated to applying my expertise to drive <b class="orange">innovation</b> and achieve <b class="orange">exceptional outcomes</b>.
+          <br>
+          My portfolio showcases my ability to <b class="orange">adapt</b>, <b class="orange">excel</b>, and consistently <b class="orange">strive for excellence</b> in every endeavor. 
+           
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+            <span class="language__name">TypeScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="">
+            <span class="language__name">React</span>
+          </figure>
 
-    <!-- JAVASCRIT CODE -->
-    <script src="script.js"></script>
-  </body>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="">
+            <span class="language__name">Bootstrap</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="">
+            <span class="language__name">Python</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png" alt="">
+            <span class="language__name">Scss</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+    <img src="./assets/semi circle.svg" class="shape shape--0">
+    <img src="./assets/circle.svg" class="shape shape--1">
+    <img src="./assets/squiggly.svg" class="shape shape--2">
+    <img src="./assets/circle.svg" class="shape shape--3">
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7">
+    <img src="./assets/semi circle.svg" class="shape shape--8">
+  </section>
+
+  <section id="projects">
+    <div class="container">
+        <div class="row">
+            <h1 class="section__title">
+                Portfolio <span class="orange">Projects</span>
+            </h1>
+            <div class="carousel">
+                <ul class="carousel-inner project__list">
+                    <li class="carousel-item project active">
+                        <div class="project__wrapper">
+                            <img src="./assets/projects/facial-expression.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Facial Expression Software
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                  The software is designed to detect and recognize human facial emotions in images or real-time video streams.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/pharaohmak/facial-expression-software" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://pharaohmak.github.io/facial-expression-software/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item project">
+                        <div class="project__wrapper">
+                            <img src="./assets/projects/tetris-game.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Tetris Game
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                  The game features the iconic gameplay of Tetris, where players manipulate falling tetrominoes to create complete lines and clear them from the screen.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/pharaohmak/tetris-game" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://pharaohmak.github.io/tetris-game/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item project">
+                        <div class="project__wrapper">
+                            <img src="./assets/projects/react-music-player.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Music Player Web App
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript, ReactJS
+                                </h4>
+                                <p class="project__description--para">
+                                  The React Music Player web app is a responsive music player that allows users to browse and play songs from a collection.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/pharaohmak/music-player-web-app/" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://music-payer-react-g0cltjayo-pharaohmak.vercel.app/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a class="carousel-control-prev" href="#" role="button">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">&#10094;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#" role="button">
+                    <span class="carousel-control-next-icon" aria-hidden="true">&#10095;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/logo.png" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/pharaohmak" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/mak-ibrahim/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+          <a href="./assets/certifications/Makram Ibrahim Resume.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2021 Makram Ibrahim</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

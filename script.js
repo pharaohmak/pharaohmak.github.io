@@ -1,59 +1,91 @@
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
+let isModalOpen = false;
+let contrastToggle = false;
+const scaleFactor = 1 / 20;
+
+function moveBackground(event) {
+  const shapes = document.querySelectorAll(".shape");
+  const x = event.clientX * scaleFactor;
+  const y = event.clientY * scaleFactor;
+
+  for (let i = 0; i < shapes.length; ++i) {
+    const isOdd = i % 2 !== 0;
+    const boolInt = isOdd ? -1 : 1;
+    shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 10}deg)`
+  }
 }
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList += " dark-theme"
+  }
+  else {
+    document.body.classList.remove("dark-theme")
+  }
 }
 
-// Script to navigate portfolio tabs
-function navAll() {
-  document.querySelector("#capstone-tab").style.display = "block";
-  document.querySelector("#website-tab").style.display = "none";
-  document.querySelector("#app-tab").style.display = "none";
-  document.querySelector("#programs-tab").style.display = "none";
-
-  document.getElementById("capstone-tab").style.backgroundColor = "#000";
-  document.getElementById("website-tab").style.backgroundColor = "#fff";
-  document.getElementById("app-tab").style.backgroundColor = "#fff";
-  document.getElementById("programs-tab").style.backgroundColor = "#fff";
+function contact(event) {
+  event.preventDefault();
+  const loading = document.querySelector(".modal__overlay--loading");
+  const success = document.querySelector(".modal__overlay--success");
+  loading.classList += " modal__overlay--visible";
+  emailjs
+    .sendForm(
+      "service_80ih0if",
+      "template_d9refyl",
+      event.target,
+      "user_K1PoFs8pB2YVWStDxrUls"
+    )
+    .then(() => {
+      loading.classList.remove("modal__overlay--visible");
+      success.classList += " modal__overlay--visible";
+    })
+    .catch(() => {
+      loading.classList.remove("modal__overlay--visible");
+      alert(
+        "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+      );
+    });
 }
 
-function navWebsites() {
-  document.querySelector("#capstone-tab").style.display = "none";
-  document.querySelector("#website-tab").style.display = "block";
-  document.querySelector("#app-tab").style.display = "none";
-  document.querySelector("#programs-tab").style.display = "none";
-
-  document.getElementById("capstone-tab").style.backgroundColor = "#fff";
-  document.getElementById("website-tab").style.backgroundColor = "#000";
-  document.getElementById("app-tab").style.backgroundColor = "#fff";
-  document.getElementById("programs-tab").style.backgroundColor = "#fff";
+function toggleModal() {
+  if (isModalOpen) {
+    isModalOpen = false;
+    return document.body.classList.remove("modal--open");
+  }
+  isModalOpen = true;
+  document.body.classList += " modal--open";
 }
 
-function navComponents() {
-  document.querySelector("#capstone-tab").style.display = "none";
-  document.querySelector("#website-tab").style.display = "none";
-  document.querySelector("#app-tab").style.display = "block";
-  document.querySelector("#programs-tab").style.display = "none";
+// scripts.js
 
-  document.getElementById("capstone-tab").style.backgroundColor = "#fff";
-  document.getElementById("website-tab").style.backgroundColor = "#fff";
-  document.getElementById("app-tab").style.backgroundColor = "#000";
-  document.getElementById("programs-tab").style.backgroundColor = "#fff";
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const prevButton = document.querySelector('.carousel-control-prev');
+  const nextButton = document.querySelector('.carousel-control-next');
+  const carouselInner = document.querySelector('.carousel-inner');
+  const items = document.querySelectorAll('.carousel-item');
 
-function navPrograms() {
-  document.querySelector("#capstone-tab").style.display = "none";
-  document.querySelector("#website-tab").style.display = "none";
-  document.querySelector("#app-tab").style.display = "none";
-  document.querySelector("#programs-tab").style.display = "block";
+  let currentIndex = 0;
 
-  document.getElementById("capstone-tab").style.backgroundColor = "#fff";
-  document.getElementById("website-tab").style.backgroundColor = "#fff";
-  document.getElementById("app-tab").style.backgroundColor = "#fff";
-  document.getElementById("programs-tab").style.backgroundColor = "#000";
-}
+  const updateCarousel = () => {
+      const offset = -currentIndex * 100;
+      carouselInner.style.transform = `translateX(${offset}%)`;
+      items.forEach((item, index) => {
+          item.classList.toggle('active', index === currentIndex);
+      });
+  };
+
+  prevButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+      updateCarousel();
+  });
+
+  nextButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+      updateCarousel();
+  });
+
+  updateCarousel();
+});
