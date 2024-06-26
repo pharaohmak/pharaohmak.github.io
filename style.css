@@ -230,7 +230,6 @@ nav,
   object-fit: cover; /* ensure the image is scaled to fit the circle */
   border: 2px solid #fff; /* add a white border around the image */
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* add a subtle shadow effect */
-  margin-top: 150px;
 }
 
 .mail__btn {
@@ -769,7 +768,6 @@ footer {
   }
   .header {
     display: flex;
-    flex-direction: column-reverse;
   }
   .shape {
     visibility: hidden;
