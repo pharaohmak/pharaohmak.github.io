@@ -193,6 +193,11 @@ nav,
 }
 
 .header__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__content {
   flex: 1;
 }
 
@@ -798,7 +803,22 @@ footer {
   }
   .header {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    margin: 80px 0;
+  }
+  .header__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .header__image--wrapper {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .shape {
     visibility: hidden;
