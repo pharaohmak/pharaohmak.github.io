@@ -194,13 +194,8 @@ nav,
 
 .header__content {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.header__content {
   flex: 1;
 }
-
 
 .header__para {
   font-size: 24px;
@@ -664,7 +659,6 @@ nav {
   /* Added after tutorial to push all the books images down */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   z-index: 100;
 }
 
@@ -706,7 +700,7 @@ nav {
 }
 .portfolio__description {
   color: #1c1d25;
-  height: 150px;
+  height: 150pxF;
 }
 
 .portfolio__link {
@@ -917,6 +911,12 @@ footer {
   .header {
     display: flex;
   }
+  .header__content {
+    flex-direction: row;
+  }
+  .header__image--wrapper {
+    width: 100%;
+  }
   .shape {
     visibility: hidden;
   }
@@ -938,8 +938,77 @@ footer {
     width: 100%;
   }
 }
-
+@media (max-width: 375px) {
+  #projects {
+    margin-top: 40%;
+  }
+  .header {
+    top: 60%;
+  }
+  .header__content {
+    display: block;
+  }
+}
 /* Small phones */
+@media (min-width: 480px) {
+  .title {
+    font-size: 52px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+  }
+  .header__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .header__image--wrapper {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shape {
+    visibility: hidden;
+  }
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  .header__para {
+    font-size: 18px;
+  }
+  .nav__link:first-child {
+    display: none;
+  }
+  .project__description--para {
+    display: none;
+  }
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .project__description--sub-title {
+    margin-bottom: 8px;
+  }
+  .modal__half {
+    padding: 40px;
+  }
+  .books {
+    width: 100%;
+  }
+  .book {
+    width: 50%;
+  }
+
+}
 @media (max-width: 480px) {
   .title {
     font-size: 52px;
@@ -948,6 +1017,9 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 80px 0;
+  }
+  .header__content {
+    display: block;    
   }
   .header__image {
     width: 100%;
@@ -995,8 +1067,10 @@ footer {
   .books {
     flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .book {
-    width: 100%;
+    width: 75%;
   }
 }
