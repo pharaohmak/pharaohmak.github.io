@@ -174,6 +174,11 @@ nav,
   background-color: white;
   color: #242424;
 }
+.dark-theme .portfolio__description,
+.dark-theme .portfolio__title,
+.dark-theme .portfolio__link {
+  color: white;
+}
 /* 
 
   LANDING PAGE 
