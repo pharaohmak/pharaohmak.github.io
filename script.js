@@ -90,46 +90,46 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function handleFilterChange(event) {
-    const components = document.getElementById("components");
-    const templates = document.getElementById("templates");
-    const capstone = document.getElementById("capstone");
-    const programs = document.getElementById("programs");
+  const components = document.getElementById("components");
+  const templates = document.getElementById("templates");
+  const capstone = document.getElementById("capstone");
+  const programs = document.getElementById("programs");
 
-    const value = event.target.value;
-    if (value === "SHOW_TEMPLATES") {
-      showTemplates();
-    } else if (value === "SHOW_COMPONENTS") {
-      showComponents();
-    } else if (value === "SHOW_PROGRAMS") {
-      showPrograms();
-    } else {
-      showCapstone();
-    }
-    function showCapstone() {
-      capstone.style.display = "flex";
-      components.style.display = "none";
-      templates.style.display = "none";
-      programs.style.display = "none";
-    }
+  const value = event.target.value;
+  if (value === "SHOW_TEMPLATES") {
+    showTemplates();
+  } else if (value === "SHOW_COMPONENTS") {
+    showComponents();
+  } else if (value === "SHOW_PROGRAMS") {
+    showPrograms();
+  } else {
+    showCapstone();
+  }
+  function showCapstone() {
+    capstone.style.display = "flex";
+    components.style.display = "none";
+    templates.style.display = "none";
+    programs.style.display = "none";
+  }
 
-    function showTemplates() {
-      capstone.style.display = "none";
-      components.style.display = "none";
-      programs.style.display = "none";
-      templates.style.display = "flex";
-    }
+  function showTemplates() {
+    capstone.style.display = "none";
+    components.style.display = "none";
+    programs.style.display = "none";
+    templates.style.display = "flex";
+  }
 
-    function showComponents() {
-      templates.style.display = "none";
-      capstone.style.display = "none";
-      programs.style.display = "none";
-      components.style.display = "flex";
-    }
+  function showComponents() {
+    templates.style.display = "none";
+    capstone.style.display = "none";
+    programs.style.display = "none";
+    components.style.display = "flex";
+  }
 
-    function showPrograms() {
-      components.style.display = "none";
-      templates.style.display = "none";
-      capstone.style.display = "none";
-      programs.style.display = "flex";
-    }
+  function showPrograms() {
+    components.style.display = "none";
+    templates.style.display = "none";
+    capstone.style.display = "none";
+    programs.style.display = "flex";
+  }
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Makram Ibrahim</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
@@ -62,53 +62,53 @@
       </nav>
       <header class="header">
         <div class="header__content">
-          <div class="header__info">
-            <h1 class="title">Hey</h1>
-            <h1 class="title orange">I'm Mak.</h1>
-            <p class="header__para">
-              I'm a <b class="orange">Frontend Software Engineer</b> with a
-              strong passion for building web and mobile applications with great
-              user experiences.
-              <br />
-              Here's a bit more
-              <b class="orange click" onclick="toggleModal()">about me</b>.
-            </p>
-            <div class="social__list">
-              <a
-                href="https://www.linkedin.com/in/mak-ibrahim/"
-                target="_blank"
-                class="social__link click"
-              >
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a
-                href="https://github.com/pharaohmak"
-                target="_blank"
-                class="social__link click"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-              <a
-                href="./assets/certifications/Makram Ibrahim Resume.pdf"
-                target="_blank"
-                class="social__link click"
-              >
-                <i class="fas fa-file-pdf"></i>
-              </a>
-              <a
-                href="./assets/certifications/it-automation.pdf"
-                target="_blank"
-                class="social__link click"
-              >
-                <i class="fas fa-certificate"></i>
-              </a>
-            </div>
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm Mak.</h1>
+          <p class="header__para">
+            I'm a <b class="orange">Frontend Software Engineer</b> with a strong
+            passion for building web and mobile applications with great user
+            experiences.
+            <br />
+            Here's a bit more
+            <b class="orange click" onclick="toggleModal()">about me</b>.
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/mak-ibrahim/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/pharaohmak"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="./assets/certifications/Makram Ibrahim Resume.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+            <a
+              href="./assets/certifications/it-automation.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fas fa-certificate"></i>
+            </a>
           </div>
+        </div>
+        <div class="header__image">
           <figure class="header__image--wrapper">
             <img
               src="assets/headshot.jpeg"
               alt="Image description"
-              class="header__image"
+              class="header__img"
             />
           </figure>
         </div>
@@ -398,7 +398,6 @@
         </div>
       </div>
     </section>
-
     <section id="features">
       <div class="container">
         <div class="row">
@@ -411,29 +410,26 @@
             <option value="SHOW_COMPONENTS">Web Components</option>
             <option value="SHOW_PROGRAMS">JS Programs</option>
           </select>
-          <div id="capstone" class="books">
-            <div class="book">
-              <figure class="book__img--wrapper">
+          <div id="capstone" class="portfolio">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://github.com/pharaohmak/ship-handling-calculator"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/capstone/ship-handling.jpg"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Ship Handling Calculator</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  The objective of this project was to develop an offline
-                  shipping handling calculator that accurately calculates
-                  navigational routes for ship handlers.
-                </p>
-              </div>
-
+              <div class="portfolio__title">Ship Handling Calculator</div>
+              <p class="portfolio__description">
+                The objective of this project was to develop an offline shipping
+                handling calculator that accurately calculates navigational
+                routes for ship handlers.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/ship-handling-calculator"
@@ -444,25 +440,22 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a href="https://www.outcomelegal.com/" target="_blank">
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/websites/outcome-legal.png"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Outcome Legal</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  The website aims to enhance the firm's visibility and
-                  credibility, providing potential clients with easy access to
-                  information about their legal services.
-                </p>
-              </div>
-
+              <div class="portfolio__title">Outcome Legal</div>
+              <p class="portfolio__description">
+                The website aims to enhance the firm's visibility and
+                credibility, providing potential clients with easy access to
+                information about their legal services.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://www.outcomelegal.com/"
@@ -473,27 +466,24 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/ajack-mobile-mechanic-website/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/websites/ajack-mobile-mechanic.png"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Ajack Mobile Mechanic</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  I utilized best practices in HTML, CSS, and JavaScript to
-                  create a user-friendly, responsive, and visually appealing
-                  site.
-                </p>
-              </div>
+              <div class="portfolio__title">Ajack Mobile Mechanic</div>
+              <p class="portfolio__description">
+                I utilized best practices in HTML, CSS, and JavaScript to create
+                a user-friendly, responsive, and visually appealing site.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/ajack-mobile-mechanic-website"
@@ -511,26 +501,24 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/omarang-association-website/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/websites/omarang-association.png"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Omarang Association</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  The objective of this project was to build a website designed
-                  to encourage donations and volunteering to support the foundation.
-                </p>
-              </div>
+              <div class="portfolio__title">Omarang Association</div>
+              <p class="portfolio__description">
+                The objective of this project was to build a website designed to
+                encourage donations and volunteering to support the foundation.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/omarang-association-website"
@@ -550,28 +538,25 @@
             </div>
           </div>
           <!-- WEB TEMPLATES -->
-          <div id="templates" class="books" style="display: none">
-            <div class="book">
-              <figure class="book__img--wrapper">
+          <div id="templates" class="portfolio" style="display: none">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/facial-expression-software/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/facial-recognition-software.jpeg"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Facial Expressions</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  The software is designed to detect and recognize human facial
-                  emotions in images and real-time video streams.
-                </p>
-              </div>
-
+              <div class="portfolio__title">Facial Expressions</div>
+              <p class="portfolio__description">
+                The software is designed to detect and recognize human facial
+                emotions in images and real-time video streams.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/facial-expression-software"
@@ -589,28 +574,25 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/colmar-academy/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/websites/colmar-academy.png"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Colmar Academy</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This challenge provided an opportunity to apply my skills in a
-                  real-world scenario by building a simple online menu using
-                  HTML and CSS.
-                </p>
-              </div>
-
+              <div class="portfolio__title">Colmar Academy</div>
+              <p class="portfolio__description">
+                This challenge provided an opportunity to apply my skills in a
+                real-world scenario by building a simple online menu using HTML
+                and CSS.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/colmar-academy"
@@ -628,27 +610,25 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/huddle-landing-page/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/components/landing-page.jpeg"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Huddle Landing Page</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This project was valuable for honing my HTML and CSS skills
-                  and gaining practical experience in creating responsive
-                  landing pages.
-                </p>
-              </div>
+              <div class="portfolio__title">Huddle Landing Page</div>
+              <p class="portfolio__description">
+                This project was valuable for honing my HTML and CSS skills and
+                gaining practical experience in creating responsive landing
+                pages.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/huddle-landing-page"
@@ -666,26 +646,24 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://music-payer-react-app.vercel.app/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/music-player.jpeg"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Music Player</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This version maintains clarity and conciseness while
-                  emphasizing the main features of the music player app.
-                </p>
-              </div>
+              <div class="portfolio__title">Music Player</div>
+              <p class="portfolio__description">
+                This version maintains clarity and conciseness while emphasizing
+                the main features of the music player app.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/music-player-web-app"
@@ -705,28 +683,25 @@
             </div>
           </div>
           <!-- WEB COMPONENTS -->
-          <div id="components" class="books" style="display: none">
-            <div class="book">
-              <figure class="book__img--wrapper">
+          <div id="components" class="portfolio" style="display: none">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://www.frontendmentor.io/solutions/profilecardcomponentmain-HJQhsi-8q"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/components/single-profile-card.jpeg"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Profile Card</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This project served as a test of my layout skills, allowing me
-                  to gain confidence with Flexbox and Grid.
-                </p>
-              </div>
-
+              <div class="portfolio__title">Profile Card</div>
+              <p class="portfolio__description">
+                This project served as a test of my layout skills, allowing me
+                to gain confidence with Flexbox and Grid.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/profile-card"
@@ -744,27 +719,24 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://www.frontendmentor.io/solutions/interactiveratingcomponentmain-BkTjQzir5"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/components/interactive-rating-card.jpeg"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Interactive Rating Card</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This was a satisfying small project focused on practicing
-                  handling user interactions and updating the DOM.
-                </p>
-              </div>
-
+              <div class="portfolio__title">Interactive Rating Card</div>
+              <p class="portfolio__description">
+                This was a satisfying small project focused on practicing
+                handling user interactions and updating the DOM.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/interactive-rating-component"
@@ -782,27 +754,25 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://www.frontendmentor.io/solutions/nftpreviewcard-SyTP0FmSq"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/components/nft-preview-card.jpeg"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">NFT Preview Card</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This HTML & CSS-only challenge is perfect for beginners or
-                  anyone looking for a fun, introductory project to experiment
-                  with.
-                </p>
-              </div>
+              <div class="portfolio__title">NFT Preview Card</div>
+              <p class="portfolio__description">
+                This HTML & CSS-only challenge is perfect for beginners or
+                anyone looking for a fun, introductory project to experiment
+                with.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/nft-preview-card"
@@ -820,26 +790,24 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://www.frontendmentor.io/solutions/qrcodecomponentmain-HkbL5Wrrc"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/components/qr-code-card.jpeg"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">QR Code Card</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This project was an excellent starting point for me when I was
-                  new to HTML and CSS.
-                </p>
-              </div>
+              <div class="portfolio__title">QR Code Card</div>
+              <p class="portfolio__description">
+                This project was an excellent starting point for me when I was
+                new to HTML and CSS.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/QR-code"
@@ -859,29 +827,26 @@
             </div>
           </div>
           <!-- JS PROGRAMS -->
-          <div id="programs" class="books" style="display: none">
-            <div class="book">
-              <figure class="book__img--wrapper">
+          <div id="programs" class="portfolio" style="display: none">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/bmi-calc/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/programs/bmi-calc.png"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">BMI Calculator</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This is a straightforward BMI (Body Mass Index) calculator
-                  that allows users to input their height and weight to
-                  calculate their BMI value.
-                </p>
-              </div>
-
+              <div class="portfolio__title">BMI Calculator</div>
+              <p class="portfolio__description">
+                This is a straightforward BMI (Body Mass Index) calculator that
+                allows users to input their height and weight to calculate their
+                BMI value.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/bmi-calc"
@@ -899,27 +864,24 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/letter-grade-calc/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/programs/letter-grade-calc.png"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Letter Grade Calculator</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  This JavaScript code calculates a letter grade based on a
-                  numerical input.
-                </p>
-              </div>
-
+              <div class="portfolio__title">Letter Grade Calculator</div>
+              <p class="portfolio__description">
+                This JavaScript code calculates a letter grade based on a
+                numerical input.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/letter-grade-calc"
@@ -937,26 +899,23 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/discount-checker/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/programs/discount-checker.png"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Discount Checker</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  An easy-to-use and efficient tool for checking online
-                  discounts.
-                </p>
-              </div>
+              <div class="portfolio__title">Discount Checker</div>
+              <p class="portfolio__description">
+                An easy-to-use and efficient tool for checking online discounts.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/discount-checker"
@@ -974,26 +933,24 @@
                 </a>
               </div>
             </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
+            <div class="portfolio__project">
+              <figure class="portfolio__img--wrapper">
                 <a
                   href="https://pharaohmak.github.io/miles-to-empty/"
                   target="_blank"
                 >
                   <img
-                    class="book__img"
+                    class="portfolio__img"
                     src="assets/projects/programs/miles-to-empty.png"
                     alt=""
                   />
                 </a>
               </figure>
-              <div class="book__title">Miles To Empty</div>
-              <div class="book__ratings">
-                <p class="portfolio__description">
-                  A straightforward and efficient tool to calculate the
-                  remaining mileage based on the current amount of gas in a car.
-                </p>
-              </div>
+              <div class="portfolio__title">Miles To Empty</div>
+              <p class="portfolio__description">
+                A straightforward and efficient tool to calculate the remaining
+                mileage based on the current amount of gas in a car.
+              </p>
               <div class="project__description--links">
                 <a
                   href="https://github.com/pharaohmak/miles-to-empty"
