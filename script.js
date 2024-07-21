@@ -107,9 +107,9 @@ function handleFilterChange(event) {
   }
   function showCapstone() {
     capstone.style.display = "flex";
-    components.style.display = "none";
-    templates.style.display = "none";
-    programs.style.display = "none";
+    components.style.display = "flex";
+    programs.style.display = "flex";
+    templates.style.display = "flex";
   }
 
   function showTemplates() {
