@@ -4,12 +4,11 @@
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
-As a Senior Software Engineer and IT Automation Specialist, I am committed to driving innovation and efficiency in the world of technology. With a passion for crafting custom solutions, I have spent my career dedicated to empowering small business owners and organizations to navigate the dynamic landscape of the digital era. My diverse skill set spans multiple programming languages, CSS preprocessors, and frameworks. This versatility allows me to craft tailored solutions that meet the unique needs of small business owners, enhancing their daily operations and bolstering their competitive edge.
+As a Frontend Software Engineer and IT Automation Specialist, I am committed to driving innovation and efficiency in the world of technology. With a passion for crafting custom solutions, I have spent my career dedicated to empowering small business owners and organizations to navigate the dynamic landscape of the digital era. My diverse skill set spans multiple programming languages, CSS preprocessors, and frameworks. This versatility allows me to craft tailored solutions that meet the unique needs of small business owners, enhancing their daily operations and bolstering their competitive edge.
 
 ### **Background and Expertise:**
 
 - **Diverse Technical Skills:** My extensive background in computer systems and networks, coupled with my ability to adapt quickly to new technologies, positions me as a versatile professional in the field.
-
 - **Result-Oriented Problem Solver:** With a strong focus on delivering results that meet the highest standards, I tackle complex challenges with a logical and methodical approach.
 
 ### **Intentions and Goals:**
@@ -17,7 +16,6 @@ As a Senior Software Engineer and IT Automation Specialist, I am committed to dr
 I embrace a powerful set of intentions and goals that underscore my commitment to continuous growth and contribution:
 
 - **Positive Contribution:** My primary intention is to gain knowledge of new skills and expertise, with the ultimate goal of making a positive contribution to the world. I believe in the transformative power of technology to shape a brighter future.
-
 - **Professional Advancement:** My goal is to employ my knowledge, skills, and expertise to launch a professional career in the software development industry. I seek opportunities that challenge me and provide room for career advancement, enabling me to make a lasting impact.
 
 ## **Professional Accomplishments:**
