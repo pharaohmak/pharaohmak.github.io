@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -37,7 +37,7 @@
 
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <!-- Uncomment below if you prefer to use an text logo -->
-      <h1 class="logo"><a href="index.html">Makram Ibraim</a></h1>
+      <h1 class="logo"><a href="index.html">Makram Ibrahim</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -77,12 +77,14 @@
       <div class="container">
         <div class="hero-content">
           <h1>I'm <span class="typed"
-              data-typed-items="Makram Ibrahim, A Analytical Critical Thinker, A Collaborative Team Player, A Innovative Problem Solver, A Skilled Frontend Developer"></span></h1>
+              data-typed-items="Makram Ibrahim, A Insightful Critical Thinker, A Collaborative Team Player, A Innovative Problem Solver, A Skilled Frontend Developer"></span>
+          </h1>
           <p>Critical Thinker, Team Player, Problem Solver, Frontend Developer</p>
 
           <ul class="list-unstyled list-social">
             <li><a href="https://pharaohmak.wordpress.com/"><i class="bi bi-wordpress"></i></a></li>
-            <li><a href="https://stackexchange.com/users/35360139/makram-m-ibrahim"><i class="bi bi-stack-overflow"></i></a></li>
+            <li><a href="https://stackexchange.com/users/35360139/makram-m-ibrahim"><i
+                  class="bi bi-stack-overflow"></i></a></li>
             <li><a href="https://github.com/pharaohmak"><i class="bi bi-github"></i></a></li>
             <li><a href="https://www.linkedin.com/in/mak-ibrahim/"><i class="bi bi-linkedin"></i></a></li>
           </ul>
@@ -194,7 +196,8 @@
               <div class="services-block">
                 <figure class="modal__language">
                   <img class="modal__language--img"
-                    src="https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-1713885634631.webp" alt="" />
+                    src="https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-1713885634631.webp"
+                    alt="" />
                   <span class="language__name">Python</span>
                 </figure>
               </div>
@@ -257,7 +260,7 @@
             <div class="swiper-slide">
               <div class="services-block">
                 <figure class="modal__language">
-                  <img class="modal__language--img" src="https://pharaohmak.github.io/assets/firebase.png" alt="" />
+                  <img class="modal__language--img" src="assets/img/firebase.png" alt="" />
                   <span class="language__name">Firebase</span>
                 </figure>
               </div>
@@ -390,7 +393,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Omarang Association Website</h4>
+              <h4>Music Player Web App</h4>
               <p>Web</p>
               <a href="assets/img/portfolio/portfolio-8.png?projectId=8" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Omarang Association"><i class="bx bx-plus"></i></a>
@@ -402,7 +405,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Ajack Mobile Mechanic Website</h4>
+              <h4>Crypto Punks Clone</h4>
               <p>Web</p>
               <a href="assets/img/portfolio/portfolio-9.png?projectId=9" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Ajack Mobile Mechanic"><i class="bx bx-plus"></i></a>
@@ -418,21 +421,21 @@
     </div><!-- End Portfolio Section -->
 
     <!-- ======= Journal Section ======= -->
-  <div id="journal" class="text-left paddsection">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Journal</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div id="journal-block" class="journal-block">
-        <div class="row">
-          <!-- Blog posts will be dynamically inserted here -->
+    <div id="journal" class="text-left paddsection">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Journal</h2>
         </div>
       </div>
-    </div>
-  </div><!-- End Journal Section -->
+
+      <div class="container">
+        <div id="journal-block" class="journal-block">
+          <div class="row">
+            <!-- Blog posts will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Journal Section -->
 
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="paddsection">
@@ -455,47 +458,38 @@
             </div>
 
             <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form id="contact__form" onsubmit="handleSubmit(event)" class="php-email-form">
                 <div class="row gy-3">
-
                   <div class="col-lg-6">
                     <div class="form-group contact-block1">
                       <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                     </div>
                   </div>
-
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                        required>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                     </div>
                   </div>
-
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                        required>
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                     </div>
                   </div>
-
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                      <textarea class="form-control" name="message" id="message" placeholder="Message" required></textarea>
                     </div>
                   </div>
-
                   <div class="col-lg-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="loading" style="display:none;">Loading</div>
+                    <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div>
                   </div>
-
-                  <div class="mt-0">
+                  <div class="mt-0 form-btn">
                     <input type="submit" class="btn btn-defeault btn-send" value="Send message">
                   </div>
-
                 </div>
               </form>
+
             </div>
           </div>
         </div>
@@ -511,7 +505,8 @@
 
         <ul class="list-unstyled">
           <li><a href="https://pharaohmak.wordpress.com/"><i class="bi bi-wordpress"></i></a></li>
-          <li><a href="https://stackexchange.com/users/35360139/makram-m-ibrahim"><i class="bi bi-stack-overflow"></i></a></li>
+          <li><a href="https://stackexchange.com/users/35360139/makram-m-ibrahim"><i
+                class="bi bi-stack-overflow"></i></a></li>
           <li><a href="https://github.com/pharaohmak"><i class="bi bi-github"></i></a></li>
           <li><a href="https://www.linkedin.com/in/mak-ibrahim/"><i class="bi bi-linkedin"></i></a></li>
         </ul>
@@ -537,6 +532,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/journal.js"></script>
+  <script src="forms/contact.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </body>
 

@@ -42,7 +42,7 @@ const projects = {
         Client: 'FES Bootcamp',
         Category: 'Web Development',
         Technologies: 'HTML, CSS',
-        Date: 'July 2024',
+        Date: 'June 2024',
         Website: 'pharaohmak.github.io/Treact-Clone/'
       },
       features: [
@@ -59,7 +59,7 @@ const projects = {
         Client: 'FES Bootcamp',
         Category: 'React App Development',
         Technologies: 'HTML, CSS, JavaScript, React, Node.js',
-        Date: 'July 2024',
+        Date: 'June 2024',
         Website: 'https://my-library-teal.vercel.app'
       },
       features: [
@@ -108,7 +108,7 @@ const projects = {
         Client: 'Fiverr | Jill Russal',
         Category: 'React Native App Development',
         Technologies: 'JavaScript, React Native, Node.js, Expo',
-        Date: 'May 2024',
+        Date: 'May 2022',
         Website: 'https://shorturl.at/6PBrF'
       },
       features: [
@@ -117,37 +117,36 @@ const projects = {
       ]
     },
     8: {
-      title: 'Omarang Association Website',
-      overview: 'The homepage of Omarang Organization in the U.S.A.',
+      title: 'Music Player Web App',
+      overview: 'The app is a responsive music player that allows users to browse and play songs from a collection.',
       images: ['./assets/img/portfolio/portfolio-8.png'],
-      description: 'The objective of this project was to build a website designed to encourage donations and volunteering to support the foundation.',
+      description: 'This repository contains the source code for a ReactJS-based music player web application. The app features a sleek interface with interactive controls for playing, pausing, and managing music',
       details: {
-        Client: 'Musa K Koudi',
+        Client: 'Personal Project',
         Category: 'Web Development',
-        Technologies: 'React, Node.js',
-        Date: 'In Progress',
-        Website: 'https://pharaohmak.github.io/omarang-association-website/'
+        Technologies: 'HTML, CSS, JavaScript, React',
+        Date: 'August 2022',
+        Website: 'https://music-payer-react-app.vercel.app/'
       },
       features: [
-        'Web Design and Development',
-        'Hosting and Maintentance'
+        'React',
       ]
     },
     9: {
-      title: 'Ajack Mobile Mechanic Website',
-      overview: 'The homepage of Ajack Mobile Mechanic',
+      title: 'Crypto Punks Clone',
+      overview: 'This repository contains the source code for a tutorial on creating a React web application to list and display NFTs (Non-Fungible Tokens).',
       images: ['./assets/img/portfolio/portfolio-9.png'],
-      description: 'I utilized best practices in HTML, CSS, and JavaScript to create a user-friendly, responsive, and visually appealing site.',
+      description: 'The application integrates ReactJS, ThirdWeb, the OpenSea API, and MetaMask for a complete NFT browsing experience. Users can explore and view various NFTs with seamless blockchain wallet integration.',
       details: {
-        Client: 'Ayoum Ajack',
-        Category: 'Web Development',
-        Technologies: 'HTML, CSS, JavaScript',
+        Client: 'Personal Project',
+        Category: 'React App Development',
+        Technologies: 'HTML, CSS, JavaScript, React',
         Date: 'In Progress',
-        Website: 'https://pharaohmak.github.io/ajack-mobile-mechanic-website/'
+        Website: 'https://crypto-punks-clone.vercel.app/'
       },
       features: [
-        'Web Design and Development',
-        'Hosting and Maintenance'
+        'React',
+        'Web3, ThirdWeb, OpenSea API'
       ]
     }
   };
