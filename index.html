@@ -2,1973 +2,542 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Makram Ibrahim</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
-  <script src="https://kit.fontawesome.com/700c4a0443.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_K1PoFs8pB2YVWStDxrUls");
-    })();
-  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Makram M. Ibrahim</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <h1 class="logo"><a href="index.html">Makram Ibraim</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link  scrollto" href="#journal">Blog</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
   <section id="landing-page" onmousemove="moveBackground(event)">
-    <nav>
-      <figure>
-        <img id="personal-logo" src="./assets/logo.png" alt="" />
-      </figure>
-      <ul class="nav__link--list">
-        <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
-        </li>
-        <li class="nav__link">
-          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Portfolio</a>
-        </li>
-        <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
-        </li>
-        <li class="nav__link click" onclick="toggleContrast()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i
-              class="fas fa-adjust"></i></a>
-        </li>
-      </ul>
-    </nav>
-    <header class="header">
-      <div class="header__content">
-        <h1 class="title">Hey</h1>
-        <h1 class="title orange">I'm Mak.</h1>
-        <p class="header__para">
-          I'm a <b class="orange">Frontend Software Engineer</b> with a strong
-          passion for building web and mobile applications with great user
-          experiences.
-          <br />
-          Here's a bit more
-          <b class="orange click" onclick="toggleModal()">about me</b>.
-        </p>
-        <div class="social__list">
-          <a href="https://www.linkedin.com/in/mak-ibrahim/" target="_blank" class="social__link click">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/pharaohmak" target="_blank" class="social__link click">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="./assets/certifications/tech-resume.pdf" target="_blank" class="social__link click">
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <a href="./assets/certifications/it-automation.pdf" target="_blank" class="social__link click">
-            <i class="fas fa-certificate"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <a href="#">
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fas fa-envelope"></i>
-      </button>
-    </a>
-    <a href="#projects" class="scroll">
-      <div class="scroll__icon click"></div>
-    </a>
-    <div class="modal">
-      <div class="modal__half modal__about">
-        <h3 class="modal__title modal__title--about">About Me.</h3>
-        <h4 class="modal__sub-title modal__sub-title--about">
-          Frontend Software Engineer.
-        </h4>
-        <p class="modal__para">
-          I'm an experienced
-          <b class="orange">Frontend Software Engineer</b> specializing in
-          crafting captivating <b class="orange">web pages</b> and
-          <b class="orange">cross-platform applications</b>. I excel in
-          seamless <b class="orange">collaboration</b> with back-end
-          developers to deliver cohesive and
-          <b class="orange">high-quality solutions</b>. With a versatile skill
-          set, I am dedicated to applying my expertise to drive
-          <b class="orange">innovation</b> and achieve
-          <b class="orange">exceptional outcomes</b>.
-          <br />
-          My portfolio showcases my ability to <b class="orange">adapt</b>,
-          <b class="orange">excel</b>, and consistently
-          <b class="orange">strive for excellence</b> in every endeavor.
-        </p>
-        <div class="modal__languages">
-          <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-              alt="" />
-            <span class="language__name">HTML</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-              alt="" />
-            <span class="language__name">CSS</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-              alt="" />
-            <span class="language__name">JavaScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="" />
-            <span class="language__name">TypeScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-              alt="" />
-            <span class="language__name">React</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://redux.js.org/img/redux.svg" alt="" />
-            <span class="language__name">Redux</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="./assets/firebase.png" alt="" />
-            <span class="language__name">Firebase</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png" alt="" />
-            <span class="language__name">Next.js</span>
-          </figure>
-        </div>
-      </div>
-      <div class="modal__half modal__contact">
-        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-        <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
-        <h3 class="modal__sub-title modal__sub-title--contact">
-          I'm currently open to new opportunities.
-        </h3>
-        <form id="contact__form" onsubmit="contact(event)">
-          <div class="form__item">
-            <label class="form__item--label">Name</label>
-            <input class="input" name="user_name" type="text" required />
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Email</label>
-            <input class="input" name="user_email" type="email" required />
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Message</label>
-            <textarea class="input" name="message" type="text" required></textarea>
-          </div>
-          <button id="contact__submit" class="form__submit">
-            Send it my way
-          </button>
-        </form>
-        <div class="modal__overlay modal__overlay--loading">
-          <i class="fas fa-spinner"></i>
-        </div>
-        <div class="modal__overlay modal__overlay--success">
-          Thanks for the message! Looking forward to speaking to you soon.
-        </div>
-      </div>
-    </div>
-    <img src="./assets/semi circle.svg" class="shape shape--0" />
-    <img src="./assets/circle.svg" class="shape shape--1" />
-    <img src="./assets/squiggly.svg" class="shape shape--2" />
-    <img src="./assets/circle.svg" class="shape shape--3" />
-    <img src="./assets/triangle.svg" class="shape shape--4" />
-    <img src="./assets/circle.svg" class="shape shape--5" />
-    <img src="./assets/squiggly.svg" class="shape shape--6" />
-    <img src="./assets/circle.svg" class="shape shape--7" />
-    <img src="./assets/semi circle.svg" class="shape shape--8" />
-  </section>
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="home">
 
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h1 class="section__title">
-          Featured <span class="orange">Projects</span>
-        </h1>
-        <div class="carousel">
-          <ul class="carousel-inner project__list">
-            <li class="carousel-item project active">
-              <div class="project__wrapper">
-                <img src="./assets/projects/treact-clone.png" class="project__img" alt="" />
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">TREACT Clone</h3>
-                  <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript
-                  </h4>
-                  <p class="project__description--para">
-                    For this project, I integrated all the skills I have
-                    acquired and applied them to a real-world scenario. This
-                    comprehensive approach allowed me to demonstrate my
-                    expertise and deliver a practical, high-quality solution.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/Treact-Clone" target="_blank"
-                      class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/Treact-Clone/" target="_blank"
-                      class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-item project">
-              <div class="project__wrapper">
-                <img src="./assets/projects/my-library.png" class="project__img" alt="" />
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">My Library JS</h3>
-                  <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript
-                  </h4>
-                  <p class="project__description--para">
-                    In this project, I mastered CSS best practices to develop
-                    a highly relevant and practical real-world application.
-                    This experience enhanced my skills in creating efficient,
-                    responsive, and visually appealing web designs, ensuring
-                    adherence to industry standards.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/My-LibraryJS" target="_blank"
-                      class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/My-LibraryJS/" target="_blank"
-                      class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-item project">
-              <div class="project__wrapper">
-                <img src="./assets/projects/event-search.png" class="project__img" alt="" />
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">Ticket Finder</h3>
-                  <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript
-                  </h4>
-                  <p class="project__description--para">
-                    In this project, I developed a dynamic website utilizing
-                    my skills in HTML, CSS, and JavaScript. I also gained
-                    practical experience integrating APIs to enhance the
-                    website's functionality and user experience.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/Ticket-Finder.git" target="_blank"
-                      class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/Ticket-Finder/" target="_blank"
-                      class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
+      <div class="container">
+        <div class="hero-content">
+          <h1>I'm <span class="typed"
+              data-typed-items="Makram Ibrahim, A Analytical Critical Thinker, A Collaborative Team Player, A Innovative Problem Solver, A Skilled Frontend Developer"></span></h1>
+          <p>Critical Thinker, Team Player, Problem Solver, Frontend Developer</p>
+
+          <ul class="list-unstyled list-social">
+            <li><a href="https://pharaohmak.wordpress.com/"><i class="bi bi-wordpress"></i></a></li>
+            <li><a href="https://stackexchange.com/users/35360139/makram-m-ibrahim"><i class="bi bi-stack-overflow"></i></a></li>
+            <li><a href="https://github.com/pharaohmak"><i class="bi bi-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mak-ibrahim/"><i class="bi bi-linkedin"></i></a></li>
           </ul>
-          <a class="carousel-control-prev" href="#" role="button">
-            <span class="carousel-control-prev-icon" aria-hidden="true">&#10094;</span>
-          </a>
-          <a class="carousel-control-next" href="#" role="button">
-            <span class="carousel-control-next-icon" aria-hidden="true">&#10095;</span>
-          </a>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="features">
-    <div class="container">
-      <div class="row">
-        <h2 class="section__title">
-          Portfolio <span class="orange">Projects</span>
-        </h2>
-        <select id="filter" onchange="handleFilterChange(event)">
-          <option value="SHOW_CAPSTONE" selected>All Projects</option>
-          <option value="SHOW_TEMPLATES">Websites</option>
-          <option value="SHOW_COMPONENTS">Components</option>
-          <option value="SHOW_PROGRAMS">Programs</option>
-        </select>
-        <div id="capstone" class="portfolio">
-          <div class="portfolio__project">
-            <figure class="portfolio__img--wrapper">
-              <a href="https://github.com/pharaohmak/ship-handling-calculator" target="_blank">
-                <img class="portfolio__img" src="assets/projects/capstone/ship-handling.jpg" alt="" />
-              </a>
-            </figure>
-            <div class="portfolio__title">Ship Handling Calculator</div>
-            <p class="portfolio__description">
-              The objective of this project was to develop an offline shipping
-              handling calculator that accurately calculates navigational
-              routes for ship handlers.
-            </p>
-            <div class="project__description--links">
-              <a href="https://github.com/pharaohmak/ship-handling-calculator" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio__project">
-            <figure class="portfolio__img--wrapper">
-              <a href="https://www.outcomelegal.com/" target="_blank">
-                <img class="portfolio__img" src="assets/projects/capstone/outcome-legal.png" alt="" />
-              </a>
-            </figure>
-            <div class="portfolio__title">Outcome Legal</div>
-            <p class="portfolio__description">
-              The website aims to enhance the firm's visibility and
-              credibility, providing potential clients with easy access to
-              information about their legal services.
-            </p>
-            <div class="project__description--links">
-              <a href="https://www.outcomelegal.com/" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio__project">
-            <figure class="portfolio__img--wrapper">
-              <a href="https://pharaohmak.github.io/ajack-mobile-mechanic-website/" target="_blank">
-                <img class="portfolio__img" src="assets/projects/capstone/ajack-mobile-mechanic.png" alt="" />
-              </a>
-            </figure>
-            <div class="portfolio__title">Ajack Mobile Mechanic</div>
-            <p class="portfolio__description">
-              I utilized best practices in HTML, CSS, and JavaScript to create
-              a user-friendly, responsive, and visually appealing site.
-            </p>
-            <div class="project__description--links">
-              <a href="https://github.com/pharaohmak/ajack-mobile-mechanic-website" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://pharaohmak.github.io/ajack-mobile-mechanic-website/" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio__project">
-            <figure class="portfolio__img--wrapper">
-              <a href="https://pharaohmak.github.io/omarang-association-website/" target="_blank">
-                <img class="portfolio__img" src="assets/projects/capstone/omarang-association.png" alt="" />
-              </a>
-            </figure>
-            <div class="portfolio__title">Omarang Association</div>
-            <p class="portfolio__description">
-              The objective of this project was to build a website designed to
-              encourage donations and volunteering to support the foundation.
-            </p>
-            <div class="project__description--links">
-              <a href="https://github.com/pharaohmak/omarang-association-website" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://pharaohmak.github.io/omarang-association-website/" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio__project">
-            <figure class="portfolio__img--wrapper">
-              <a href="https://pharaohmak.github.io/facial-expression-software/" target="_blank">
-                <img class="portfolio__img" src="assets/projects/facial-recognition-software.jpeg" alt="" />
-              </a>
-            </figure>
-            <div class="portfolio__title">Facial Expressions</div>
-            <p class="portfolio__description">
-              The software is designed to detect and recognize human facial
-              emotions in images and real-time video streams.
-            </p>
-            <div class="project__description--links">
-              <a href="https://github.com/pharaohmak/facial-expression-software" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://pharaohmak.github.io/facial-expression-software/" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio__project">
-            <figure class="portfolio__img--wrapper">
-              <a href="https://pharaohmak.github.io/tetris-game/" target="_blank">
-                <img class="portfolio__img" src="assets/projects/tetris-game.jpeg" alt="" />
-              </a>
-            </figure>
-            <div class="portfolio__title">Tetris Game</div>
-            <p class="portfolio__description">
-              The game features the iconic gameplay of the classic Tetris
-              game.
-            </p>
-            <div class="project__description--links">
-              <a href="https://github.com/pharaohmak/tetris-game.git" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://pharaohmak.github.io/tetris-game/" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio__project">
-            <figure class="portfolio__img--wrapper">
-              <a href="https://github.com/pharaohmak/space-shooter-game.git" target="_blank">
-                <img class="portfolio__img" src="assets/projects/space-invaders.jpeg" alt="" />
-              </a>
-            </figure>
-            <div class="portfolio__title">Space Invaders Game</div>
-            <p class="portfolio__description">
-              The game features classic space shooter game built using Python.
-            </p>
-            <div class="project__description--links">
-              <a href="https://github.com/pharaohmak/space-shooter-game.git" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio__project">
-            <figure class="portfolio__img--wrapper">
-              <a href="https://music-payer-react-app.vercel.app/" target="_blank">
-                <img class="portfolio__img" src="assets/projects/music-player.jpeg" alt="" />
-              </a>
-            </figure>
-            <div class="portfolio__title">Music Player</div>
-            <p class="portfolio__description">
-              This version maintains clarity and conciseness while emphasizing
-              the main features of the music player app.
-            </p>
-            <div class="project__description--links">
-              <a href="https://github.com/pharaohmak/music-player-web-app" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://music-payer-react-app.vercel.app/" target="_blank"
-                class="project__description--link portfolio__link">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+    </div><!-- End Hero -->
 
-        <!================================= WEB TEMPLATES=====================================================>
-          <div id="templates" class="portfolio" style="display: none">
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/architecture-blog/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/architecture-blog.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Architecture Blog</div>
-              <p class="portfolio__description">
-                This project showcases a simple blog layout focused on various architectural designs using CSS Grid.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/architecture-blog" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/architecture-blog/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/broadway/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/broadway.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Broadway</div>
-              <p class="portfolio__description">
-                This project is a stylish and modern webpage designed to showcase a company's services with a clean,
-                responsive layout.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/broadway" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/broadway/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/colmar-academy/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/colmar-academy.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Colmar Academy</div>
-              <p class="portfolio__description">
-                This project is a modern, responsive webpage designed for a fictional educational institution,
-                showcasing various courses, thesis exhibits, and more.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/colmar-academy" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/colmar-academy/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/davies-burgers/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/davies-burgers.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Davies Burgers</div>
-              <p class="portfolio__description">
-                This project is a stylish and modern webpage designed to showcase a restaurant's BBQ Bacon Burger with
-                detailed descriptions and nutritional information.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/davies-burgers" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/davies-burgers/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/flexbox-business-site/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/flexbox-business-site.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Flexbox Business Site
-              </div>
-              <p class="portfolio__description">
-                This project features a modern design with easy navigation,
-                showcasing the company's expertise in tuning accessories and professional services.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/flexbox-business-site" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/flexbox-business-site/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/excersion/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/excursion.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Excursion</div>
-              <p class="portfolio__description">
-                Excursion is your personal travel guide, helping you discover hidden places around the world and
-                recommending new points of interest based on your preferences.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/excersion" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/excersion/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/wine-festival-scheduale/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/festival-schedule.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Wine Festival Schedual</div>
-              <p class="portfolio__description">
-                This project is a webpage for the Annual Aguillar Family Wine Festival. It includes a schedule of events
-                for the day, displayed in a table format.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/wine-festival-scheduale" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/wine-festival-scheduale/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/fotomatic/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/fotomatic.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Fotomatic</div>
-              <p class="portfolio__description">
-                Fotomatic is a promotional website for the Fotomatic instant format camera, showcasing its features,
-                filters.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/fotomatic" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/fotomatic/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/fresh-deals/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/fresh-deals.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Fresh Deals</div>
-              <p class="portfolio__description">
-                FreshDeals is an e-commerce website designed to offer a seamless shopping experience for various food
-                items.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/fresh-deals" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/fresh-deals/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/journey-around-the-world/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/journey-around-the-world.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Journey Around World</div>
-              <p class="portfolio__description">
-                This
-                website features a gallery of stunning photos, information about Jared, and a contact form for potential
-                clients.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/journey-around-the-world" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/journey-around-the-world/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/birthday-party/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/kays-birthday.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Kays Birthday</div>
-              <p class="portfolio__description">
-                This project is a simple, stylish invitation to celebrate Kay's 29th birthday.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/birthday-party" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/birthday-party/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/typography/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/moroco.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Moroco</div>
-              <p class="portfolio__description">
-                This project is a travel journal entry for a fictional writer, Aoife Conleavy, documenting her travels
-                in Morocco.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/typography" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/typography/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/new-york-city-blog/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/nyc-blog.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">NYC Blog</div>
-              <p class="portfolio__description">
-                This project provides a simple, informative webpage about New York City, including its landmarks,
-                attractions, and popular foods.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/new-york-city-blog" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/new-york-city-blog/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/fashion-blog/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/nyfw-blog.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">NYFW Blog</div>
-              <p class="portfolio__description">
-                Fashion Blog is a website that provides readers with insider tips, guides, and information on fashion
-                events like New York Fashion Week (NYFW).
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/fashion-blog" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/fashion-blog/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/olivia-woodruff-portfolio/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/olivia-wodroof-portfolio.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Olivia Woodruff Portfolio</div>
-              <p class="portfolio__description">
-                This project is a simple portfolio webpage showcasing Olivia Woodruff's work as a developer specializing
-                in HTML and CSS.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/olivia-woodruff-portfolio" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/olivia-woodruff-portfolio/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/paint-store/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/paint-store.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Paint Store</div>
-              <p class="portfolio__description">
-                THis website is designed to help you choose the perfect paint color for your home with our comprehensive
-                color guide and easy ordering process.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/paint-store" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/paint-store/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/pinpoint-ecommerce/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/pinpoint.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Pinpoint E-Commerce</div>
-              <p class="portfolio__description">
-                This page provides a comprehensive checkout experience for users purchasing products.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/pinpoint-ecommerce" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/pinpoint-ecommerce/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/task-board/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/project-taskboard.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Project Taskboard</div>
-              <p class="portfolio__description">
-                This project is a demo task board designed for organizing and managing tasks related to stuffed animal
-                projects.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/task-board" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/task-board/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/pup-spa/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/pup-spa.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Pup Spa</div>
-              <p class="portfolio__description">
-                This website provides information about our services, location, operating hours, and testimonials from
-                our satisfied clients.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/pup-spa" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/pup-spa/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/healthy-recipe/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/quinua-recipe.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Quinua Recipe</div>
-              <p class="portfolio__description">
-                This project showcases a recipe for a healthy and delicious Kale Caesar Quinoa Salad with Roasted
-                Chicken.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/healthy-recipe" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/healthy-recipe/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/reel-good-review/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/reel-good-reviews.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Reel Good Reviews</div>
-              <p class="portfolio__description">
-                This project is a sample webpage designed to demonstrate the use of color in UI design.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/reel-good-review" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/reel-good-review/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/responsive-club-website/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/responsive-club.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Responsive Club</div>
-              <p class="portfolio__description">
-                This project is a demo website for the Mwizi Kamili Running Club, showcasing their mission, schedule,
-                testimonials, and contact information.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/responsive-club-website" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/responsive-club-website/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/the-summit/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/the-summit.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Experience the Summit</div>
-              <p class="portfolio__description">
-                This project is a website for promoting the Breckenridge Ski Area, highlighting its lodge, ski runs,
-                activities, and other attractions.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/the-summit" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/the-summit/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/to-do-app/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/to-do-app.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">To-Do</div>
-              <p class="portfolio__description">
-                This project is a simple "To Do" application that allows users to view their tasks for the week and set
-                reminders.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/to-do-app" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/to-do-app/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/tsunami-coffee/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/tsunami-coffee.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Tsunami Coffee</div>
-              <p class="portfolio__description">
-                This project is a simple webpage for a fictional coffee shop called Tsunami Coffee.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/tsunami-coffee" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/tsunami-coffee/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/transition2000/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/twenty-thousand.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">20,000 Leagues</div>
-              <p class="portfolio__description">
-                This project is a web representation of the classic novel "20,000 Leagues Under The Sea" by Jules Verne.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/transition2000" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/transition2000/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/desmotos-arts-crafts/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/dasmoto-arts-crafts.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Dasmotos Arts & Crraftts</div>
-              <p class="portfolio__description">
-                This project is a simple webpage designed to display various art and craft supplies available at
-                Dasmoto's store.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/desmotos-arts-crafts" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/desmotos-arts-crafts/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-            <!-- <div class="portfolio__project">
-              <figure class="portfolio__img--wrapper">
-                <a href="https://pharaohmak.github.io/tea-cozy/" target="_blank">
-                  <img class="portfolio__img" src="assets/projects/websites/tea-cozy.png" alt="" />
-                </a>
-              </figure>
-              <div class="portfolio__title">Tea Cozy</div>
-              <p class="portfolio__description">
-                Tea Cozy is a fictional tea company website showcasing their mission, featured teas, and store
-                locations.
-              </p>
-              <div class="project__description--links">
-                <a href="https://github.com/pharaohmak/tea-cozy" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://pharaohmak.github.io/tea-cozy/" target="_blank"
-                  class="project__description--link portfolio__link">
-                  <i class="fas fa-link"></i>
-                </a>
-              </div>
-            </div> -->
-          </div>
-
-          <!===================================== WEB COMPONENTS=====================================>
-            <div id="components" class="portfolio" style="display: none">
-              <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/profile-card/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/single-profile-card.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Profile Card</div>
-                <p class="portfolio__description">
-                  This project served as a test of my layout skills, allowing me
-                  to gain confidence with Flexbox and Grid.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/profile-card" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/profile-card/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/interactive-rating-component/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/interactive-rating-card.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Interactive Rating Card</div>
-                <p class="portfolio__description">
-                  This was a satisfying small project focused on practicing
-                  handling user interactions and updating the DOM.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/interactive-rating-component" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/interactive-rating-component/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/nft-preview-card/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/nft-preview-card.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">NFT Preview Card</div>
-                <p class="portfolio__description">
-                  This HTML & CSS-only challenge is perfect for beginners or
-                  anyone looking for a fun, introductory project to experiment
-                  with.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/nft-preview-card" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/nft-preview-card/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/QR-code/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/qr-code-card.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">QR Code Card</div>
-                <p class="portfolio__description">
-                  This project was an excellent starting point for me when I was
-                  new to HTML and CSS.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/QR-code" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/QR-code/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-              <!-- <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/order-summary/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/order-summary-card.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Order Summary</div>
-                <p class="portfolio__description">
-                  This project is an order summary card component that displays a summary of an order with options to
-                  proceed to payment or cancel the order.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/order-summary" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/order-summary/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div> -->
-              <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/3-column-preview-card/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/3-column-card.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Pricing Card</div>
-                <p class="portfolio__description">
-                  This project showcases a 3-column preview card component designed to display different categories of
-                  vehicles.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/3-column-preview-card" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/3-column-preview-card/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/four-card-feature/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/four-card-feature-section.jpeg"
-                      alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Feature Section</div>
-                <p class="portfolio__description">
-                  This project is a simple four-card feature section designed to highlight different features of a
-                  service.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/four-card-feature" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/four-card-feature/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-              <!-- <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/price-grid/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/priceing card.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Pricing Card</div>
-                <p class="portfolio__description">
-                  This project is a single price grid component that displays a pricing plan for joining a community.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/price-grid" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/price-grid/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div> -->
-              <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/testimonials-section/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/testimonial-preview-section.jpeg"
-                      alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Testimonial Preview</div>
-                <p class="portfolio__description">
-                  This project is a testimonial grid section designed to showcase user feedback in a visually
-                  appealing
-                  manner.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/testimonials-section" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/testimonials-section/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-              <!-- <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/social-proof/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/social-proof-section.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Social Proof</div>
-                <p class="portfolio__description">
-                  This project is a social proof section that showcases customer reviews and ratings.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/social-proof" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/social-proof/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div> -->
-              <div class="portfolio__project">
-                <figure class="portfolio__img--wrapper">
-                  <a href="https://pharaohmak.github.io/stats-preview/" target="_blank">
-                    <img class="portfolio__img" src="assets/projects/components/stats-preview-section.jpeg" alt="" />
-                  </a>
-                </figure>
-                <div class="portfolio__title">Stats Preview</div>
-                <p class="portfolio__description">
-                  This project is a stats preview card component that provides insights into data analytics and
-                  highlights key statistics.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/pharaohmak/stats-preview" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://pharaohmak.github.io/stats-preview/" target="_blank"
-                    class="project__description--link portfolio__link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!========================================== JS PROGRAMS==========================================>
-              <div id="programs" class="portfolio" style="display: none">
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/bmi-calc/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/bmi-calc.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">BMI Calculator</div>
-                  <p class="portfolio__description">
-                    This is a straightforward BMI (Body Mass Index) calculator that
-                    allows users to input their height and weight to calculate their
-                    BMI value.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/bmi-calc" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/bmi-calc/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/letter-grade-calc/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/letter-grade.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Letter Grade Calculator</div>
-                  <p class="portfolio__description">
-                    This JavaScript code calculates a letter grade based on a
-                    numerical input.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/letter-grade-calc" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/letter-grade-calc/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/dog-years/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/dog-years.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Dog Years</div>
-                  <p class="portfolio__description">
-                    This project is a simple JavaScript application that converts a person's age into dog years
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/dog-years" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/dog-years//" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/find-my-hat/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/find-my-hat.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Find My Hat</div>
-                  <p class="portfolio__description">
-                    This project is a simple browser-based game where the player navigates through a field to find a hat
-                    while avoiding holes.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/find-my-hat" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/find-my-hat/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/gallon-converter/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/gallon-converter.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Gallon Converter Up</div>
-                  <p class="portfolio__description">
-                    The JavaScript application allows users to convert a specified number of gallons into either
-                    quarts,
-                    pints, or cups based on their selection.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/gallon-converter" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/gallon-converter/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/total-cost-calc/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/total-cost.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Shopping Calculator</div>
-                  <p class="portfolio__description">
-                    This is a javascript application designed to help users calculate the total cost of
-                    purchasing two items, including sales tax.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/total-cost-calc" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/total-cost-calc/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/kelvin-weather/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/kelvin-temp.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Kelvin Temp</div>
-                  <p class="portfolio__description">
-                    This project is a simple browser-based tool that converts temperature values from Kelvin to both
-                    Celsius and Fahrenheit.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/kelvin-weather" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/kelvin-weather/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/magic-8-ball/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/magic-8-ball.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Magic 8 Ball</div>
-                  <p class="portfolio__description">
-                    This project is a simple browser-based Magic Eight Ball game where users can ask any question, and
-                    the game will provide a random answer.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/magic-8-ball" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/magic-8-ball/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/members-discount/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/members-discount.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Members Discount</div>
-                  <p class="portfolio__description">
-                    This project is a simple browser-based tool that calculates the total cost of two items, applying a
-                    discount if the user is a member.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/members-discount" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/members-discount/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/movie-star/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/movie-star.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Movie Star</div>
-                  <p class="portfolio__description">
-                    This project is a simple browser-based tool that ranks a user's movie collection based on the total
-                    number of movies.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/movie-star" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/movie-star/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/rock-paper-scissors/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/rock-paper-scissors.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Rock, Paper, Scissors</div>
-                  <p class="portfolio__description">
-                    This project is a simple browser-based Rock Paper Scissors game where users can play against the
-                    computer.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/rock-paper-scissors" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/rock-paper-scissors/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/sleep-debt-calculator/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/sleep-debt.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Sleep Debt Calculator</div>
-                  <p class="portfolio__description">
-                    This project is a simple browser-based tool that calculates your sleep debt based on the actual and
-                    ideal hours of sleep.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/sleep-debt-calculator" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/sleep-debt-calculator/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/build-a-library/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/build-library.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Build a Library</div>
-                  <p class="portfolio__description">
-                    A JavaScript project to manage a media library, allowing users to add books and movies, rate them,
-                    and check their status.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/build-a-library" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/build-a-library/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/credit-card-checker/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/credit-card.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Credit Card Checker</div>
-                  <p class="portfolio__description">
-                    This project provides functions to check if credit card numbers are valid, identify invalid card
-                    numbers, and determine the iss…
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/credit-card-checker" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/credit-card-checker/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/discount-checker/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/discount-checker.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Discount Checker</div>
-                  <p class="portfolio__description">
-                    The JavaScript application prompts users to input the costs of two items and calculates whether they
-                    qualify for a discount based on the total purchase price.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/discount-checker" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/discount-checker/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/lodash/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/lodash.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Lodash</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that allows users to test various utility functions such as clamp, inRange, words, pad, has, invert, findKey, drop, dropWhile, and chunk. The application provides an interf…
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/lodash" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/lodash/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div> -->
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/meal-maker/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/meal-maker.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Meal Maker</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that allows users to add dishes to a menu, categorized by appetizers,
-                    mains, and desserts.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/meal-maker" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/meal-maker/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/message-mixer/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/message-mixer.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Message Mixer</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that allows users to encode and decode messages using various encryption
-                    methods.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/message-mixer" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/message-mixer/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/mini-linter/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/mini-linter.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Mini Linter</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that analyzes a given story by counting words, sentences, and occurrences
-                    of specific overused words.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/mini-linter" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/mini-linter/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/mixed-messages/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/mixed-messages.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Mixed Messages</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that generates random mixed messages using different sets of elements.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/mixed-messages" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/mixed-messages/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/mystery-organism/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/mystery-organism.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Mystery Organism</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that generates random DNA specimens, mutates their DNA, compares DNA similarities, and determines their likelihood of survival based on specific DNA characteristics.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/mystery-organism" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/mystery-organism/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div> -->
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/race-day/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/race-day.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Race Day</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that assigns a race number and start time based on a runner's age and
-                    registration time.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/race-day" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/race-day/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/school-catalog/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/school-catalog.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">School Catalog</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that manages a school system with classes for different school levels
-                    (primary, middle, high).
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/school-catalog" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/school-catalog/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/secret-message/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/secret-message.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Secret Message</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that allows users to input a message, manipulate it using various array
-                    methods, and display the original and manipulated message.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/secret-message" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/secret-message/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/team-stats/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/team-stats.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Team Stats</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that manages a team by storing player and game data, allowing new players
-                    and games to be added, and displaying the data dynamically on the web page.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/team-stats" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/team-stats/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/training-days/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/training-days.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Training Days</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that randomly assigns athletic events to participants and calculates the
-                    number of training days required for each event.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/training-days" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/training-days/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- <div class="portfolio__project">
-                  <figure class="portfolio__img--wrapper">
-                    <a href="https://pharaohmak.github.io/whale-talk/" target="_blank">
-                      <img class="portfolio__img" src="assets/projects/programs/whale-talk.png" alt="" />
-                    </a>
-                  </figure>
-                  <div class="portfolio__title">Whale Talk</div>
-                  <p class="portfolio__description">
-                    A JavaScript application that extracts vowels from an input text, modifies certain vowels, and
-                    displays the result on the web page.
-
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/pharaohmak/whale-talk" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://pharaohmak.github.io/whale-talk/" target="_blank"
-                      class="project__description--link portfolio__link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div> -->
-              </div>
-      </div>
-    </div>
+    <img src="./assets/img/shapes/circle.svg" class="shape shape--0" />
+    <img src="./assets/img/shapes/circle.svg" class="shape shape--1" />
+    <img src="./assets/img/shapes/squiggly.svg" class="shape shape--2" />
+    <img src="./assets/img/shapes/circle.svg" class="shape shape--3" />
+    <img src="./assets/img/shapes/triangle.svg" class="shape shape--4" />
+    <img src="./assets/img/shapes/circle.svg" class="shape shape--5" />
+    <img src="./assets/img/shapes/squiggly.svg" class="shape shape--6" />
+    <img src="./assets/img/shapes/circle.svg" class="shape shape--7" />
+    <img src="./assets/img/shapes/semi circle.svg" class="shape shape--8" />
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="row footer__row">
-        <a href="#" class="footer__anchor">
-          <figure class="footer__logo">
-            <img src="./assets/logo.png" class="footer__logo--img" alt="" />
-          </figure>
-          <span class="footer__logo--popper">
-            Top
-            <i class="fas fa-arrow-up"></i>
-          </span>
-        </a>
-        <div class="footer__social--list">
-          <a href="https://github.com/pharaohmak" target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white">
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/mak-ibrahim/" target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white">
-            LinkedIn
-          </a>
-          <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">
-            Contact
-          </a>
-          <a href="https://pharaohmak.wordpress.com" target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white">
-            Blog
-          </a>
-          <a href="./assets/certifications/tech-resume.pdf" target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white">
-            Resume
-          </a>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="assets/img/me.jpg" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+
+              <p class="p-heading">I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for
+                solving problems with innovative tech solutions.<br /></p>
+              <p class="separator"> I'm an experienced <b class="orange">Frontend Software Engineer</b> specializing in
+                crafting captivating <b class="orange">web pages</b> and <b class="orange">cross-platform
+                  applications</b>. I excel in seamless <b class="orange">collaboration</b> with back-end
+                developers to deliver cohesive and
+                <b class="orange">high-quality solutions</b>. With a versatile skill
+                set, I am dedicated to applying my expertise to drive
+                <b class="orange">innovation</b> and achieve
+                <b class="orange">exceptional outcomes</b>.
+                <br />
+                My portfolio showcases my ability to <b class="orange">adapt</b>,
+                <b class="orange">excel</b>, and consistently
+                <b class="orange">strive for excellence</b> in every endeavor.
+              </p>
+            </div>
+
+          </div>
         </div>
-        <div class="footer__copyright">
-          Copyright &copy; 2021 Makram Ibrahim
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                    alt="" />
+                  <span class="language__name">HTML</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                    alt="" />
+                  <span class="language__name">CSS</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" />
+                  <span class="language__name">JavaScript</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="" />
+                  <span class="language__name">TypeScript</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-1713885634631.webp" alt="" />
+                  <span class="language__name">Python</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://w1.pngwing.com/pngs/711/379/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascript-thumbnail.png"
+                    alt="" />
+                  <span class="language__name">MongoDB</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo-thumbnail.png"
+                    alt="" />
+                  <span class="language__name">Express</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://w7.pngwing.com/pngs/452/495/png-transparent-react-javascript-angularjs-ionic-github-text-logo-symmetry-thumbnail.png"
+                    alt="" />
+                  <span class="language__name">React.js</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png" alt="" />
+                  <span class="language__name">Next.js</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://w7.pngwing.com/pngs/558/166/png-transparent-node-js-javascript-react-express-js-linux-foundation-mongodb-icons-angle-text-rectangle-thumbnail.png"
+                    alt="" />
+                  <span class="language__name">Node.js</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img" src="https://pharaohmak.github.io/assets/firebase.png" alt="" />
+                  <span class="language__name">Firebase</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <figure class="modal__language">
+                  <img class="modal__language--img" src="https://redux.js.org/img/redux.svg" alt="" />
+                  <span class="language__name">Redux</span>
+                </figure>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+      </div>
+
+    </div><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Project Portfolio</h2>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">React</li>
+              <li data-filter=".filter-card">Next</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Summarist</h4>
+              <p>Next</p>
+              <a href="assets/img/portfolio/portfolio-1.png?projectId=1" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Summarist"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=1" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>NFT Marketplace</h4>
+              <p>React</p>
+              <a href="assets/img/portfolio/portfolio-2.png?projectId=2" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="NFT Marketplace"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=2" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Treact Clone</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-3.png?projectId=3" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Treact Clone"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=3" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>My Library</h4>
+              <p>React</p>
+              <a href="assets/img/portfolio/portfolio-4.png?projectId=4" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="My Library"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=4" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Ticket Finder</h4>
+              <p>React</p>
+              <a href="assets/img/portfolio/portfolio-5.png?projectId=5" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Ticket Finder"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=5" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Outcome Legal Website</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-6.png?projectId=6" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Outcome Legal"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=6" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Ship Handling Calculator</h4>
+              <p>React Native</p>
+              <a href="assets/img/portfolio/portfolio-7.png?projectId=7" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Ship Handling Calculator"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=7" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Omarang Association Website</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-8.png?projectId=8" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Omarang Association"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=8" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Ajack Mobile Mechanic Website</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.png?projectId=9" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Ajack Mobile Mechanic"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html?projectId=9" class="details-link" title="More Details"><i
+                  class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Portfolio Section -->
+
+    <!-- ======= Journal Section ======= -->
+  <div id="journal" class="text-left paddsection">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Journal</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="journal-block" class="journal-block">
+        <div class="row">
+          <!-- Blog posts will be dynamically inserted here -->
         </div>
       </div>
     </div>
-  </footer>
+  </div><!-- End Journal Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="contact-contact">
+
+                <h2 class="mb-30">GET IN TOUCH</h2>
+
+                <ul class="contact-details">
+                  <li><span>Salt Lake City, UT, United States</span></li>
+                  <li><span>+1 3852593959</span></li>
+                  <li><span>pharaohmak@outlook.com</span></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row gy-3">
+
+                  <div class="col-lg-6">
+                    <div class="form-group contact-block1">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                        required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                        required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+
+                  <div class="mt-0">
+                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://pharaohmak.wordpress.com/"><i class="bi bi-wordpress"></i></a></li>
+          <li><a href="https://stackexchange.com/users/35360139/makram-m-ibrahim"><i class="bi bi-stack-overflow"></i></a></li>
+          <li><a href="https://github.com/pharaohmak"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mak-ibrahim/"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights Makram M Ibrahim. All rights reserved.</p>
+
+    </div>
+  </div><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/journal.js"></script>
+
 </body>
 
 </html>
