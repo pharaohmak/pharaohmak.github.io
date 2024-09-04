@@ -150,51 +150,79 @@ const projects = {
       ]
     }
   };
-  
-  // Function to load project data based on ID
-  function loadProjectData(projectId) {
-    const project = projects[projectId];
-  
-    if (project) {
-      document.getElementById('portfolio-title').textContent = project.title;
-      document.getElementById('portfolio-overview').textContent = project.overview;
-  
-      // Update images
-      const imageContainer = document.getElementById('portfolio-images');
-      imageContainer.innerHTML = '';
-      project.images.forEach(src => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.className = 'portfolio-image';
-        imageContainer.appendChild(img);
-      });
-  
-      document.getElementById('portfolio-description').textContent = project.description;
-  
-      // Update details
-      const detailsList = document.getElementById('portfolio-details-list');
-      detailsList.innerHTML = '';
-      for (const [key, value] of Object.entries(project.details)) {
-        const li = document.createElement('li');
+ 
+// Function to load project data based on ID
+function loadProjectData(projectId) {
+  const project = projects[projectId];
+
+  if (project) {
+    document.getElementById('portfolio-title').textContent = project.title;
+    document.getElementById('portfolio-overview').textContent = project.overview;
+
+    // Update images
+    const imageContainer = document.getElementById('portfolio-images');
+    imageContainer.innerHTML = '';
+    project.images.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.className = 'portfolio-image';
+      imageContainer.appendChild(img);
+    });
+
+    document.getElementById('portfolio-description').textContent = project.description;
+
+    // Update details
+    const detailsList = document.getElementById('portfolio-details-list');
+    detailsList.innerHTML = '';
+    for (const [key, value] of Object.entries(project.details)) {
+      const li = document.createElement('li');
+      if (key === 'Website') {
+        li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer">${value}</a>`;
+      } else {
         li.innerHTML = `<strong>${key}:</strong> ${value}`;
-        detailsList.appendChild(li);
       }
-  
-      // Update features
-      const featuresList = document.getElementById('portfolio-features');
-      featuresList.innerHTML = '';
-      project.features.forEach(feature => {
-        const li = document.createElement('li');
-        li.textContent = feature;
-        featuresList.appendChild(li);
-      });
-    } else {
-      // Handle project not found
-      console.error('Project not found');
+      detailsList.appendChild(li);
     }
-  }
+
+    // Update features
+    const featuresList = document.getElementById('portfolio-features');
+    featuresList.innerHTML = '';
+    project.features.forEach(feature => {
+      const li = document.createElement('li');
+      li.textContent = feature;
+      featuresList.appendChild(li);
+    });
+
+    // Navigation button logic
+    const prevButton = document.getElementById('prev-project');
+    const nextButton = document.getElementById('next-project');
   
-  // Get the projectId from the URL query parameters
-  const urlParams = new URLSearchParams(window.location.search);
-  const projectId = urlParams.get('projectId') || 1; // Default to 1 if no projectId is found
-  loadProjectData(projectId);
+    const projectIds = Object.keys(projects).map(Number);
+    let currentIndex = projectIds.indexOf(parseInt(projectId));
+
+    function updateButtons() {
+      prevButton.disabled = currentIndex === 0;
+      nextButton.disabled = currentIndex === projectIds.length - 1;
+    }
+  
+    function navigateToProject(offset) {
+      const newIndex = currentIndex + offset;
+      if (newIndex >= 0 && newIndex < projectIds.length) {
+        window.location.search = `projectId=${projectIds[newIndex]}`;
+      }
+    }
+  
+    prevButton.addEventListener('click', () => navigateToProject(-1));
+    nextButton.addEventListener('click', () => navigateToProject(1));
+  
+    // Initialize button states
+    updateButtons();
+  } else {
+    console.error('Project not found');
+  }
+}
+
+// Get the projectId from the URL query parameters
+const urlParams = new URLSearchParams(window.location.search);
+const projectId = urlParams.get('projectId') || 1; // Default to 1 if no projectId is found
+loadProjectData(projectId);

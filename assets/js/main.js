@@ -172,14 +172,17 @@
    * Testimonials slider
    */
   new Swiper('.services-slider', {
-    speed: 3000, // Set a slower speed for a smoother transition
+    speed: 2000, // Slower speed for a smoother continuous effect
     loop: true,
     autoplay: {
       delay: 0, // No delay between slides
       disableOnInteraction: false,
     },
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 10,
+    freeMode: true, // Enable free mode for smooth, continuous scrolling
+    freeModeMomentum: true, // Enable momentum for smoother transitions
+    freeModeMomentumRatio: 0.5, // Control momentum speed
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -187,12 +190,12 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 3,
+        spaceBetween: 5,
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        slidesPerView: 3,
+        spaceBetween: 0,
       },
       1200: {
         slidesPerView: 4,
@@ -200,7 +203,6 @@
       },
     },
   });
-
   /**
    * Porfolio isotope and filter
    */
@@ -271,3 +273,4 @@ function moveBackground(event) {
     }px) rotate(${x * boolInt * 10}deg)`;
   }
 }
+

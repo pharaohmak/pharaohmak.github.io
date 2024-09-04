@@ -1,6 +1,3 @@
-
-// assets/js/blog-single.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const blogPostContainer = document.getElementById('blog-post');
     const queryParams = new URLSearchParams(window.location.search);
@@ -10,34 +7,62 @@ document.addEventListener('DOMContentLoaded', () => {
     const blogPosts = [
         {
             id: 1,
-            title: "The Rise of AI and What It Means for You",
-            content: "Artificial Intelligence (AI) is no longer just a futuristic concept; it’s here, and it’s transforming our daily lives in ways we might not even realize. <br><br> From virtual assistants like Siri and Alexa to recommendation algorithms on Netflix and Amazon, AI is quietly shaping our experiences. But what does this mean for the average person? In simple terms, AI aims to make our lives easier by automating repetitive tasks, improving accuracy, and enhancing decision-making processes. <br><br> However, with the rise of AI comes the need for ethical considerations. Questions around privacy, job displacement, and data security are becoming more pressing. As AI continues to evolve, it’s essential for everyone to stay informed about its impact and the ways it can both benefit and challenge us. <br><br> Whether you’re a tech enthusiast or someone who simply enjoys the convenience of smart home devices, staying up to date with the latest AI trends will help you better understand the technological landscape of the future.",
-            image: 'assets/img/blog-post-big-1.webp'
+            title: "Dynamic Web Development & Design",
+            content: "This service focuses on building engaging, high-performance websites that enhance brand visibility and user interaction. Utilizing modern frameworks like React, Next.js, and Node.js, I deliver websites that are not only visually appealing but also responsive, fast, and optimized for search engines. Whether you’re looking for a single-page application, a corporate website, or a full-fledged e-commerce platform, I provide solutions that are tailored to your business goals, ensuring your website scales as your business grows.",
+            usp: "Responsive and mobile-friendly design., SEO-optimized for better search engine rankings., Scalable and secure architectures for long-term growth., Custom UI/UX that aligns with your brand identity.",
+            benefits: "Increased web traffic and engagement., Improved conversion rates through intuitive design., Stronger online presence and brand recognition.",
+            image: '/assets/img/blog-post-big-1.webp'
         },
         {
             id: 2,
-            title: "A Simple Guide to Building Your First Website",
-            content: "Ever thought about creating your own website but don’t know where to start? You’re not alone! Many people find building a website intimidating, but it doesn’t have to be. <br><br> Here’s a simple step-by-step guide to get you started: <br><br> 1.	Choose a Domain Name: <br>Your domain name is your website’s address on the internet. Make sure it’s easy to remember and reflects the purpose of your site. <br><br> 2.	Select a Web Hosting Provider: <br>This is where your website’s files will be stored. Popular options include Bluehost, HostGator, and SiteGround. <br><br> 3.	Use a Website Builder or CMS: <br> If you’re a beginner, platforms like WordPress, Wix, or Squarespace offer easy-to-use tools for creating websites without needing to code. <br><br> 4.	Design Your Website: <br> Pick a theme or template that suits your style and customize it with your own images, text, and branding. <br><br> 5.	Launch and Promote: <br> Once you’re happy with your website, publish it for the world to see! Don’t forget to promote it on social media and through other channels. <br><br> By following these simple steps, you can have your very own website up and running in no time!",
-            image: 'assets/img/blog-post-big-2.jpeg'
+            title: "Custom Mobile App Development",
+            content: "This service is dedicated to crafting custom mobile apps that provide seamless user experiences on both iOS and Android platforms. By leveraging tools like React Native, Flutter, or native development technologies, I develop apps that are user-friendly, high-performing, and aligned with your business objectives. From ideation and wireframing to design, development, and deployment, I guide you through the entire process to ensure your app meets market standards and resonates with your target audience.",
+            usp: "Cross-platform app development for wider reach., Focus on user experience and intuitive design., Scalable architecture to support app growth., Comprehensive development process from concept to launch.",
+            benefits: "Direct engagement with customers via a branded app., Enhanced customer loyalty and retention through an optimized mobile experience., Competitive edge in the mobile market with a custom-built solution.",
+            image: '/assets/img/blog-post-big-2.webp'
         },
         {
             id: 3,
-            title: "Make Smarter Tech Decisions",
-            content: "Navigating the tech market can be daunting with so many products vying for your attention. To help you make informed choices, honest reviews and side-by-side comparisons are essential. Here’s why they matter and how they can guide you to the best tech products. <br><br> Why Product Reviews Are Crucial <br>•	Real User Insights: Reviews offer real-world feedback on a product’s performance and reliability. <br>•	Balanced View: They highlight both pros and cons, providing a fair evaluation. <br>•	Durability Check: Reviews can reveal potential long-term issues. <br><br>The Value of Side-by-Side Comparisons <br>•	Feature Analysis: Compare key features like performance, battery life, and connectivity. <br>•	Performance Metrics: Look at benchmarks to see how products stack up. <br>•	Cost Evaluation: Assess which product offers the best value for your money. <br><br>Tips for Effective Reviews and Comparisons <br>1.	Comprehensive and Balanced: Cover all aspects of the product and provide a fair assessment. <br>2.	Clear Language: Use straightforward language to make the information accessible. <br>3.	Real-World Testing: Base reviews on actual use rather than theoretical performance. <br><br>Example Comparison: <br>Smartphones iPhone 15 vs. Samsung Galaxy S24 <br>•	Design: Compare aesthetics and build quality. <br>•	Performance: Look at processor speed and RAM. <br>•	Camera: Evaluate image quality and features. <br>•	Battery Life: Compare battery capacity and usage times. <br>•	Price: Analyze the value offered for the cost. <br><br> By leveraging detailed reviews and comparisons, you can make more informed decisions and invest in tech products that truly meet your needs. Stay informed, and you’ll always be one step ahead in the tech world!",
-            image: 'assets/img/blog-post-big-3.png'
+            title: "Bespoke Software Solutions",
+            content: "This service offers end-to-end custom software development tailored to meet specific business needs. Whether it’s building a CRM system, developing an automation tool, or creating a data management solution, I handle every stage of the development cycle—from initial consultation and requirements gathering to design, coding, testing, and deployment. The goal is to create secure, scalable, and efficient software that improves business processes, enhances productivity, and supports strategic goals.",
+            usp: "Fully customized software solutions for unique business needs., Robust architecture and secure coding practices., Agile development methodology for faster delivery and flexibility., Continuous support and maintenance to ensure software efficiency.",
+            benefits: "Streamlined operations and increased productivity., Solutions designed to scale with business growth., Reduced operational costs through automation and process improvement.",
+            image: '/assets/img/blog-post-big-3.png'
         },
         // Add more posts as needed
     ];
 
     // Find the blog post with the matching ID
-    const post = blogPosts.find(p => p.id === parseInt(blogId));
+    const currentIndex = blogPosts.findIndex(p => p.id === parseInt(blogId));
+    const post = blogPosts[currentIndex];
+
+    // Determine previous and next post IDs
+    const previousPostId = currentIndex > 0 ? blogPosts[currentIndex - 1].id : null;
+    const nextPostId = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1].id : null;
 
     if (post) {
         blogPostContainer.innerHTML = `
-        <h1>${post.title}</h1>
-        <img src="${post.image}" alt="${post.title}">
-        <p>${post.content}</p>
-      `;
+        <div class="blog-post">
+            <h1 class="blog-title">${post.title}</h1>
+            <img src="${post.image}" class="blog-image" alt="${post.title}">
+            <h3 class="section-title">Overview</h3>
+            <p class="blog-content">${post.content}</p>
+
+            <h3 class="section-title">Unique Selling Points</h3>
+            <ul class="blog-list">
+                ${post.usp.split(',').map(point => `<li>${point.trim()}</li>`).join('')}
+            </ul>
+
+            <h3 class="section-title">Client Benefits</h3>
+            <ul class="blog-list">
+                ${post.benefits.split(',').map(point => `<li>${point.trim()}</li>`).join('')}
+            </ul>
+            <div class="blog-navigation">
+                ${previousPostId ? `<a href="blog-single.html?blogId=${previousPostId}" class="nav-button prev-button">Previous</a>` : '<span class="nav-button prev-button disabled">Previous</span>'}
+                ${nextPostId ? `<a href="blog-single.html?blogId=${nextPostId}" class="nav-button next-button">Next</a>` : '<span class="nav-button next-button disabled">Next</span>'}
+            </div>
+        </div>
+        `;
     } else {
         blogPostContainer.innerHTML = '<p>Blog post not found.</p>';
     }
