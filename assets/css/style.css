@@ -1,34 +1,21 @@
-/**
-* Template Name: Folio
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   background: #ffffff;
   color: #898989;
-  font-family: "Poppins", helvetica;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.02em;
   overflow-x: hidden;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -46,35 +33,29 @@ h4 {
 
 a {
   color: #292929;
-  text-decoration: none !important;
-  transition: all 0.5s ease-in-out 0s;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
 }
 
 a:hover {
-  transition: all 0.5s ease-in-out 0s;
+  color: #b8a07e;
 }
 
 p {
   margin: 25px 0;
-  padding: 0;
   font-size: 15px;
   color: #999999;
   line-height: 28px;
 }
 
-::-moz-selection {
-  background: #b8a07e;
-  color: #fff;
-}
-
-::selection {
+::-moz-selection, ::selection {
   background: #b8a07e;
   color: #fff;
 }
 
 .btn {
   background: #333;
-  border: medium none;
+  border: none;
   border-radius: 0;
   color: #fff;
   font-size: 12px;
@@ -82,25 +63,11 @@ p {
   line-height: 50px;
   padding: 0 30px;
   text-transform: uppercase;
+  transition: background 0.3s ease;
 }
 
-.btn:hover,
-.btn:focus {
-  color: #fff;
-}
-
-.padDiv {
-  padding: 30px 20px;
-}
-
-.section-title {
-  margin-bottom: 70px;
-}
-
-.section-title h2 {
-  font-size: 25px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.btn:hover, .btn:focus {
+  background: #b8a07e;
 }
 
 .form-control {
@@ -111,34 +78,18 @@ p {
   font-size: 12px;
   font-weight: 500;
   height: 50px;
-  letter-spacing: 0.1em;
   padding-left: 10px;
-  margin: 0 0 25px 0;
-  line-height: 14px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 
 .form-control:focus {
   box-shadow: none;
-  outline: 0 none;
+  outline: none;
 }
 
-.paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.paddsections {
-  padding-top: 90px;
-  padding-bottom: 90px !important;
-}
-
-.hvr-shutter-in-horizontal::before {
-  background: #333;
-}
-
-.hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
+.paddsection, .paddsections {
+  padding: 90px 0;
 }
 
 .mb-30 {
@@ -450,9 +401,21 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  /* background: url("../img/home-bg.jpg") repeat scroll center center/cover; */
-  height: 100vh;
-  width: 100%;
+  /* background: url("../img/home-bg.jpeg") no-repeat center top; Align image to the right and bottom */
+  background-size: cover; /* Cover the entire container */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  position: relative; /* Relative positioning for possible child elements */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-attachment: fixed; /* Fixed attachment for parallax effect (optional) */
+}
+
+@media (max-width: 768px) {
+  #hero {
+    background-position: center center; /* Adjust position for smaller screens */
+  }
 }
 
 #hero .hero-content {
@@ -620,7 +583,7 @@ p {
   font-size: 44px;
   color: #b8a07e;
   line-height: 44px;
-  
+
 }
 
 .services-slider .swiper-pagination {
@@ -1592,38 +1555,47 @@ blockquote {
 .shape {
   position: fixed;
 }
+
 .shape--0 {
   top: 15vh;
   left: 5vw;
 }
+
 .shape--1 {
   top: 15vh;
   left: 50vw;
 }
+
 .shape--2 {
   top: 15vh;
   left: 80vw;
 }
+
 .shape--3 {
   top: 50vh;
   left: 5vw;
 }
+
 .shape--4 {
   top: 50vh;
   left: 50vw;
 }
+
 .shape--5 {
   top: 50vh;
   left: 80vw;
 }
+
 .shape--6 {
   top: 80vh;
   left: 5vw;
 }
+
 .shape--7 {
   top: 80vh;
   left: 50vw;
 }
+
 .shape--8 {
   top: 80vh;
   left: 80vw;
@@ -1631,188 +1603,278 @@ blockquote {
 
 /* Blog Post Container */
 .blog-post {
-  max-width: 800px; /* Limit the width for readability */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Add padding around the content */
-  background-color: #ffffff; /* White background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px;
+  /* Limit the width for readability */
+  margin: 0 auto;
+  /* Center the container */
+  padding: 20px;
+  /* Add padding around the content */
+  background-color: #ffffff;
+  /* White background */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
 }
 
 /* Blog Title Styles */
 .blog-title {
-  font-size: 32px; /* Larger font size for the title */
-  font-weight: 700; /* Bold for emphasis */
-  color: #333; /* Dark color for readability */
-  margin-bottom: 20px; /* Spacing below the title */
-  text-align: center; /* Center-aligned text */
+  font-size: 32px;
+  /* Larger font size for the title */
+  font-weight: 700;
+  /* Bold for emphasis */
+  color: #333;
+  /* Dark color for readability */
+  margin-bottom: 20px;
+  /* Spacing below the title */
+  text-align: center;
+  /* Center-aligned text */
 }
 
 /* Blog Image Styles */
 .blog-image {
-  width: 100%; /* Full width to fit container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners for the image */
-  margin-bottom: 20px; /* Space below the image */
-  object-fit: cover; /* Ensure the image covers its container */
+  width: 100%;
+  /* Full width to fit container */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 8px;
+  /* Rounded corners for the image */
+  margin-bottom: 20px;
+  /* Space below the image */
+  object-fit: cover;
+  /* Ensure the image covers its container */
 }
 
 /* Section Title Styles */
 .section-title {
-  font-size: 24px; /* Font size for section headings */
-  font-weight: 600; /* Semi-bold for emphasis */
-  color: #2c3e50; /* Dark blue color for headings */
-  margin-top: 30px; /* Spacing above the section heading */
-  margin-bottom: 10px; /* Spacing below the section heading */
-  border-bottom: 2px solid #e0e0e0; /* Underline for the section heading */
-  padding-bottom: 5px; /* Padding below the heading text */
+  font-size: 24px;
+  /* Font size for section headings */
+  font-weight: 600;
+  /* Semi-bold for emphasis */
+  color: #2c3e50;
+  /* Dark blue color for headings */
+  margin-top: 30px;
+  /* Spacing above the section heading */
+  margin-bottom: 10px;
+  /* Spacing below the section heading */
+  border-bottom: 2px solid #e0e0e0;
+  /* Underline for the section heading */
+  padding-bottom: 5px;
+  /* Padding below the heading text */
 }
 
 /* Blog Content Styles */
 .blog-content {
-  font-size: 18px; /* Standard font size for body text */
-  color: #555; /* Medium gray color for text */
-  line-height: 1.6; /* Improved line spacing */
-  margin-bottom: 30px; /* Spacing below the content */
+  font-size: 18px;
+  /* Standard font size for body text */
+  color: #555;
+  /* Medium gray color for text */
+  line-height: 1.6;
+  /* Improved line spacing */
+  margin-bottom: 30px;
+  /* Spacing below the content */
 }
 
 /* List Styles */
 .blog-list {
-  list-style-type: disc; /* Default disc bullets */
-  margin-left: 20px; /* Indentation for list items */
-  color: #555; /* Consistent text color */
+  list-style-type: disc;
+  /* Default disc bullets */
+  margin-left: 20px;
+  /* Indentation for list items */
+  color: #555;
+  /* Consistent text color */
 }
 
 .blog-list li {
-  margin-bottom: 10px; /* Space between list items */
-  font-size: 16px; /* Font size for list items */
-  line-height: 1.5; /* Line height for better readability */
+  margin-bottom: 10px;
+  /* Space between list items */
+  font-size: 16px;
+  /* Font size for list items */
+  line-height: 1.5;
+  /* Line height for better readability */
 }
 
 /* Blog Navigation Container */
 .blog-navigation {
-  display: flex; /* Align buttons side by side */
-  justify-content: space-between; /* Space out the buttons */
-  margin-top: 30px; /* Space above the navigation */
+  display: flex;
+  /* Align buttons side by side */
+  justify-content: space-between;
+  /* Space out the buttons */
+  margin-top: 30px;
+  /* Space above the navigation */
 }
 
 /* Navigation Button Styles */
 .nav-button {
-  display: inline-block; /* Inline block for button styling */
-  padding: 10px 20px; /* Padding inside the button */
-  font-size: 16px; /* Font size for button text */
-  font-weight: 600; /* Bold text */
-  text-align: center; /* Center text inside the button */
-  color: #fff; /* White text color */
-  background-color: #007bff; /* Blue background color */
-  border: none; /* No border */
-  border-radius: 4px; /* Rounded corners */
-  text-decoration: none; /* Remove underline from links */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  display: inline-block;
+  /* Inline block for button styling */
+  padding: 10px 20px;
+  /* Padding inside the button */
+  font-size: 16px;
+  /* Font size for button text */
+  font-weight: 600;
+  /* Bold text */
+  text-align: center;
+  /* Center text inside the button */
+  color: #fff;
+  /* White text color */
+  background-color: #007bff;
+  /* Blue background color */
+  border: none;
+  /* No border */
+  border-radius: 4px;
+  /* Rounded corners */
+  text-decoration: none;
+  /* Remove underline from links */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transition */
 }
 
 /* Hover Effect */
 .nav-button:hover {
-  background-color: #0056b3; /* Darker blue for hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #0056b3;
+  /* Darker blue for hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 /* Previous Button Specific Styles */
 .prev-button {
-  background-color: #6c757d; /* Gray background for the previous button */
+  background-color: #6c757d;
+  /* Gray background for the previous button */
 }
 
 .prev-button:hover {
-  background-color: #5a6268; /* Darker gray for hover */
+  background-color: #5a6268;
+  /* Darker gray for hover */
 }
 
 /* Next Button Specific Styles */
 .next-button {
-  background-color: #f06449; /* Green background for the next button */
+  background-color: #f06449;
+  /* Green background for the next button */
 }
 
 .next-button:hover {
-  background-color: #d9534f; /* Darker green for hover */
-  
+  background-color: #d9534f;
+  /* Darker green for hover */
+
 }
 
 /* Container for blog cards */
 .blog-card-container {
   display: flex;
-  flex-wrap: wrap; /* Allows the cards to wrap to the next line */
-  gap: 30px; /* Space between the cards */
-  margin: -15px; /* Negative margin to offset the padding from the container */
+  flex-wrap: wrap;
+  /* Allows the cards to wrap to the next line */
+  gap: 30px;
+  /* Space between the cards */
+  margin: -15px;
+  /* Negative margin to offset the padding from the container */
 }
 
 .blog-card {
-  border: 1px solid #ddd; /* Light border around the card */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Hide overflow for rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
-  background-color: #fff; /* White background for the card */
-  margin: 15px; /* Margin to add spacing around each card */
-  flex: 1 1 calc(33.333% - 30px); /* Make cards responsive, 3 cards per row */
+  border: 1px solid #ddd;
+  /* Light border around the card */
+  border-radius: 8px;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Hide overflow for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease;
+  /* Smooth transition for shadow effect */
+  background-color: #fff;
+  /* White background for the card */
+  margin: 15px;
+  /* Margin to add spacing around each card */
+  flex: 1 1 calc(33.333% - 30px);
+  /* Make cards responsive, 3 cards per row */
 }
 
 .blog-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Darker shadow on hover */
 }
 
 .blog-card-info {
-  position: relative; /* For positioning the rate */
+  position: relative;
+  /* For positioning the rate */
 }
 
 .blog-card-image {
-  width: 100%; /* Full width of the card */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove extra space below image */
+  width: 100%;
+  /* Full width of the card */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove extra space below image */
   margin-top: 20px;
 }
 
 .blog-card-text {
-  padding: 20px; /* Add padding around the text */
+  padding: 20px;
+  /* Add padding around the text */
 }
 
 .blog-card-title {
-  font-size: 20px; /* Size for the title */
-  margin-bottom: 10px; /* Space below the title */
+  font-size: 20px;
+  /* Size for the title */
+  margin-bottom: 10px;
+  /* Space below the title */
 }
 
 .blog-card-title a {
-  color: #f06449; /* Link color */
-  text-decoration: none; /* Remove underline */
+  color: #f06449;
+  /* Link color */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 .blog-card-title a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
+  /* Underline on hover */
 }
 
 .blog-card-subtitle {
-  font-size: 16px; /* Size for the subtitle */
-  color: #777; /* Subtitle color */
-  margin-bottom: 15px; /* Space below the subtitle */
+  font-size: 16px;
+  /* Size for the subtitle */
+  color: #777;
+  /* Subtitle color */
+  margin-bottom: 15px;
+  /* Space below the subtitle */
 }
 
 .blog-card-divider {
-  border-top: 1px solid #ddd; /* Divider line */
-  margin: 20px 0; /* Space around the divider */
+  border-top: 1px solid #ddd;
+  /* Divider line */
+  margin: 20px 0;
+  /* Space around the divider */
 }
 
 .blog-card-description {
-  font-size: 16px; /* Font size for description */
-  color: #555; /* Text color for the description */
+  font-size: 16px;
+  /* Font size for description */
+  color: #555;
+  /* Text color for the description */
 }
 
 .blog-card-rate {
-  position: absolute; /* Positioning at the bottom */
-  top: -20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
-  font-size: 24px; /* Font size for the rate */
-  color: #f06449; /* Color for the rate */
-  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
-  padding: 10px; /* Padding around the rate */
-  border-radius: 4px; /* Rounded corners for the rate */
+  position: absolute;
+  /* Positioning at the bottom */
+  top: -20px;
+  /* Distance from the bottom */
+  right: 20px;
+  /* Distance from the right */
+  font-size: 24px;
+  /* Font size for the rate */
+  color: #f06449;
+  /* Color for the rate */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Slightly transparent background */
+  padding: 10px;
+  /* Padding around the rate */
+  border-radius: 4px;
+  /* Rounded corners for the rate */
 }
 
 /* Styles for portfolio navigation buttons */
@@ -1822,8 +1884,10 @@ blockquote {
   margin-top: 20px;
 }
 
-#prev-project, #next-project {
-  background-color: #f06449; /* Primary color */
+#prev-project,
+#next-project {
+  background-color: #f06449;
+  /* Primary color */
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -1833,18 +1897,25 @@ blockquote {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-#prev-project:disabled, #next-project:disabled {
-  background-color: #d6d6d6; /* Disabled color */
+#prev-project:disabled,
+#next-project:disabled {
+  background-color: #d6d6d6;
+  /* Disabled color */
   cursor: not-allowed;
 }
 
-#prev-project:hover, #next-project:hover {
-  background-color: #d9534f; /* Darker shade on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+#prev-project:hover,
+#next-project:hover {
+  background-color: #d9534f;
+  /* Darker shade on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
-#prev-project:active, #next-project:active {
-  transform: scale(0.98); /* Slightly scale down on click */
+#prev-project:active,
+#next-project:active {
+  transform: scale(0.98);
+  /* Slightly scale down on click */
 }
 
 /* Additional styling for the portfolio container */
@@ -1878,7 +1949,8 @@ blockquote {
 
 /* Default styles for the slider */
 .services-slider .swiper-slide {
-  width: auto; /* Ensures items take up their content width by default */
+  width: auto;
+  /* Ensures items take up their content width by default */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1887,56 +1959,67 @@ blockquote {
 /* Media queries for smaller screens (max width: 768px) */
 @media screen and (max-width: 768px) {
   .services-slider .swiper-slide {
-    width: 80%; /* Adjust width for smaller screens */
+    width: 80%;
+    /* Adjust width for smaller screens */
   }
 }
 
 /* Media queries for mobile screens (max width: 576px) */
 @media screen and (max-width: 576px) {
   .services-slider .swiper-slide {
-    width: 100%; /* Full width for mobile */
-    margin-bottom: 20px; /* Add space between items */
+    width: 100%;
+    /* Full width for mobile */
+    margin-bottom: 20px;
+    /* Add space between items */
   }
 
   .services-block {
-    padding: 10px; /* Reduce padding for mobile */
+    padding: 10px;
+    /* Reduce padding for mobile */
   }
 
   .modal__language--img {
-    width: 50px; /* Adjust icon size for mobile */
+    width: 50px;
+    /* Adjust icon size for mobile */
     height: 50px;
   }
 
   .language__name {
-    font-size: 12px; /* Reduce font size for better fit */
+    font-size: 12px;
+    /* Reduce font size for better fit */
   }
 }
 
 /* Additional style adjustments for small devices (max width: 480px) */
 @media screen and (max-width: 480px) {
   .services-slider .swiper-slide {
-    width: 90%; /* More padding for small mobile screens */
+    width: 90%;
+    /* More padding for small mobile screens */
   }
 
   .services-block {
-    text-align: center; /* Center text on small screens */
-  
+    text-align: center;
+    /* Center text on small screens */
+
   }
 
   .modal__language--img {
-    width: 40px; /* Smaller icon size */
+    width: 40px;
+    /* Smaller icon size */
     height: 40px;
   }
 
   .language__name {
-    font-size: 10px; /* Smaller font size */
+    font-size: 10px;
+    /* Smaller font size */
   }
 }
 
 /* Medium screens (tablets, 768px to 1199px) */
 @media (max-width: 1199px) {
   .blog-card {
-    flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    flex: 1 1 calc(50% - 20px);
+    /* Two cards per row */
     max-width: calc(50% - 20px);
   }
 }
@@ -1944,27 +2027,96 @@ blockquote {
 /* Small screens (mobile devices, 480px to 767px) */
 @media (max-width: 768px) {
   .blog-card {
-    flex: 1 1 calc(100% - 20px); /* One card per row */
+    flex: 1 1 calc(100% - 20px);
+    /* One card per row */
     max-width: calc(100% - 20px);
   }
+
   .shape {
     display: none;
   }
+
+  .resume-buttons {
+    flex-direction: column;
+    /* Ensure buttons are stacked vertically on mobile */
+    gap: 1rem;
+    /* Space between buttons on mobile */
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 1rem;
+    width: 100%;
+    /* Adjust font size for mobile */
+  }
+  
 }
 
 /* Very small screens (small mobile devices, below 480px) */
 @media (max-width: 480px) {
   .blog-card {
-    flex: 1 1 calc(100% - 10px); /* One card per row with smaller gap */
+    flex: 1 1 calc(100% - 10px);
+    /* One card per row with smaller gap */
     max-width: calc(100% - 10px);
   }
+
   .blog-card-info {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px;
+    /* Reduce padding for smaller screens */
   }
+
   .blog-card-rate {
     top: 5px;
   }
+
   .shape {
     display: none;
   }
+}
+
+.resume-buttons {
+  display: flex;
+  gap: 10px;
+  /* Adds space between the buttons */
+}
+
+.btn-primary, 
+.btn-secondary {
+  background-color: #f06449;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d9534f;
+  /* Darker shade of orange */
+}
+
+.btn-secondary:hover {
+  background-color: #d9534f;
+  /* Darker shade of blue */
+}
+
+.consultation-button {
+  margin-top: 15px;
+  text-align: center;
+  /* Centers the button horizontally */
+  margin-bottom: 25px;
+}
+
+.consultation-button .btn-primary {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }

@@ -42,26 +42,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (post) {
         blogPostContainer.innerHTML = `
-        <div class="blog-post">
-            <h1 class="blog-title">${post.title}</h1>
-            <img src="${post.image}" class="blog-image" alt="${post.title}">
-            <h3 class="section-title">Overview</h3>
-            <p class="blog-content">${post.content}</p>
-
-            <h3 class="section-title">Unique Selling Points</h3>
-            <ul class="blog-list">
-                ${post.usp.split(',').map(point => `<li>${point.trim()}</li>`).join('')}
-            </ul>
-
-            <h3 class="section-title">Client Benefits</h3>
-            <ul class="blog-list">
-                ${post.benefits.split(',').map(point => `<li>${point.trim()}</li>`).join('')}
-            </ul>
-            <div class="blog-navigation">
-                ${previousPostId ? `<a href="blog-single.html?blogId=${previousPostId}" class="nav-button prev-button">Previous</a>` : '<span class="nav-button prev-button disabled">Previous</span>'}
-                ${nextPostId ? `<a href="blog-single.html?blogId=${nextPostId}" class="nav-button next-button">Next</a>` : '<span class="nav-button next-button disabled">Next</span>'}
-            </div>
-        </div>
+       <div class="blog-post">
+    <h1 class="blog-title">${post.title}</h1>
+    <img src="${post.image}" class="blog-image" alt="${post.title}">
+    <div class="content-section">
+        <h3 class="section-title">Overview</h3>
+        <p class="blog-content">${post.content}</p>
+    </div>
+    <div class="content-section">
+        <h3 class="section-title">Unique Selling Points</h3>
+        <ul class="blog-list">
+            ${post.usp.split(',').map(point => `<li>${point.trim()}</li>`).join('')}
+        </ul>
+    </div>
+    <div class="content-section">
+        <h3 class="section-title">Client Benefits</h3>
+        <ul class="blog-list">
+            ${post.benefits.split(',').map(point => `<li>${point.trim()}</li>`).join('')}
+        </ul>
+    </div>
+    <div class="consultation-button mt-3">
+        <a href="index.html#contact" class="btn btn-primary">Book Free Consultation</a>
+    </div>
+    <div class="blog-navigation">
+        ${previousPostId ? `<a href="blog-single.html?blogId=${previousPostId}" class="nav-button prev-button">Previous</a>` : '<span class="nav-button prev-button disabled">Previous</span>'}
+        ${nextPostId ? `<a href="blog-single.html?blogId=${nextPostId}" class="nav-button next-button">Next</a>` : '<span class="nav-button next-button disabled">Next</span>'}
+    </div>
+</div>
         `;
     } else {
         blogPostContainer.innerHTML = '<p>Blog post not found.</p>';

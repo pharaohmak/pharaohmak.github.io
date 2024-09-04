@@ -274,3 +274,14 @@ function moveBackground(event) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  // Check if there's a fragment in the URL
+  const hash = window.location.hash;
+  if (hash) {
+      // Scroll to the element with the matching id
+      document.querySelector(hash)?.scrollIntoView({
+          behavior: 'smooth'
+      });
+  }
+});
+
