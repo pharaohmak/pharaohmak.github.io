@@ -61,9 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${post.benefits.split(',').map(point => `<li>${point.trim()}</li>`).join('')}
         </ul>
     </div>
-    <div class="consultation-button mt-3">
-        <a href="index.html#contact" class="btn btn-primary">Book Free Consultation</a>
-    </div>
+    
     <div class="blog-navigation">
         ${previousPostId ? `<a href="blog-single.html?blogId=${previousPostId}" class="nav-button prev-button">Previous</a>` : '<span class="nav-button prev-button disabled">Previous</span>'}
         ${nextPostId ? `<a href="blog-single.html?blogId=${nextPostId}" class="nav-button next-button">Next</a>` : '<span class="nav-button next-button disabled">Next</span>'}
