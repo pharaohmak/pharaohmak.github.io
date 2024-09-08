@@ -15,7 +15,12 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -48,7 +53,8 @@ p {
   line-height: 28px;
 }
 
-::-moz-selection, ::selection {
+::-moz-selection,
+::selection {
   background: #b8a07e;
   color: #fff;
 }
@@ -66,7 +72,8 @@ p {
   transition: background 0.3s ease;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background: #b8a07e;
 }
 
@@ -88,7 +95,8 @@ p {
   outline: none;
 }
 
-.paddsection, .paddsections {
+.paddsection,
+.paddsections {
   padding: 90px 0;
 }
 
@@ -402,19 +410,28 @@ p {
 --------------------------------------------------------------*/
 #hero {
   /* background: url("../img/home-bg.jpeg") no-repeat center top; Align image to the right and bottom */
-  background-size: cover; /* Cover the entire container */
-  height: 100vh; /* Full viewport height */
-  width: 100%; /* Full width */
-  position: relative; /* Relative positioning for possible child elements */
-  display: flex; /* Flexbox for centering content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-attachment: fixed; /* Fixed attachment for parallax effect (optional) */
+  background-size: cover;
+  /* Cover the entire container */
+  height: 100vh;
+  /* Full viewport height */
+  width: 100%;
+  /* Full width */
+  position: relative;
+  /* Relative positioning for possible child elements */
+  display: flex;
+  /* Flexbox for centering content */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  background-attachment: fixed;
+  /* Fixed attachment for parallax effect (optional) */
 }
 
 @media (max-width: 768px) {
   #hero {
-    background-position: center center; /* Adjust position for smaller screens */
+    background-position: center center;
+    /* Adjust position for smaller screens */
   }
 }
 
@@ -519,11 +536,13 @@ p {
 /*-----------------------------------------------------------------------------------*/
 /*  About
 /*-----------------------------------------------------------------------------------*/
-#about {
+#about, #contact {
   width: 100%;
   height: auto;
   background: #f7f7f7;
   padding-top: 120px;
+  position: relative;
+  z-index: 10;
 }
 
 #about .div-img-bg {
@@ -551,6 +570,13 @@ p {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
+}
+
+.top-layer {
+  position: relative;
+  /* or absolute, fixed, sticky depending on your layout */
+  z-index: -1000;
+  /* Set a high value to ensure it is on top */
 }
 
 /*--------------------------------------------------------------
@@ -823,6 +849,8 @@ p {
 #contact {
   height: auto;
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .contact-details {
@@ -843,50 +871,6 @@ p {
 
 #contact textarea {
   min-height: 160px;
-}
-
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
 }
 
 @keyframes animate-loading {
@@ -1079,10 +1063,6 @@ blockquote {
   font-weight: 500;
   margin-top: 0;
   text-transform: uppercase;
-}
-
-.credits {
-  font-size: 13px;
 }
 
 /** Width between 1200x to 0
@@ -1945,8 +1925,6 @@ blockquote {
   line-height: 1.6;
 }
 
-
-
 /* Default styles for the slider */
 .services-slider .swiper-slide {
   width: auto;
@@ -2049,7 +2027,7 @@ blockquote {
     width: 100%;
     /* Adjust font size for mobile */
   }
-  
+
 }
 
 /* Very small screens (small mobile devices, below 480px) */
@@ -2080,7 +2058,7 @@ blockquote {
   /* Adds space between the buttons */
 }
 
-.btn-primary, 
+.btn-primary,
 .btn-secondary {
   background-color: #f06449;
   color: #fff;
