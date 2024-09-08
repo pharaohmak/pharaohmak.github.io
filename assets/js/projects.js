@@ -7,10 +7,11 @@ const projects = {
       description: 'Developed a feature-rich web application using NextJS, TypeScript, and Firebase, with integrated authentication and payment processing via Stripe.',
       details: {
         Client: 'FES Advanced Virtual Internship',
-        Category: 'Next App Development',
+        Category: 'Next App',
         Technologies: 'HTML, CSS, Next.JS, TypeScript, Firebase',
         Date: 'August 2024',
-        Website: 'https://summarist-iota.vercel.app/'
+        Website: 'https://summarist-iota.vercel.app/',
+        GitHub: 'https://github.com/pharaohmak/Summarist'
       },
       features: [
         'Next JS',
@@ -24,10 +25,11 @@ const projects = {
       description: 'Developed a full-featured NFT marketplace using modern web technologies, allowing users to explore, buy, and sell digital assets securely.',
       details: {
         Client: 'FES Virtual Internship',
-        Category: 'React App Development',
+        Category: 'React App',
         Technologies: 'HTML, CSS, JavaScript, React, Node.js',
         Date: 'July 2024',
-        Website: 'https://makram-internship.vercel.app/'
+        Website: 'https://makram-internship.vercel.app/',
+        GitHub: 'https://github.com/pharaohmak/makram-internship'
       },
       features: [
         'React JS',
@@ -43,7 +45,8 @@ const projects = {
         Category: 'Web Development',
         Technologies: 'HTML, CSS',
         Date: 'June 2024',
-        Website: 'pharaohmak.github.io/TReact-Clone/'
+        Website: 'pharaohmak.github.io/TReact-Clone/',
+        GitHub: 'https://github.com/pharaohmak/TReact-Clone'
       },
       features: [
         'HTML,CSS Best Practices',
@@ -57,10 +60,11 @@ const projects = {
       description: 'This project is an online library platform that showcases a collection of books available for purchase. It includes a landing page, highlights of key features, and sections for featured and latest books.',
       details: {
         Client: 'FES Bootcamp',
-        Category: 'React App Development',
+        Category: 'React App',
         Technologies: 'HTML, CSS, JavaScript, React, Node.js',
         Date: 'June 2024',
-        Website: 'https://my-library-teal.vercel.app'
+        Website: 'https://my-library-teal.vercel.app',
+        GitHub: 'https://github.com/pharaohmak/React-My-Library'
       },
       features: [
         'React JS',
@@ -73,10 +77,11 @@ const projects = {
       description: 'Built with HTML, CSS, JavaScript, and Bootstrap, this application features a user-friendly interface for searching and displaying event information.',
       details: {
         Client: 'FES Bootcamp',
-        Category: ' React App Development',
+        Category: ' React App',
         Technologies: 'HTML, CSS, Javascript, Bootstrap, React',
         Date: 'July 2024',
-        Website: 'https://react-ticket-finder.vercel.app'
+        Website: 'https://react-ticket-finder.vercel.app',
+        GitHub: 'https://github.com/pharaohmak/Ticket-Finder'
       },
       features: [
         'React JS',
@@ -84,7 +89,7 @@ const projects = {
     },
     6: {
       title: 'Outcome Legal Website',
-      overview: 'I will create a website that can be updated with changes as they occur (names, phone numbers, and addresses) using Namecheap Domain and Hosting.',
+      overview: 'I designed a website that can be updated with changes as they occur (names, phone numbers, and addresses) using Namecheap Domain and Hosting.',
       images: ['./assets/img/portfolio/portfolio-6.png'],
       description: "The website aims to enhance the firm's visibility and credibility, providing potential clients with easy access to information about their legal services.",
       details: {
@@ -92,7 +97,8 @@ const projects = {
         Category: 'Web Design',
         Technologies: 'Namecheap, DNS, SEO',
         Date: 'December 2022',
-        Website: 'https://www.outcomelegal.com'
+        Website: 'https://www.outcomelegal.com',
+        GitHub: 'N/A'
       },
       features: [
         'Web Design and Maintenance',
@@ -106,10 +112,11 @@ const projects = {
       description: 'This objective for this project was to build an offline shipping handling calculator that can claculate the navigations for ship handlers to safety navigate to their destination.',
       details: {
         Client: 'Fiverr | Jill Russal',
-        Category: 'React Native App Development',
+        Category: 'React Native App',
         Technologies: 'JavaScript, React Native, Node.js, Expo',
         Date: 'May 2022',
-        Website: 'https://shorturl.at/6PBrF'
+        Website: 'https://shorturl.at/6PBrF',
+        GitHub: 'https://github.com/pharaohmak/Ship-Handling-Calculator'
       },
       features: [
         'React Native',
@@ -123,32 +130,34 @@ const projects = {
       description: 'This repository contains the source code for a ReactJS-based music player web application. The app features a sleek interface with interactive controls for playing, pausing, and managing music',
       details: {
         Client: 'Personal Project',
-        Category: 'Web Development',
+        Category: 'React App',
         Technologies: 'HTML, CSS, JavaScript, React',
         Date: 'August 2022',
-        Website: 'https://music-payer-react-app.vercel.app/'
+        Website: 'https://music-payer-react-app.vercel.app/',
+        GitHub: 'https://github.com/pharaohmak/Music-Player'
       },
       features: [
         'React',
       ]
     },
-    9: {
-      title: 'Crypto Punks Clone',
-      overview: 'This repository contains the source code for a tutorial on creating a React web application to list and display NFTs (Non-Fungible Tokens).',
-      images: ['./assets/img/portfolio/portfolio-9.png'],
-      description: 'The application integrates ReactJS, ThirdWeb, the OpenSea API, and MetaMask for a complete NFT browsing experience. Users can explore and view various NFTs with seamless blockchain wallet integration.',
-      details: {
-        Client: 'Personal Project',
-        Category: 'React App Development',
-        Technologies: 'HTML, CSS, JavaScript, React',
-        Date: 'In Progress',
-        Website: 'https://crypto-punks-clone.vercel.app/'
-      },
-      features: [
-        'React',
-        'Web3, ThirdWeb, OpenSea API'
-      ]
-    }
+    // 9: {
+    //   title: 'Crypto Punks Clone',
+    //   overview: 'This repository contains the source code for a tutorial on creating a React web application to list and display NFTs (Non-Fungible Tokens).',
+    //   images: ['./assets/img/portfolio/portfolio-9.png'],
+    //   description: 'The application integrates ReactJS, ThirdWeb, the OpenSea API, and MetaMask for a complete NFT browsing experience. Users can explore and view various NFTs with seamless blockchain wallet integration.',
+    //   details: {
+    //     Client: 'Personal Project',
+    //     Category: 'React App Development',
+    //     Technologies: 'HTML, CSS, JavaScript, React',
+    //     Date: 'In Progress',
+    //     Website: 'https://crypto-punks-clone.vercel.app/',
+    //     GitHub: 'https://github.com/pharaohmak/Crypto-Punks-Clone'
+    //   },
+    //   features: [
+    //     'React',
+    //     'Web3, ThirdWeb, OpenSea API'
+    //   ]
+    // }
   };
  
 // Function to load project data based on ID
@@ -176,11 +185,16 @@ function loadProjectData(projectId) {
     detailsList.innerHTML = '';
     for (const [key, value] of Object.entries(project.details)) {
       const li = document.createElement('li');
+      
+      // Check if the key is 'Website' or 'GitHub'
       if (key === 'Website') {
-        li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer">${value}</a>`;
+        li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer">Explore site</a>`;
+      } else if (key === 'GitHub') {
+        li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer">View repository</a>`;
       } else {
         li.innerHTML = `<strong>${key}:</strong> ${value}`;
       }
+      
       detailsList.appendChild(li);
     }
 
