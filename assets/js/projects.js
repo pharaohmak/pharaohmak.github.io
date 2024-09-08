@@ -43,7 +43,7 @@ const projects = {
         Category: 'Web Development',
         Technologies: 'HTML, CSS',
         Date: 'June 2024',
-        Website: 'pharaohmak.github.io/Treact-Clone/'
+        Website: 'pharaohmak.github.io/TReact-Clone/'
       },
       features: [
         'HTML,CSS Best Practices',
