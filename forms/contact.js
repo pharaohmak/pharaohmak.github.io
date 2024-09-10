@@ -1,23 +1,16 @@
-// Initialize EmailJS
-emailjs.init(); 
+emailjs.init();
 
 function handleSubmit(event) {
-  event.preventDefault(); // Prevent the default form submission
+  event.preventDefault();
 
-  // Show loading message
-  document.querySelector('.loading').style.display = 'block';
-
-  // Collect form data
   const form = document.getElementById('contact__form');
-  const formData = new FormData(form);
+  const button = document.querySelector('.btn-send');
+  const loadingIndicator = document.querySelector('.loading');
+  const sentMessage = document.querySelector('.sent-message');
 
-  // Create an object to hold the form data
-  const data = {};
-  formData.forEach((value, key) => {
-    data[key] = value;
-  });
+  setButtonState(button, 'loading');
+  loadingIndicator.style.display = 'block';
 
-  // Send the email using EmailJS
   emailjs
     .sendForm(
       'service_b8gnzwh',
@@ -26,26 +19,44 @@ function handleSubmit(event) {
       "hmxelbWgmRVAyNR78"
     )
     .then((response) => {
-        console.log('Email sent successfully:', response); // Log the successful response
-        // Hide loading message
-        document.querySelector('.loading').style.display = 'none';
-  
-        // Show success message
-        document.querySelector('.sent-message').style.display = 'block';
-        document.querySelector('.error-message').style.display = 'none';
+        console.log('Email sent successfully:', response);
+        setButtonState(button, 'success');
+        loadingIndicator.style.display = 'none';
+        sentMessage.style.display = 'block';
     })
     .catch((error) => {
-        console.error('Error sending email:', error); // Log the error
-        // Hide loading message
-        document.querySelector('.loading').style.display = 'none';
-      
-        // Show error message
-        document.querySelector('.error-message').textContent = 'There was an error sending your message. Please try again later.';
-        document.querySelector('.error-message').style.display = 'block';
-        document.querySelector('.sent-message').style.display = 'none';
+        console.error('Error sending email:', error);
+        setButtonState(button, 'error');
+        loadingIndicator.style.display = 'none';
+        sentMessage.style.display = 'none';
     })
     .finally(() => {
-      // Optionally reset the form
       form.reset();
+      setButtonState(button, 'default');
     });
+}
+
+function setButtonState(button, state) {
+  button.classList.remove('loading', 'success', 'error');
+  button.classList.add(state);
+
+  switch (state) {
+    case 'loading':
+      button.innerHTML = 'Sending...';
+      button.disabled = true;
+      break;
+    case 'success':
+      button.innerHTML = 'Message Sent';
+      button.disabled = true;
+      break;
+    case 'error':
+      button.innerHTML = 'Send message';
+      button.disabled = false;
+      break;
+    case 'default':
+    default:
+      button.innerHTML = 'Send message';
+      button.disabled = false;
+      break;
+  }
 }

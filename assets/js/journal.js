@@ -1,9 +1,6 @@
-// assets/js/journal.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const journalBlock = document.getElementById('journal-block').querySelector('.row');
 
-  // Example blog posts data (can be replaced with fetch from a server)
   const blogPosts = [
     {
       id: 1,
@@ -28,17 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
-  // Function to generate HTML for each blog post
   function generateBlogHTML(post) {
     return `
       <div class="blog-card col-lg-4 col-md-6">
     <div class="blog-card-info">
-        <a href="blog-single.html?blogId=${post.id}">
+        <a href="service-details.html?blogId=${post.id}">
             <img src="${post.image}" class="blog-card-image" alt="${post.title}">
         </a>
         <div class="blog-card-text">
             <h4 class="blog-card-title">
-                <a href="blog-single.html?blogId=${post.id}">${post.title}</a>
+                <a href="service-details.html?blogId=${post.id}">${post.title}</a>
             </h4>
             <h6 class="blog-card-subtitle">${post.subtitle}</h6>
             <div class="blog-card-divider" style="margin: 25px 0"></div>
@@ -46,13 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
     <div class="consultation-button mt-3">
-        <a href="blog-single.html?blogId=${post.id}" class="btn btn-primary">Learn More</a>
+        <a href="service-details.html?blogId=${post.id}" class="btn btn-primary">Learn More</a>
     </div>
 </div>
       `;
   }
 
-  // Insert blog posts into the journal block
   blogPosts.forEach(post => {
     journalBlock.innerHTML += generateBlogHTML(post);
   });

@@ -1,4 +1,3 @@
-// Example data, in practice this would come from a server or API
 const projects = {
     1: {
       title: 'Summarist',
@@ -36,22 +35,22 @@ const projects = {
       ]
     },
     3: {
-      title: 'TReact Clone',
-      overview: 'This project is a clone of Treact, showcasing a simplified version of its functionality.',
+      title: 'Ticket Finder',
+      overview: 'The Event Search Application allows users to effortlessly find events by entering keywords related to artists, locations, or dates.',
       images: ['./assets/img/portfolio/portfolio-3.png'],
-      description: 'The Treact Clone project replicates the essential functionalities and user interface of Treact, a social media platform.',
+      description: 'Built with HTML, CSS, JavaScript, and Bootstrap, this application features a user-friendly interface for searching and displaying event information.',
       details: {
         Client: 'FES Bootcamp',
-        Category: 'Web Development',
-        Technologies: 'HTML, CSS',
-        Date: 'June 2024',
-        Website: 'pharaohmak.github.io/TReact-Clone/',
-        GitHub: 'https://github.com/pharaohmak/TReact-Clone'
+        Category: ' React App',
+        Technologies: 'HTML, CSS, Javascript, Bootstrap, React',
+        Date: 'July 2024',
+        Website: 'https://react-ticket-finder.vercel.app',
+        GitHub: 'https://github.com/pharaohmak/Ticket-Finder'
       },
       features: [
-        'HTML,CSS Best Practices',
-        'Feature 2 for project 2'
+        'React JS',
       ]
+     
     },
     4: {
       title: 'My Library',
@@ -64,27 +63,28 @@ const projects = {
         Technologies: 'HTML, CSS, JavaScript, React, Node.js',
         Date: 'June 2024',
         Website: 'https://my-library-teal.vercel.app',
-        GitHub: 'https://github.com/pharaohmak/React-My-Library'
+        GitHub: 'https://github.com/pharaohmak/My-Library'
       },
       features: [
         'React JS',
       ]
     },
     5: {
-      title: 'Ticket Finder',
-      overview: 'The Event Search Application allows users to effortlessly find events by entering keywords related to artists, locations, or dates.',
+      title: 'TReact Clone',
+      overview: 'This project is a clone of Treact, showcasing a simplified version of its functionality.',
       images: ['./assets/img/portfolio/portfolio-5.png'],
-      description: 'Built with HTML, CSS, JavaScript, and Bootstrap, this application features a user-friendly interface for searching and displaying event information.',
+      description: 'The Treact Clone project replicates the essential functionalities and user interface of Treact, a social media platform.',
       details: {
         Client: 'FES Bootcamp',
-        Category: ' React App',
-        Technologies: 'HTML, CSS, Javascript, Bootstrap, React',
-        Date: 'July 2024',
-        Website: 'https://react-ticket-finder.vercel.app',
-        GitHub: 'https://github.com/pharaohmak/Ticket-Finder'
+        Category: 'Web Development',
+        Technologies: 'HTML, CSS',
+        Date: 'June 2024',
+        Website: 'pharaohmak.github.io/TReact-Clone/',
+        GitHub: 'https://github.com/pharaohmak/TReact-Clone'
       },
       features: [
-        'React JS',
+        'HTML,CSS Best Practices',
+        'Feature 2 for project 2'
       ]
     },
     6: {
@@ -160,7 +160,6 @@ const projects = {
     // }
   };
  
-// Function to load project data based on ID
 function loadProjectData(projectId) {
   const project = projects[projectId];
 
@@ -168,7 +167,6 @@ function loadProjectData(projectId) {
     document.getElementById('portfolio-title').textContent = project.title;
     document.getElementById('portfolio-overview').textContent = project.overview;
 
-    // Update images
     const imageContainer = document.getElementById('portfolio-images');
     imageContainer.innerHTML = '';
     project.images.forEach(src => {
@@ -180,17 +178,15 @@ function loadProjectData(projectId) {
 
     document.getElementById('portfolio-description').textContent = project.description;
 
-    // Update details
     const detailsList = document.getElementById('portfolio-details-list');
     detailsList.innerHTML = '';
     for (const [key, value] of Object.entries(project.details)) {
       const li = document.createElement('li');
       
-      // Check if the key is 'Website' or 'GitHub'
       if (key === 'Website') {
-        li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer">Explore site</a>`;
+        li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer" class="project-link">Explore site</a>`;
       } else if (key === 'GitHub') {
-        li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer">View repository</a>`;
+        li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer" class="project-link">View repository</a>`;
       } else {
         li.innerHTML = `<strong>${key}:</strong> ${value}`;
       }
@@ -198,7 +194,6 @@ function loadProjectData(projectId) {
       detailsList.appendChild(li);
     }
 
-    // Update features
     const featuresList = document.getElementById('portfolio-features');
     featuresList.innerHTML = '';
     project.features.forEach(feature => {
@@ -207,7 +202,6 @@ function loadProjectData(projectId) {
       featuresList.appendChild(li);
     });
 
-    // Navigation button logic
     const prevButton = document.getElementById('prev-project');
     const nextButton = document.getElementById('next-project');
   
@@ -229,14 +223,12 @@ function loadProjectData(projectId) {
     prevButton.addEventListener('click', () => navigateToProject(-1));
     nextButton.addEventListener('click', () => navigateToProject(1));
   
-    // Initialize button states
     updateButtons();
   } else {
     console.error('Project not found');
   }
 }
 
-// Get the projectId from the URL query parameters
 const urlParams = new URLSearchParams(window.location.search);
-const projectId = urlParams.get('projectId') || 1; // Default to 1 if no projectId is found
+const projectId = urlParams.get('projectId') || 1; 
 loadProjectData(projectId);

@@ -65,8 +65,6 @@ p {
   border-radius: 0;
   color: #fff;
   font-size: 12px;
-  height: 50px;
-  line-height: 50px;
   padding: 0 30px;
   text-transform: uppercase;
   transition: background 0.3s ease;
@@ -75,6 +73,69 @@ p {
 .btn:hover,
 .btn:focus {
   background: #b8a07e;
+}
+
+/* Default button state */
+#contact__form .btn-send {
+  background-color: #f06449; /* Primary color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Button hover state */
+#contact__form .btn-send:hover {
+  background-color: #d9534f; /* Darker shade for hover effect */
+}
+
+/* Button in loading state */
+#contact__form .btn-send.loading {
+  background-color: #ccc; /* Gray background during loading */
+  color: #666; /* Text color during loading */
+  cursor: not-allowed; /* Disable cursor */
+}
+
+/* Button in success state */
+#contact__form .btn-send.success {
+  background-color: #28a745; /* Green background for success */
+  color: #fff; /* Text color */
+  cursor: default; /* Default cursor */
+}
+
+/* Button in error state */
+#contact__form .btn-send.error {
+  background-color: #dc3545; /* Red background for error */
+  color: #fff; /* Text color */
+  cursor: default; /* Default cursor */
+}
+
+/* Loading state */
+#contact__form .loading {
+  display: none; /* Hidden by default */
+  font-size: 16px;
+  color: #007bff; /* Loading indicator color */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Sent message state */
+#contact__form .sent-message {
+  display: none; /* Hidden by default */
+  font-size: 16px;
+  color: #28a745; /* Green color for success message */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Error message state */
+#contact__form .error-message {
+  display: none; /* Hidden by default */
+  font-size: 16px;
+  color: #dc3545; /* Red color for error message */
+  margin-bottom: 10px;
 }
 
 .form-control {
@@ -409,29 +470,19 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  /* background: url("../img/home-bg.jpeg") no-repeat center top; Align image to the right and bottom */
   background-size: cover;
-  /* Cover the entire container */
   height: 100vh;
-  /* Full viewport height */
   width: 100%;
-  /* Full width */
   position: relative;
-  /* Relative positioning for possible child elements */
   display: flex;
-  /* Flexbox for centering content */
   justify-content: center;
-  /* Center horizontally */
   align-items: center;
-  /* Center vertically */
   background-attachment: fixed;
-  /* Fixed attachment for parallax effect (optional) */
 }
 
 @media (max-width: 768px) {
   #hero {
     background-position: center center;
-    /* Adjust position for smaller screens */
   }
 }
 
@@ -465,12 +516,40 @@ p {
 .hero-content .list-social li {
   float: left;
   margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-content .list-social li i {
   color: #f06449;
-  font-size: 15px;
+  font-size: 20px;
 }
+
+.list-social li {
+  position: relative; 
+}
+
+.list-social__name {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px; 
+  border-radius: 5px;
+  white-space: nowrap; 
+  font-size: 14px; 
+  font-weight: 500;
+  z-index: 1; 
+  margin-top: 10px ;
+}
+
+.list-social li:hover .list-social__name {
+  display: block; 
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -536,7 +615,8 @@ p {
 /*-----------------------------------------------------------------------------------*/
 /*  About
 /*-----------------------------------------------------------------------------------*/
-#about, #contact {
+#about,
+#contact {
   width: 100%;
   height: auto;
   background: #f7f7f7;
@@ -570,13 +650,6 @@ p {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
-}
-
-.top-layer {
-  position: relative;
-  /* or absolute, fixed, sticky depending on your layout */
-  z-index: -1000;
-  /* Set a high value to ensure it is on top */
 }
 
 /*--------------------------------------------------------------
@@ -635,6 +708,10 @@ p {
 #portfolio {
   position: relative;
   padding-bottom: 50px;
+}
+
+.portfolio-details-subtitle {
+  color: #898989;
 }
 
 #portfolio #portfolio-flters {
@@ -698,6 +775,7 @@ p {
   padding: 0;
 }
 
+#portfolio .portfolio-item .portfolio-info .repo-link,
 #portfolio .portfolio-item .portfolio-info .preview-link,
 #portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
@@ -707,9 +785,16 @@ p {
   color: #b8a07e;
 }
 
+#portfolio .portfolio-item .portfolio-info .repo-link:hover,
 #portfolio .portfolio-item .portfolio-info .preview-link:hover,
 #portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #cab89f;
+}
+
+/* Additional Styling for Repo Link */
+#portfolio .portfolio-item .portfolio-info .repo-link {
+  right: 80px; /* Adjust position for better spacing */
+  transition: color 0.3s ease; /* Smooth transition effect */
 }
 
 #portfolio .portfolio-item .portfolio-info .details-link {
@@ -1490,8 +1575,6 @@ blockquote {
   }
 }
 
-
-
 .modal__languages {
   display: flex;
   flex-wrap: wrap;
@@ -1530,7 +1613,6 @@ blockquote {
 .orange {
   color: #f06449 !important;
 }
-
 
 .shape {
   position: fixed;
@@ -1581,283 +1663,179 @@ blockquote {
   left: 80vw;
 }
 
-/* Blog Post Container */
 .blog-post {
   max-width: 800px;
-  /* Limit the width for readability */
   margin: 0 auto;
-  /* Center the container */
   padding: 20px;
-  /* Add padding around the content */
   background-color: #ffffff;
-  /* White background */
   border-radius: 8px;
-  /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
 }
 
-/* Blog Title Styles */
 .blog-title {
   font-size: 32px;
-  /* Larger font size for the title */
   font-weight: 700;
-  /* Bold for emphasis */
   color: #333;
-  /* Dark color for readability */
   margin-bottom: 20px;
-  /* Spacing below the title */
   text-align: center;
-  /* Center-aligned text */
 }
 
-/* Blog Image Styles */
 .blog-image {
   width: 100%;
-  /* Full width to fit container */
   height: auto;
-  /* Maintain aspect ratio */
   border-radius: 8px;
-  /* Rounded corners for the image */
   margin-bottom: 20px;
-  /* Space below the image */
   object-fit: cover;
-  /* Ensure the image covers its container */
 }
 
-/* Section Title Styles */
 .section-title {
   font-size: 24px;
-  /* Font size for section headings */
   font-weight: 600;
-  /* Semi-bold for emphasis */
   color: #2c3e50;
-  /* Dark blue color for headings */
   margin-top: 30px;
-  /* Spacing above the section heading */
   margin-bottom: 10px;
-  /* Spacing below the section heading */
   border-bottom: 2px solid #e0e0e0;
-  /* Underline for the section heading */
   padding-bottom: 5px;
-  /* Padding below the heading text */
 }
 
-/* Blog Content Styles */
 .blog-content {
   font-size: 18px;
-  /* Standard font size for body text */
   color: #555;
-  /* Medium gray color for text */
   line-height: 1.6;
-  /* Improved line spacing */
   margin-bottom: 30px;
-  /* Spacing below the content */
 }
 
-/* List Styles */
 .blog-list {
   list-style-type: disc;
-  /* Default disc bullets */
   margin-left: 20px;
-  /* Indentation for list items */
   color: #555;
-  /* Consistent text color */
 }
 
 .blog-list li {
   margin-bottom: 10px;
-  /* Space between list items */
   font-size: 16px;
-  /* Font size for list items */
   line-height: 1.5;
-  /* Line height for better readability */
 }
 
-/* Blog Navigation Container */
 .blog-navigation {
   display: flex;
-  /* Align buttons side by side */
   justify-content: space-between;
-  /* Space out the buttons */
   margin-top: 30px;
-  /* Space above the navigation */
 }
 
-/* Navigation Button Styles */
 .nav-button {
   display: inline-block;
-  /* Inline block for button styling */
   padding: 10px 20px;
-  /* Padding inside the button */
   font-size: 16px;
-  /* Font size for button text */
   font-weight: 600;
-  /* Bold text */
   text-align: center;
-  /* Center text inside the button */
   color: #fff;
-  /* White text color */
   background-color: #007bff;
-  /* Blue background color */
   border: none;
-  /* No border */
   border-radius: 4px;
-  /* Rounded corners */
   text-decoration: none;
-  /* Remove underline from links */
   transition: background-color 0.3s ease, transform 0.3s ease;
-  /* Smooth transition */
 }
 
-/* Hover Effect */
 .nav-button:hover {
   background-color: #0056b3;
-  /* Darker blue for hover */
   transform: scale(1.05);
-  /* Slight zoom effect */
 }
 
-/* Previous Button Specific Styles */
 .prev-button {
   background-color: #6c757d;
-  /* Gray background for the previous button */
 }
 
 .prev-button:hover {
   background-color: #5a6268;
-  /* Darker gray for hover */
 }
 
-/* Next Button Specific Styles */
 .next-button {
   background-color: #f06449;
-  /* Green background for the next button */
 }
 
 .next-button:hover {
   background-color: #d9534f;
-  /* Darker green for hover */
-
 }
 
-/* Container for blog cards */
 .blog-card-container {
   display: flex;
   flex-wrap: wrap;
-  /* Allows the cards to wrap to the next line */
   gap: 30px;
-  /* Space between the cards */
   margin: -15px;
-  /* Negative margin to offset the padding from the container */
 }
 
 .blog-card {
   border: 1px solid #ddd;
-  /* Light border around the card */
   border-radius: 8px;
-  /* Rounded corners */
   overflow: hidden;
-  /* Hide overflow for rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
   transition: box-shadow 0.3s ease;
-  /* Smooth transition for shadow effect */
   background-color: #fff;
-  /* White background for the card */
   margin: 15px;
-  /* Margin to add spacing around each card */
   flex: 1 1 calc(33.333% - 30px);
-  /* Make cards responsive, 3 cards per row */
 }
 
 .blog-card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  /* Darker shadow on hover */
 }
 
 .blog-card-info {
   position: relative;
-  /* For positioning the rate */
 }
 
 .blog-card-image {
   width: 100%;
-  /* Full width of the card */
   height: auto;
-  /* Maintain aspect ratio */
   display: block;
-  /* Remove extra space below image */
   margin-top: 20px;
 }
 
 .blog-card-text {
   padding: 20px;
-  /* Add padding around the text */
 }
 
 .blog-card-title {
   font-size: 20px;
-  /* Size for the title */
   margin-bottom: 10px;
-  /* Space below the title */
 }
 
 .blog-card-title a {
   color: #f06449;
-  /* Link color */
   text-decoration: none;
-  /* Remove underline */
 }
 
 .blog-card-title a:hover {
   text-decoration: underline;
-  /* Underline on hover */
 }
 
 .blog-card-subtitle {
   font-size: 16px;
-  /* Size for the subtitle */
   color: #777;
-  /* Subtitle color */
   margin-bottom: 15px;
-  /* Space below the subtitle */
 }
 
 .blog-card-divider {
   border-top: 1px solid #ddd;
-  /* Divider line */
   margin: 20px 0;
-  /* Space around the divider */
 }
 
 .blog-card-description {
   font-size: 16px;
-  /* Font size for description */
   color: #555;
-  /* Text color for the description */
 }
 
 .blog-card-rate {
   position: absolute;
-  /* Positioning at the bottom */
   top: -20px;
-  /* Distance from the bottom */
   right: 20px;
-  /* Distance from the right */
   font-size: 24px;
-  /* Font size for the rate */
   color: #f06449;
-  /* Color for the rate */
   background-color: rgba(255, 255, 255, 0.8);
-  /* Slightly transparent background */
   padding: 10px;
-  /* Padding around the rate */
   border-radius: 4px;
-  /* Rounded corners for the rate */
 }
 
-/* Styles for portfolio navigation buttons */
 #portfolio-navigation {
   display: flex;
   justify-content: space-between;
@@ -1867,7 +1845,6 @@ blockquote {
 #prev-project,
 #next-project {
   background-color: #f06449;
-  /* Primary color */
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -1880,25 +1857,26 @@ blockquote {
 #prev-project:disabled,
 #next-project:disabled {
   background-color: #d6d6d6;
-  /* Disabled color */
   cursor: not-allowed;
 }
 
 #prev-project:hover,
 #next-project:hover {
   background-color: #d9534f;
-  /* Darker shade on hover */
   transform: scale(1.05);
-  /* Slight zoom effect */
 }
 
 #prev-project:active,
 #next-project:active {
   transform: scale(0.98);
-  /* Slightly scale down on click */
 }
 
-/* Additional styling for the portfolio container */
+.project-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #f06449;
+}
+
 #portfolio-container {
   max-width: 800px;
   margin: 0 auto;
@@ -1925,88 +1903,69 @@ blockquote {
   line-height: 1.6;
 }
 
-/* Default styles for the slider */
 .services-slider .swiper-slide {
   width: auto;
-  /* Ensures items take up their content width by default */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Media queries for smaller screens (max width: 768px) */
 @media screen and (max-width: 768px) {
   .services-slider .swiper-slide {
     width: 80%;
-    /* Adjust width for smaller screens */
   }
 }
 
-/* Media queries for mobile screens (max width: 576px) */
 @media screen and (max-width: 576px) {
   .services-slider .swiper-slide {
     width: 100%;
-    /* Full width for mobile */
     margin-bottom: 20px;
-    /* Add space between items */
   }
 
   .services-block {
     padding: 10px;
-    /* Reduce padding for mobile */
   }
 
   .modal__language--img {
     width: 50px;
-    /* Adjust icon size for mobile */
     height: 50px;
   }
 
   .language__name {
     font-size: 12px;
-    /* Reduce font size for better fit */
   }
 }
 
-/* Additional style adjustments for small devices (max width: 480px) */
 @media screen and (max-width: 480px) {
   .services-slider .swiper-slide {
     width: 90%;
-    /* More padding for small mobile screens */
   }
 
   .services-block {
     text-align: center;
-    /* Center text on small screens */
 
   }
 
   .modal__language--img {
     width: 40px;
-    /* Smaller icon size */
     height: 40px;
   }
 
   .language__name {
     font-size: 10px;
-    /* Smaller font size */
   }
 }
 
-/* Medium screens (tablets, 768px to 1199px) */
 @media (max-width: 1199px) {
   .blog-card {
     flex: 1 1 calc(50% - 20px);
-    /* Two cards per row */
     max-width: calc(50% - 20px);
   }
 }
 
-/* Small screens (mobile devices, 480px to 767px) */
 @media (max-width: 768px) {
   .blog-card {
     flex: 1 1 calc(100% - 20px);
-    /* One card per row */
     max-width: calc(100% - 20px);
   }
 
@@ -2014,33 +1973,22 @@ blockquote {
     display: none;
   }
 
-  .resume-buttons {
-    flex-direction: column;
-    /* Ensure buttons are stacked vertically on mobile */
-    gap: 1rem;
-    /* Space between buttons on mobile */
-  }
-
   .btn-primary,
   .btn-secondary {
     font-size: 1rem;
     width: 100%;
-    /* Adjust font size for mobile */
   }
 
 }
 
-/* Very small screens (small mobile devices, below 480px) */
 @media (max-width: 480px) {
   .blog-card {
     flex: 1 1 calc(100% - 10px);
-    /* One card per row with smaller gap */
     max-width: calc(100% - 10px);
   }
 
   .blog-card-info {
     padding: 10px;
-    /* Reduce padding for smaller screens */
   }
 
   .blog-card-rate {
@@ -2055,7 +2003,6 @@ blockquote {
 .resume-buttons {
   display: flex;
   gap: 10px;
-  /* Adds space between the buttons */
 }
 
 .btn-primary,
@@ -2073,18 +2020,18 @@ blockquote {
 
 .btn-primary:hover {
   background-color: #d9534f;
-  /* Darker shade of orange */
 }
 
 .btn-secondary:hover {
   background-color: #d9534f;
-  /* Darker shade of blue */
 }
 
+.btn-primary__resume {
+  margin-top: 10px;
+}
 .consultation-button {
   margin-top: 15px;
   text-align: center;
-  /* Centers the button horizontally */
   margin-bottom: 25px;
 }
 

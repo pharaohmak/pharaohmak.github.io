@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const queryParams = new URLSearchParams(window.location.search);
     const blogId = queryParams.get('blogId');
 
-    // Example blog post data (can be replaced with fetch from a server)
     const blogPosts = [
         {
             id: 1,
@@ -29,14 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
             benefits: "Streamlined operations and increased productivity., Solutions designed to scale with business growth., Reduced operational costs through automation and process improvement.",
             image: '/assets/img/blog-post-big-3.png'
         },
-        // Add more posts as needed
     ];
 
-    // Find the blog post with the matching ID
     const currentIndex = blogPosts.findIndex(p => p.id === parseInt(blogId));
     const post = blogPosts[currentIndex];
 
-    // Determine previous and next post IDs
     const previousPostId = currentIndex > 0 ? blogPosts[currentIndex - 1].id : null;
     const nextPostId = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1].id : null;
 
@@ -63,8 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     
     <div class="blog-navigation">
-        ${previousPostId ? `<a href="blog-single.html?blogId=${previousPostId}" class="nav-button prev-button">Previous</a>` : '<span class="nav-button prev-button disabled">Previous</span>'}
-        ${nextPostId ? `<a href="blog-single.html?blogId=${nextPostId}" class="nav-button next-button">Next</a>` : '<span class="nav-button next-button disabled">Next</span>'}
+        ${previousPostId ? `<a href="service-details.html?blogId=${previousPostId}" class="nav-button prev-button">Previous</a>` : '<span class="nav-button prev-button disabled">Previous</span>'}
+        ${nextPostId ? `<a href="service-details.html?blogId=${nextPostId}" class="nav-button next-button">Next</a>` : '<span class="nav-button next-button disabled">Next</span>'}
     </div>
 </div>
         `;
