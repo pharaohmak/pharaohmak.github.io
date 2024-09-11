@@ -1580,6 +1580,10 @@ blockquote {
   flex-wrap: wrap;
 }
 
+.img-fluid {
+  width: 100%;
+}
+
 .modal__language {
   width: 25%;
   padding: 16px;
