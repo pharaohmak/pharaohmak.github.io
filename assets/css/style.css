@@ -1585,13 +1585,14 @@ blockquote {
 }
 
 .modal__language {
-  width: 25%;
+  max-width: 28%;
   padding: 16px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 300ms ease;
+
 }
 
 .modal__language:hover .language__name {

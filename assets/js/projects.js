@@ -69,24 +69,24 @@ const projects = {
         'React JS',
       ]
     },
-    5: {
-      title: 'TReact Clone',
-      overview: 'This project is a clone of Treact, showcasing a simplified version of its functionality.',
-      images: ['./assets/img/portfolio/portfolio-5.png'],
-      description: 'The Treact Clone project replicates the essential functionalities and user interface of Treact, a social media platform.',
-      details: {
-        Client: 'FES Bootcamp',
-        Category: 'Web Development',
-        Technologies: 'HTML, CSS',
-        Date: 'June 2024',
-        Website: 'pharaohmak.github.io/TReact-Clone/',
-        GitHub: 'https://github.com/pharaohmak/TReact-Clone'
-      },
-      features: [
-        'HTML,CSS Best Practices',
-        'Feature 2 for project 2'
-      ]
-    },
+    // 5: {
+    //   title: 'TReact Clone',
+    //   overview: 'This project is a clone of Treact, showcasing a simplified version of its functionality.',
+    //   images: ['./assets/img/portfolio/portfolio-5.png'],
+    //   description: 'The Treact Clone project replicates the essential functionalities and user interface of Treact, a social media platform.',
+    //   details: {
+    //     Client: 'FES Bootcamp',
+    //     Category: 'Web Development',
+    //     Technologies: 'HTML, CSS',
+    //     Date: 'June 2024',
+    //     Website: 'pharaohmak.github.io/TReact-Clone/',
+    //     GitHub: 'https://github.com/pharaohmak/TReact-Clone'
+    //   },
+    //   features: [
+    //     'HTML,CSS Best Practices',
+    //     'Feature 2 for project 2'
+    //   ]
+    // },
     6: {
       title: 'Outcome Legal Website',
       overview: 'I designed a website that can be updated with changes as they occur (names, phone numbers, and addresses) using Namecheap Domain and Hosting.',
@@ -123,23 +123,23 @@ const projects = {
         'Expo'
       ]
     },
-    8: {
-      title: 'Music Player Web App',
-      overview: 'The app is a responsive music player that allows users to browse and play songs from a collection.',
-      images: ['./assets/img/portfolio/portfolio-8.png'],
-      description: 'This repository contains the source code for a ReactJS-based music player web application. The app features a sleek interface with interactive controls for playing, pausing, and managing music',
-      details: {
-        Client: 'Personal Project',
-        Category: 'React App',
-        Technologies: 'HTML, CSS, JavaScript, React',
-        Date: 'August 2022',
-        Website: 'https://music-payer-react-app.vercel.app/',
-        GitHub: 'https://github.com/pharaohmak/Music-Player'
-      },
-      features: [
-        'React',
-      ]
-    },
+    // 8: {
+    //   title: 'Music Player Web App',
+    //   overview: 'The app is a responsive music player that allows users to browse and play songs from a collection.',
+    //   images: ['./assets/img/portfolio/portfolio-8.png'],
+    //   description: 'This repository contains the source code for a ReactJS-based music player web application. The app features a sleek interface with interactive controls for playing, pausing, and managing music',
+    //   details: {
+    //     Client: 'Personal Project',
+    //     Category: 'React App',
+    //     Technologies: 'HTML, CSS, JavaScript, React',
+    //     Date: 'August 2022',
+    //     Website: 'https://music-payer-react-app.vercel.app/',
+    //     GitHub: 'https://github.com/pharaohmak/Music-Player'
+    //   },
+    //   features: [
+    //     'React',
+    //   ]
+    // },
     // 9: {
     //   title: 'Crypto Punks Clone',
     //   overview: 'This repository contains the source code for a tutorial on creating a React web application to list and display NFTs (Non-Fungible Tokens).',
@@ -185,9 +185,10 @@ function loadProjectData(projectId) {
       
       if (key === 'Website') {
         li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer" class="project-link">Explore site</a>`;
-      } else if (key === 'GitHub') {
+      } else if (key === 'GitHub' && value !== 'N/A') {
         li.innerHTML = `<strong>${key}:</strong> <a href="${value}" target="_blank" rel="noopener noreferrer" class="project-link">View repository</a>`;
-      } else {
+      }else {
+
         li.innerHTML = `<strong>${key}:</strong> ${value}`;
       }
       
