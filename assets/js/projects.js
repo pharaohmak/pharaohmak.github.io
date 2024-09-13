@@ -7,14 +7,18 @@ const projects = {
       details: {
         Client: 'FES Advanced Virtual Internship',
         Category: 'Next App',
-        Technologies: 'HTML, CSS, Next.JS, TypeScript, Firebase',
+        Technologies: 'Next.JS, TypeScript',
         Date: 'August 2024',
         Website: 'https://summarist-iota.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/Summarist'
       },
       features: [
-        'Next JS',
-        'Firebase'
+        'Firebase Authentication',
+        'Stripe Payment Integration',
+        'Firebase Firestore',
+        'Firebase Storage',
+        'Next.js API Routes',
+        'React Redux'
       ]
     },
     2: {
@@ -25,13 +29,17 @@ const projects = {
       details: {
         Client: 'FES Virtual Internship',
         Category: 'React App',
-        Technologies: 'HTML, CSS, JavaScript, React, Node.js',
+        Technologies: 'JSX',
         Date: 'July 2024',
         Website: 'https://makram-internship.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/makram-internship'
       },
       features: [
-        'React JS',
+        'Axios API',
+        'React Hooks',
+        'React Components',
+        'React State Managment',
+
       ]
     },
     3: {
@@ -42,13 +50,16 @@ const projects = {
       details: {
         Client: 'FES Bootcamp',
         Category: ' React App',
-        Technologies: 'HTML, CSS, Javascript, Bootstrap, React',
+        Technologies: 'JSX, CSS',
         Date: 'July 2024',
         Website: 'https://react-ticket-finder.vercel.app',
         GitHub: 'https://github.com/pharaohmak/Ticket-Finder'
       },
       features: [
-        'React JS',
+        'Bootstrap CSS',
+        'Axios API',
+        'React Router',
+        'React Hooks',
       ]
      
     },
@@ -60,13 +71,16 @@ const projects = {
       details: {
         Client: 'FES Bootcamp',
         Category: 'React App',
-        Technologies: 'HTML, CSS, JavaScript, React, Node.js',
+        Technologies: 'JSX, CSS',
         Date: 'June 2024',
         Website: 'https://my-library-teal.vercel.app',
         GitHub: 'https://github.com/pharaohmak/My-Library'
       },
       features: [
-        'React JS',
+        'Bootstrap CSS',
+        'Axios API',
+        'React Router',
+        'React Hooks',
       ]
     },
     // 5: {
@@ -113,13 +127,12 @@ const projects = {
       details: {
         Client: 'Fiverr | Jill Russal',
         Category: 'React Native App',
-        Technologies: 'JavaScript, React Native, Node.js, Expo',
+        Technologies: 'HTML, CSS, JavaScript',
         Date: 'May 2022',
         Website: 'https://shorturl.at/6PBrF',
         GitHub: 'https://github.com/pharaohmak/Ship-Handling-Calculator'
       },
       features: [
-        'React Native',
         'Expo'
       ]
     },

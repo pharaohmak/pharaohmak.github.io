@@ -642,7 +642,7 @@ p {
 
 #about .about-descr .p-heading {
   font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-size: 30px;
   text-align: left;
 }
 
@@ -1454,7 +1454,7 @@ blockquote {
   }
 
   #about .about-descr .p-heading {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   #about .about-descr .separator {
