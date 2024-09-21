@@ -9,7 +9,7 @@ const projects = {
         Category: 'Next App',
         Technologies: 'Next.JS, TypeScript',
         Date: 'August 2024',
-        Website: 'https://summarist-iota.vercel.app/',
+        Website: 'https://summarist-maa7zndk4-pharaohmaks-projects.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/Summarist'
       },
       features: [
