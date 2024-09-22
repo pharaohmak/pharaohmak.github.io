@@ -52,7 +52,7 @@ const projects = {
         Category: ' React App',
         Technologies: 'JSX, CSS',
         Date: 'July 2024',
-        Website: 'https://react-ticket-finder.vercel.app',
+        Website: 'https://ticket-finder-one.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/Ticket-Finder'
       },
       features: [
