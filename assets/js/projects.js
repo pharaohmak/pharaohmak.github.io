@@ -101,41 +101,41 @@ const projects = {
     //     'Feature 2 for project 2'
     //   ]
     // },
-    6: {
-      title: 'Outcome Legal Website',
-      overview: 'I designed a website that can be updated with changes as they occur (names, phone numbers, and addresses) using Namecheap Domain and Hosting.',
-      images: ['./assets/img/portfolio/portfolio-6.png'],
-      description: "The website aims to enhance the firm's visibility and credibility, providing potential clients with easy access to information about their legal services.",
-      details: {
-        Client: 'Fiverr | Joseph Milchak ',
-        Category: 'Web Design',
-        Technologies: 'Namecheap, DNS, SEO',
-        Date: 'December 2022',
-        Website: 'https://www.outcomelegal.com',
-        GitHub: 'N/A'
-      },
-      features: [
-        'Web Design and Maintenance',
-        'Hosting and Configuration'
-      ]
-    },
-    7: {
-      title: 'Ship Handling Calculator',
-      overview: 'An offline mobile app designed to calculate ship handling parameters.',
-      images: ['./assets/img/portfolio/portfolio-7.png'],
-      description: 'This objective for this project was to build an offline shipping handling calculator that can claculate the navigations for ship handlers to safety navigate to their destination.',
-      details: {
-        Client: 'Fiverr | Jill Russal',
-        Category: 'React Native App',
-        Technologies: 'HTML, CSS, JavaScript',
-        Date: 'May 2022',
-        Website: 'https://shorturl.at/6PBrF',
-        GitHub: 'https://github.com/pharaohmak/Ship-Handling-Calculator'
-      },
-      features: [
-        'Expo'
-      ]
-    },
+    // 6: {
+    //   title: 'Outcome Legal Website',
+    //   overview: 'I designed a website that can be updated with changes as they occur (names, phone numbers, and addresses) using Namecheap Domain and Hosting.',
+    //   images: ['./assets/img/portfolio/portfolio-6.png'],
+    //   description: "The website aims to enhance the firm's visibility and credibility, providing potential clients with easy access to information about their legal services.",
+    //   details: {
+    //     Client: 'Fiverr | Joseph Milchak ',
+    //     Category: 'Web Design',
+    //     Technologies: 'Namecheap, DNS, SEO',
+    //     Date: 'December 2022',
+    //     Website: 'https://www.outcomelegal.com',
+    //     GitHub: 'N/A'
+    //   },
+    //   features: [
+    //     'Web Design and Maintenance',
+    //     'Hosting and Configuration'
+    //   ]
+    // },
+    // 7: {
+    //   title: 'Ship Handling Calculator',
+    //   overview: 'An offline mobile app designed to calculate ship handling parameters.',
+    //   images: ['./assets/img/portfolio/portfolio-7.png'],
+    //   description: 'This objective for this project was to build an offline shipping handling calculator that can claculate the navigations for ship handlers to safety navigate to their destination.',
+    //   details: {
+    //     Client: 'Fiverr | Jill Russal',
+    //     Category: 'React Native App',
+    //     Technologies: 'HTML, CSS, JavaScript',
+    //     Date: 'May 2022',
+    //     Website: 'https://shorturl.at/6PBrF',
+    //     GitHub: 'https://github.com/pharaohmak/Ship-Handling-Calculator'
+    //   },
+    //   features: [
+    //     'Expo'
+    //   ]
+    // },
     // 8: {
     //   title: 'Music Player Web App',
     //   overview: 'The app is a responsive music player that allows users to browse and play songs from a collection.',
@@ -153,24 +153,24 @@ const projects = {
     //     'React',
     //   ]
     // },
-    // 9: {
-    //   title: 'Crypto Punks Clone',
-    //   overview: 'This repository contains the source code for a tutorial on creating a React web application to list and display NFTs (Non-Fungible Tokens).',
-    //   images: ['./assets/img/portfolio/portfolio-9.png'],
-    //   description: 'The application integrates ReactJS, ThirdWeb, the OpenSea API, and MetaMask for a complete NFT browsing experience. Users can explore and view various NFTs with seamless blockchain wallet integration.',
-    //   details: {
-    //     Client: 'Personal Project',
-    //     Category: 'React App Development',
-    //     Technologies: 'HTML, CSS, JavaScript, React',
-    //     Date: 'In Progress',
-    //     Website: 'https://crypto-punks-clone.vercel.app/',
-    //     GitHub: 'https://github.com/pharaohmak/Crypto-Punks-Clone'
-    //   },
-    //   features: [
-    //     'React',
-    //     'Web3, ThirdWeb, OpenSea API'
-    //   ]
-    // }
+    9: {
+      title: 'OpenSea NFT Collections',
+      overview: 'NFT browsing app integrates ReactJS, ThirdWeb, OpenSea API, and MetaMask.',
+      images: ['./assets/img/portfolio/portfolio-9.png'],
+      description: 'The application integrates ReactJS, ThirdWeb, the OpenSea API, and MetaMask for a complete NFT browsing experience. Users can explore and view various NFTs with seamless blockchain wallet integration.',
+      details: {
+        Client: 'Personal Project',
+        Category: 'React App Development',
+        Technologies: 'HTML, CSS, JavaScript, React',
+        Date: 'In Progress',
+        Website: 'https://opensea-nft-collections-qnccssqkc-pharaohmaks-projects.vercel.app/',
+        GitHub: 'https://github.com/pharaohmak/Opensea-NFT-Collections'
+      },
+      features: [
+        'React',
+        'Web3, ThirdWeb, OpenSea API'
+      ]
+    }
   };
  
 function loadProjectData(projectId) {
