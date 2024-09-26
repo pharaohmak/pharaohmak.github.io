@@ -163,7 +163,7 @@ const projects = {
         Category: 'React App Development',
         Technologies: 'HTML, CSS, JavaScript, React',
         Date: 'In Progress',
-        Website: 'https://opensea-nft-collections-qnccssqkc-pharaohmaks-projects.vercel.app/',
+        Website: 'https://opensea-nft-collections.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/Opensea-NFT-Collections'
       },
       features: [
