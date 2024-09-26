@@ -7,17 +7,13 @@ const projects = {
       details: {
         Client: 'FES Advanced Virtual Internship',
         Category: 'Next App',
-        Technologies: 'Next.JS, TypeScript',
+        Technologies: 'TypeScript, JavaScript, TailWind',
         Date: 'August 2024',
         Website: 'https://summarist-maa7zndk4-pharaohmaks-projects.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/Summarist'
       },
       features: [
         'Firebase Authentication',
-        'Stripe Payment Integration',
-        'Firebase Firestore',
-        'Firebase Storage',
-        'Next.js API Routes',
         'React Redux'
       ]
     },
@@ -29,16 +25,13 @@ const projects = {
       details: {
         Client: 'FES Virtual Internship',
         Category: 'React App',
-        Technologies: 'JSX',
+        Technologies: 'HTML, CSS, JavaScript',
         Date: 'July 2024',
         Website: 'https://makram-internship.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/makram-internship'
       },
       features: [
-        'Axios API',
-        'React Hooks',
-        'React Components',
-        'React State Managment',
+        'AOS Animations',
 
       ]
     },
@@ -50,16 +43,13 @@ const projects = {
       details: {
         Client: 'FES Bootcamp',
         Category: ' React App',
-        Technologies: 'JSX, CSS',
+        Technologies: 'HTML, CSS, JavaScript',
         Date: 'July 2024',
         Website: 'https://ticket-finder-one.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/Ticket-Finder'
       },
       features: [
         'Bootstrap CSS',
-        'Axios API',
-        'React Router',
-        'React Hooks',
       ]
      
     },
@@ -71,36 +61,33 @@ const projects = {
       details: {
         Client: 'FES Bootcamp',
         Category: 'React App',
-        Technologies: 'JSX, CSS',
+        Technologies: 'HTML, CSS, JavaScript',
         Date: 'June 2024',
         Website: 'https://my-library-teal.vercel.app',
         GitHub: 'https://github.com/pharaohmak/My-Library'
       },
       features: [
         'Bootstrap CSS',
-        'Axios API',
-        'React Router',
-        'React Hooks',
       ]
     },
-    // 5: {
-    //   title: 'TReact Clone',
-    //   overview: 'This project is a clone of Treact, showcasing a simplified version of its functionality.',
-    //   images: ['./assets/img/portfolio/portfolio-5.png'],
-    //   description: 'The Treact Clone project replicates the essential functionalities and user interface of Treact, a social media platform.',
-    //   details: {
-    //     Client: 'FES Bootcamp',
-    //     Category: 'Web Development',
-    //     Technologies: 'HTML, CSS',
-    //     Date: 'June 2024',
-    //     Website: 'pharaohmak.github.io/TReact-Clone/',
-    //     GitHub: 'https://github.com/pharaohmak/TReact-Clone'
-    //   },
-    //   features: [
-    //     'HTML,CSS Best Practices',
-    //     'Feature 2 for project 2'
-    //   ]
-    // },
+    5: {
+      title: 'Music Library',
+      overview: 'This project is a dynamic Next application designed to provide users with an engaging and interactive experience.',
+      images: ['./assets/img/portfolio/portfolio-5.png'],
+      description: ' As part of my personal development journey, this app showcases my skills in modern web technologies, allowing me to explore and implement best practices in frontend development.',
+      details: {
+        Client: 'Personal Project',
+        Category: 'Next App',
+        Technologies: 'TypeScript, JavaScript, TailwindCSS',
+        Date: 'September 2024',
+        Website: 'https://music-library-lyart.vercel.app/',
+        GitHub: 'https://github.com/pharaohmak/music-library'
+      },
+      features: [
+        'Dynamic Content Loading',
+        'Interactive UI'
+      ]
+    },
     // 6: {
     //   title: 'Outcome Legal Website',
     //   overview: 'I designed a website that can be updated with changes as they occur (names, phone numbers, and addresses) using Namecheap Domain and Hosting.',
@@ -160,15 +147,16 @@ const projects = {
       description: 'The application integrates ReactJS, ThirdWeb, the OpenSea API, and MetaMask for a complete NFT browsing experience. Users can explore and view various NFTs with seamless blockchain wallet integration.',
       details: {
         Client: 'Personal Project',
-        Category: 'React App Development',
-        Technologies: 'HTML, CSS, JavaScript, React',
-        Date: 'In Progress',
+        Category: 'React App',
+        Technologies: 'TypeScript, JavaScript, Tailwind',
+        Date: 'September 2024',
         Website: 'https://opensea-nft-collections.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/Opensea-NFT-Collections'
       },
       features: [
-        'React',
-        'Web3, ThirdWeb, OpenSea API'
+        'Web3',
+        'ThirdWeb',
+        'Express.js'
       ]
     }
   };
