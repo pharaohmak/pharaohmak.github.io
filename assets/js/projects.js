@@ -70,24 +70,24 @@ const projects = {
         'Bootstrap CSS',
       ]
     },
-    5: {
-      title: 'Music Library',
-      overview: 'This project is a dynamic Next application designed to provide users with an engaging and interactive experience.',
-      images: ['./assets/img/portfolio/portfolio-5.png'],
-      description: ' As part of my personal development journey, this app showcases my skills in modern web technologies, allowing me to explore and implement best practices in frontend development.',
-      details: {
-        Client: 'Personal Project',
-        Category: 'Next App',
-        Technologies: 'TypeScript, JavaScript, TailwindCSS',
-        Date: 'September 2024',
-        Website: 'https://music-library-lyart.vercel.app/',
-        GitHub: 'https://github.com/pharaohmak/music-library'
-      },
-      features: [
-        'Dynamic Content Loading',
-        'Interactive UI'
-      ]
-    },
+    // 5: {
+    //   title: 'Music Library',
+    //   overview: 'This project is a dynamic Next application designed to provide users with an engaging and interactive experience.',
+    //   images: ['./assets/img/portfolio/portfolio-5.png'],
+    //   description: ' As part of my personal development journey, this app showcases my skills in modern web technologies, allowing me to explore and implement best practices in frontend development.',
+    //   details: {
+    //     Client: 'Personal Project',
+    //     Category: 'Next App',
+    //     Technologies: 'TypeScript, JavaScript, TailwindCSS',
+    //     Date: 'September 2024',
+    //     Website: 'https://music-library-lyart.vercel.app/',
+    //     GitHub: 'https://github.com/pharaohmak/music-library'
+    //   },
+    //   features: [
+    //     'Dynamic Content Loading',
+    //     'Interactive UI'
+    //   ]
+    // },
     // 6: {
     //   title: 'Outcome Legal Website',
     //   overview: 'I designed a website that can be updated with changes as they occur (names, phone numbers, and addresses) using Namecheap Domain and Hosting.',
