@@ -140,25 +140,25 @@ const projects = {
     //     'React',
     //   ]
     // },
-    9: {
-      title: 'OpenSea NFT Collections',
-      overview: 'NFT browsing app integrates ReactJS, ThirdWeb, OpenSea API, and MetaMask.',
-      images: ['./assets/img/portfolio/portfolio-9.png'],
-      description: 'The application integrates ReactJS, ThirdWeb, the OpenSea API, and MetaMask for a complete NFT browsing experience. Users can explore and view various NFTs with seamless blockchain wallet integration.',
-      details: {
-        Client: 'Personal Project',
-        Category: 'React App',
-        Technologies: 'TypeScript, JavaScript, Tailwind',
-        Date: 'September 2024',
-        Website: 'https://opensea-nft-collections.vercel.app/',
-        GitHub: 'https://github.com/pharaohmak/Opensea-NFT-Collections'
-      },
-      features: [
-        'Web3',
-        'ThirdWeb',
-        'Express.js'
-      ]
-    }
+    // 9: {
+    //   title: 'OpenSea NFT Collections',
+    //   overview: 'NFT browsing app integrates ReactJS, ThirdWeb, OpenSea API, and MetaMask.',
+    //   images: ['./assets/img/portfolio/portfolio-9.png'],
+    //   description: 'The application integrates ReactJS, ThirdWeb, the OpenSea API, and MetaMask for a complete NFT browsing experience. Users can explore and view various NFTs with seamless blockchain wallet integration.',
+    //   details: {
+    //     Client: 'Personal Project',
+    //     Category: 'React App',
+    //     Technologies: 'TypeScript, JavaScript, Tailwind',
+    //     Date: 'September 2024',
+    //     Website: 'https://opensea-nft-collections.vercel.app/',
+    //     GitHub: 'https://github.com/pharaohmak/Opensea-NFT-Collections'
+    //   },
+    //   features: [
+    //     'Web3',
+    //     'ThirdWeb',
+    //     'Express.js'
+    //   ]
+    // }
   };
  
 function loadProjectData(projectId) {
