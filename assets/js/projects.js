@@ -9,7 +9,7 @@ const projects = {
         Category: 'Next App',
         Technologies: 'TypeScript, JavaScript, TailWind',
         Date: 'August 2024',
-        Website: 'https://summarist-maa7zndk4-pharaohmaks-projects.vercel.app/',
+        Website: 'https://summarist-seven.vercel.app/',
         GitHub: 'https://github.com/pharaohmak/Summarist'
       },
       features: [
