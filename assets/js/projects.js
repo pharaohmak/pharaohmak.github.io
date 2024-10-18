@@ -76,7 +76,7 @@ const projects = {
       images: ['./assets/img/portfolio/portfolio-5.png'],
       description: ' As part of my personal development journey, this app showcases my skills in modern web technologies, allowing me to explore and implement best practices in frontend development.',
       details: {
-        Client: 'Personal Project',
+        Client: 'N/A',
         Category: 'Next App',
         Technologies: 'TypeScript, JavaScript, TailwindCSS',
         Date: 'September 2024',
