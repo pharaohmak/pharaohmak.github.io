@@ -88,24 +88,24 @@ const projects = {
     //     'Interactive UI'
     //   ]
     // },
-    // 6: {
-    //   title: 'Outcome Legal Website',
-    //   overview: 'I designed a website that can be updated with changes as they occur (names, phone numbers, and addresses) using Namecheap Domain and Hosting.',
-    //   images: ['./assets/img/portfolio/portfolio-6.png'],
-    //   description: "The website aims to enhance the firm's visibility and credibility, providing potential clients with easy access to information about their legal services.",
-    //   details: {
-    //     Client: 'Fiverr | Joseph Milchak ',
-    //     Category: 'Web Design',
-    //     Technologies: 'Namecheap, DNS, SEO',
-    //     Date: 'December 2022',
-    //     Website: 'https://www.outcomelegal.com',
-    //     GitHub: 'N/A'
-    //   },
-    //   features: [
-    //     'Web Design and Maintenance',
-    //     'Hosting and Configuration'
-    //   ]
-    // },
+    6: {
+      title: 'CryptoCoin',
+      overview: 'A robust and interactive interface for cryptocurrency tracking and management.',
+      images: ['./assets/img/portfolio/portfolio-6.png'],
+      description: "Dynamic web application designed to provide real-time cryptocurrency market data and insights. The platform offers users a comprehensive dashboard where they can track the performance of various cryptocurrencies, manage their portfolios, and receive alerts on market trends.",
+      details: {
+        Client: 'Personal',
+        Category: 'Next App',
+        Technologies: 'SCSS, TypeScript, Tailwind',
+        Date: 'October 2024',
+        Website: 'https://crypto-coin-three.vercel.app/',
+        GitHub: 'https://github.com/pharaohmak/CryptoCoin'
+      },
+      features: [
+        'Real-Time Data Integration',
+        'Portfolio Management'
+      ]
+    },
     // 7: {
     //   title: 'Ship Handling Calculator',
     //   overview: 'An offline mobile app designed to calculate ship handling parameters.',
