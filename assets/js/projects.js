@@ -94,7 +94,7 @@ const projects = {
       images: ['./assets/img/portfolio/portfolio-6.png'],
       description: "Dynamic web application designed to provide real-time cryptocurrency market data and insights. The platform offers users a comprehensive dashboard where they can track the performance of various cryptocurrencies, manage their portfolios, and receive alerts on market trends.",
       details: {
-        Client: 'Personal',
+        Client: 'N/A',
         Category: 'Next App',
         Technologies: 'SCSS, TypeScript, Tailwind',
         Date: 'October 2024',
