@@ -27,24 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function generateBlogHTML(post) {
     return `
+
       <div class="blog-card col-lg-4 col-md-6">
-    <div class="blog-card-info">
-        <a href="service-details.html?blogId=${post.id}">
+        <div class="blog-card-info">
+          <a href="service-details.html?blogId=${post.id}">
             <img src="${post.image}" class="blog-card-image" alt="${post.title}">
-        </a>
-        <div class="blog-card-text">
+          </a>
+          <div class="blog-card-text">
             <h4 class="blog-card-title">
-                <a href="service-details.html?blogId=${post.id}">${post.title}</a>
+              <a href="service-details.html?blogId=${post.id}">${post.title}</a>
             </h4>
             <h6 class="blog-card-subtitle">${post.subtitle}</h6>
-            <div class="blog-card-divider" style="margin: 25px 0"></div>
+          <div class="blog-card-divider" style="margin: 25px 0"></div>
             <p class="blog-card-description">${post.description}</p>
         </div>
-    </div>
-    <div class="consultation-button mt-3">
+      </div>
+    
+      <div class="consultation-button mt-3">
         <a href="service-details.html?blogId=${post.id}" class="btn btn-primary">Learn More</a>
-    </div>
-</div>
+      </div>
+      </div>
       `;
   }
 
