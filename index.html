@@ -3,20 +3,24 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Makram M. Ibrahim</title>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- SEO Meta Tags -->
+  <title>Makram M. Ibrahim | Software Engineer & Frontend Developer</title>
   <meta name="description"
-    content="Explore Makram Ibrahim’s portfolio to discover exceptional web development and design expertise. Specializing in frontend technologies like HTML5, CSS3, JavaScript, React, and Next.js, Makram delivers high-performance, user-friendly websites and applications. With a strong focus on enhancing user experience and optimizing performance, Makram’s portfolio showcases innovative projects and a commitment to quality.">
+    content="Explore Makram Ibrahim's portfolio showcasing exceptional web development expertise. Specializing in HTML5, CSS3, JavaScript, React, and Next.js to deliver high-performance, user-friendly websites and applications.">
   <meta name="keywords"
-    content="Frontend Developer, Web Development, Web Design, HTML5, CSS3, JavaScript, React, Next.js, Responsive Design, User Experience (UX), Performance Optimization, React Native, Next.js Developer, Full-Stack Developer, Custom Web Applications, UI/UX Design, Performance Enhancement, SEO Best Practices, Frontend Technologies, Web Development Projects">
+    content="Frontend Developer, Web Development, Web Design, HTML5, CSS3, JavaScript, React, Next.js, Responsive Design, User Experience, Performance Optimization, React Native, Full-Stack Developer, Custom Web Applications, UI/UX Design">
+  <meta name="author" content="Makram M. Ibrahim">
+  <meta name="robots" content="index, follow">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i"
     rel="stylesheet">
@@ -28,36 +32,34 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Calendly badge widget begin -->
+  <!-- Calendly CSS -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script
-    type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/findmak', text: 'Schedule', color: '#f06449', textColor: '#ffffff', branding: true }); }</script>
-  <!-- Calendly badge widget end -->
 
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+
+  <!-- Preload key resources -->
+  <link rel="preload" href="assets/img/home-bg.jpeg" as="image">
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Makram Ibrahim</a></h1>
+      <h1 class="logo">
+        <a href="index.html">Makram Ibrahim</a>
+      </h1>
 
       <!-- ======= Navbar ======= -->
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
-          <!-- <li><a class="nav-link  scrollto" href="#journal">Services</a></li> -->
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <button class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation" aria-expanded="false"></button>
       </nav><!-- End Navbar -->
-
     </div>
   </header><!-- End Header -->
 
@@ -136,195 +138,20 @@
               class="btn btn-primary btn-primary__resume">View
               Resume</a>
           </div>
-        </div>
-      </div>
-    </div><!-- End About Section -->
-
-    <!-- ======= Programming Languages ======= -->
-    <div id="services">
-      <div class="container">
-        <!-- ======= Skill Icons ======= -->
-        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-            <!-- ======= HTML ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                    alt="" />
-                  <span class="language__name">HTML</span>
-                </figure>
+          <!-- ======= Skills Section ======= -->
+          <div class=" skills-section">
+            <div class="skills-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper" id="skills-slider">
+                <!-- Skills will be injected here by JS -->
               </div>
-            </div><!-- End HTML Skill Inon -->
-
-            <!-- ======= CSS ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-                    alt="" />
-                  <span class="language__name">CSS</span>
-                </figure>
-              </div>
-            </div><!-- End CSS Skill Icon -->
-
-            <!-- =======  JavaScript ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" />
-                  <span class="language__name">JavaScript</span>
-                </figure>
-              </div>
-            </div><!-- End JavaScirpt Skill Icon -->
-
-            <!-- =======  TypeScript ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="" />
-                  <span class="language__name">TypeScript</span>
-                </figure>
-              </div>
-            </div><!-- End TypeScript Skill Icon -->
-
-            <!-- =======  Python ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-1713885634631.webp"
-                    alt="" />
-                  <span class="language__name">Python</span>
-                </figure>
-              </div>
-            </div><!-- End Python Skill Icon -->
-
-            <!-- =======  MongoDB ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://w1.pngwing.com/pngs/711/379/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascript-thumbnail.png"
-                    alt="" />
-                  <span class="language__name">MongoDB</span>
-                </figure>
-              </div>
-            </div><!-- End MongoDB Skill Icon -->
-
-            <!-- =======  Express ======= -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo-thumbnail.png"
-                    alt="" />
-                  <span class="language__name">Express</span>
-                </figure>
-              </div>
-            </div><!-- End Express Skill Icon -->
-
-            <!-- ======= React ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://w7.pngwing.com/pngs/452/495/png-transparent-react-javascript-angularjs-ionic-github-text-logo-symmetry-thumbnail.png"
-                    alt="" />
-                  <span class="language__name">React.js</span>
-                </figure>
-              </div>
-            </div><!-- End React Skill Icon -->
-
-            <!-- ======= Next ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png" alt="" />
-                  <span class="language__name">Next.js</span>
-                </figure>
-              </div>
-            </div><!-- End Next Skill Icon -->
-
-            <!-- ======= Node ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://w7.pngwing.com/pngs/558/166/png-transparent-node-js-javascript-react-express-js-linux-foundation-mongodb-icons-angle-text-rectangle-thumbnail.png"
-                    alt="" />
-                  <span class="language__name">Node.js</span>
-                </figure>
-              </div>
-            </div><!-- End Node Skill Icon -->
-
-            <!-- ======= Firebase ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img" src="assets/img/firebase.png" alt="" />
-                  <span class="language__name">Firebase</span>
-                </figure>
-              </div>
-            </div><!-- End Firebase Skill Icon -->
-
-            <!-- ======= Redux ======= -->
-            <div class="swiper-slide">
-              <div class="services-block">
-                <figure class="modal__language">
-                  <img class="modal__language--img" src="https://redux.js.org/img/redux.svg" alt="" />
-                  <span class="language__name">Redux</span>
-                </figure>
-              </div>
-            </div><!-- End Redux Skill Icon -->
-
-          </div>
-        </div><!-- End Skills Icons -->
-      </div>
-    </div><!-- End Programming Languages -->
-
-    <!-- <div class="container">
-      <div class="row">
-        <div class="text-center">
-          <h1 class="section__title">Here are some of my <span class="orange">projects</span> </h1>
-          <h2>Featured Project</h2>
-        </div>
-
-        <div class="project__wrapper">
-          <img src="/assets/img/portfolio/portfolio-1.png" class="project__img" alt="">
-          <div class="project__wrapper--bg"></div>
-          <div class="project__description">
-            <h3 class="project__description--title">
-              Google In-Store
-            </h3>
-            <h4 class="project__description--sub-title">
-              Html, CSS, JavaScript, Vue, Vuex
-            </h4>
-            <p class="project__description--para">
-              Google In-Store is a platform allowing Google retail employees to report any issues with their
-              store products. Once an issue is reported, it is posted to an API which populates a separate
-              platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I
-              was
-              the sole
-              front-end developer of this application.
-            </p>
-            <div class="project__description--links">
-              <a href="https://googleinstore.com.au/" class="project__description--link">
-                <i class="fas fa-link"></i>
-              </a>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div><!-- End About Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <div id="portfolio" class="paddsection">
+    <section id="portfolio">
       <div class="container">
         <div class="section-title text-center">
           <h2>Project Portfolio</h2>
@@ -333,180 +160,20 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
+          <div class="filters col-lg-12" data-aos="fade-up">
+            <ul id="portfolio-filters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-web">UX/UI</li>
               <li data-filter=".filter-react">React</li>
               <li data-filter=".filter-next">Next</li>
             </ul>
           </div>
         </div>
-
-        <div class="row portfolio-container">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-next">
-            <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="" width="672" height="520"
-              loading="lazy">
-            <div class="portfolio-info">
-              <h4>SkinstricAI</h4>
-              <p>NextJS</p>
-              <a href="https://skinstric-ai.vercel.app/" target="_blank" class="preview-link" title="Visit Project"><i
-                  class="bx bx-link-external"></i></a>
-              <a href="https://github.com/pharaohmak/SkinstricAI" target="_blank" class="repo-link" title="See Repo"><i
-                  class='bx bxl-github'></i>
-              </a>
-              <a href="portfolio-details.html?projectId=1" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-next">
-            <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="" width="672" height="520"
-              loading="lazy">
-            <div class="portfolio-info">
-              <h4>Summarist</h4>
-              <p>NextJS</p>
-              <a href="https://summarist-seven.vercel.app/" target="_blank" class="preview-link"
-                title="Visit Project"><i class="bx bx-link-external"></i></a>
-              <a href="https://github.com/pharaohmak/Summarist" target="_blank" class="repo-link" title="See Repo"><i
-                  class='bx bxl-github'></i></a>
-              <a href="portfolio-details.html?projectId=2" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-            <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="" width="672" height="520"
-              loading="lazy">
-            <div class="portfolio-info">
-              <h4>NFT Marketplace</h4>
-              <p>ReactJS</p>
-              <a href="https://makram-internship.vercel.app/" target="_blank" class="preview-link"
-                title="Visit Project"><i class="bx bx-link-external"></i></a>
-              <a href="https://github.com/pharaohmak/makram-internship/" target="_blank" class="repo-link"
-                title="See Repo"><i class='bx bxl-github'></i></a>
-              <a href="portfolio-details.html?projectId=3" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-            <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="" width="672" height="520"
-              loading="lazy">
-            <div class="portfolio-info">
-              <h4>My Library</h4>
-              <p>ReactJS</p>
-              <a href="https://my-library-teal.vercel.app/" target="_blank" class="preview-link"
-                title="Visit Project"><i class="bx bx-link-external"></i></a>
-              <a href="https://github.com/pharaohmak/My-Library" target="_blank" class="repo-link" title="See Repo"><i
-                  class='bx bxl-github'></i>
-              </a>
-              <a href="portfolio-details.html?projectId=4" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-            <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="" width="672" height="520"
-              loading="lazy">
-            <div class="portfolio-info">
-              <h4>Ticket Finder</h4>
-              <p>ReactJS</p>
-              <a href="https://ticket-finder-one.vercel.app/" target="_blank" class="preview-link"
-                title="Visit Project"><i class="bx bx-link-external"></i></a>
-              <a href="https://github.com/pharaohmak/Ticket-Finder" target="_blank" class="repo-link"
-                title="See Repo"><i class='bx bxl-github'></i>
-              </a>
-              <a href="portfolio-details.html?projectId=5" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="" width="672" height="520"
-              loading="lazy">
-            <div class="portfolio-info">
-              <h4>TReact Clone</h4>
-              <p>Web</p>
-              <a href="https://findmak.com/TReact-Clone/" target="_blank" class="preview-link" title="Visit Project"><i
-                  class="bx bx-link-external"></i></a>
-              <a href="https://github.com/pharaohmak/TReact-Clone" target="_blank" class="repo-link" title="See Repo"><i
-                  class='bx bxl-github'></i>
-              </a>
-              <a href="portfolio-details.html?projectId=6" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-            <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="" loading="lazy">
-            <div class="portfolio-info">
-              <h4>OpenSea NFT's</h4>
-              <p>ReactJS</p>
-              <a href="https://opensea-nft-collections.vercel.app/" target="_blank" class="preview-link"
-                title="Visit Project"><i class="bx bx-link-external"></i></a>
-              <a href="https://github.com/pharaohmak/Opensea-NFT-Collections" target="_blank" class="repo-link"
-                title="See Repo"><i class='bx bxl-github'></i>
-              </a>
-              <a href="portfolio-details.html?projectId=7" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-next">
-            <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="" width="672" height="520"
-              loading="lazy">
-            <div class="portfolio-info">
-              <h4>CryptoCoin</h4>
-              <p>NextJS</p>
-              <a href="https://github.com/pharaohmak/CryptoCoin" target="_blank" class="repo-link" title="See Repo"><i
-                  class='bx bxl-github'></i>
-              </a>
-              <a href="https://crypto-coin-three.vercel.app/" target="_blank" class="preview-link"
-                title="Visit Project"><i class="bx bx-link-external"></i></a>
-              </a>
-              <a href="portfolio-details.html?projectId=8" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-next">
-            <img src="assets/img/portfolio/portfolio-9.png?projectId=5" class="img-fluid" alt="" width="672"
-              height="520" loading="lazy">
-            <div class="portfolio-info">
-              <h4>Music Library</h4>
-              <p>NextJS</p>
-              <a href="https://music-library-lyart.vercel.app/" target="_blank" class="preview-link"
-                title="Visit Project"><i class="bx bx-link-external"></i></a>
-              <a href="https://github.com/pharaohmak/music-library" target="_blank" class="repo-link"
-                title="See Repo"><i class='bx bxl-github'></i>
-              </a>
-              <a href="portfolio-details.html?projectId=9" class="details-link" title="More Details"><i
-                  class="bx bx-detail"></i></a>
-            </div>
-          </div> -->
-
+        <div class="row portfolio-container" id="portfolio-container">
+          <!-- Portfolio items will be injected here by JS -->
         </div>
       </div>
-    </div><!-- End Portfolio Section -->
-
-    <!-- ======= Journal Section ======= -->
-    <!-- <div id="journal" class="text-left paddsection">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>Services</h2>
-        </div>
-      </div>
-
-      <div class="container">
-        <div id="journal-block" class="journal-block">
-          <div class="row">
-            Blog posts will be dynamically inserted here
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- -- End Journal Section -- -->
+    </section><!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="paddsection">
@@ -517,27 +184,23 @@
               <div class="contact-contact">
                 <div class="contact-info">
                   <h3>Let's Work Together!</h3>
-                  <!-- ======= Contact Message ======= -->
                   <p>Are you looking for a skilled and creative Software Engineer to elevate your team or bring fresh
                     ideas to your next project? Let’s connect and explore how I can contribute with innovative solutions
                     that align with your goals.
                     <br><br>
                     I’m excited to collaborate and make a meaningful impact. Reach out today, and let’s start a
                     conversation about achieving success together!
-                  </p><!-- End Contact Message -->
-
-                  <!-- ======= Contact Info ======= -->
+                  </p>
                   <ul class="contact-details">
                     <li><span><strong>Phone: </strong>+1 385 259-3959</span></li>
                     <li><span><strong>Email: </strong>me@findmak.com</span></li>
                   </ul>
                 </div>
               </div>
-            </div><!-- End Contact Info-->
+            </div>
 
-            <!-- ======= Contact Form ======= -->
             <div class="col-lg-6">
-              <form id="contact__form" onsubmit="handleSubmit(event)" class="php-email-form" autocomplete="on">
+              <form id="contact__form" class="email-form" autocomplete="on">
                 <div class="row gy-3">
                   <div class="col-lg-6">
                     <div class="form-group contact-block1">
@@ -579,45 +242,75 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <div id="footer" class="text-center">
+  <footer id="footer" class="text-center">
     <div class="container">
-      <!-- ======= Footer Links ======= -->
       <div class="socials-media text-center">
-        <ul class="list-unstyled">
-          <li><a href="assets/certifications/Makram Ibrahim Resume.pdf" target="_blank">
-              <i class="bi bi-file-earmark-pdf-fill"></i>
-            </a></li>
-          <li><a href="https://www.linkedin.com/in/mak-ibrahim/">
-              <i class="bi bi-linkedin"></i>
-            </a></li>
-          <li><a href="https://github.com/pharaohmak">
-              <i class="bi bi-github"></i>
-            </a></li>
+        <ul class="list-unstyled list-social">
+          <li>
+            <a href="assets/certifications/Makram Ibrahim Resume.pdf" target="_blank" aria-label="View Resume (PDF)">
+              <i class="bi bi-file-earmark-pdf-fill" aria-hidden="true"></i>
+            </a>
+            <span class="list-social__name">Resume</span>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mak-ibrahim/" aria-label="Visit LinkedIn Profile">
+              <i class="bi bi-linkedin" aria-hidden="true"></i>
+            </a>
+            <span class="list-social__name">LinkedIn</span>
+          </li>
+          <li>
+            <a href="https://github.com/pharaohmak" aria-label="Visit GitHub Profile">
+              <i class="bi bi-github" aria-hidden="true"></i>
+            </a>
+            <span class="list-social__name">GitHub</span>
+          </li>
         </ul>
-      </div><!-- End Footer Links -->
-
-      <!-- ======= Footer Copyright ======= -->
-      <p>&copy; Copyrights Makram M Ibrahim. All rights reserved.</p>
-
-    </div><!-- End Footer Copyright -->
-  </div><!-- End Footer -->
+      </div>
+      <p class="copyright">&copy; Copyrights Makram M Ibrahim. <span>All rights reserved.</span></p>
+    </div>
+  </footer><!-- End Footer -->
 
   <!-- ======= Back to Top Button ======= -->
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a><!-- End Back to Top Button -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+  </a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script><!-- End Vector JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <!-- Utilities -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
   <script src="forms/contact.js"></script>
-  <script src="assets/js/journal.js"></script><!-- End Utils-->
+
+  <!-- Skills Data and Loader -->
+  <script src="assets/js/data/skills.js" defer></script>
+  <script src="assets/js/loadSkills.js" defer></script>
+
+  <!-- Portfolio Data and Loader -->
+  <script src="assets/js/data/portfolio.js" defer></script>
+  <script src="assets/js/loadPortfolio.js" defer></script>
+
+  <!-- Calendly Widget -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script type="text/javascript">
+    window.addEventListener('load', function () {
+      Calendly.initBadgeWidget({
+        url: 'https://calendly.com/findmak',
+        text: 'Schedule',
+        color: '#f06449',
+        textColor: '#ffffff',
+        branding: true
+      });
+    });
+  </script>
 
 </body>
 
